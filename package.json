@@ -1,0 +1,39 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "description": "William Velázquez Professional Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "next:dev": "next",
+    "next:start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WilliamVelazquez/portfolio"
+  },
+  "keywords": [
+    "WilliamVelazquez",
+    "William Velazquez",
+    "William Velázquez",
+    "react",
+    "NextJs",
+    "PWA",
+    "Personal Portfolio",
+    "Portfolio"
+  ],
+  "author": "William Velazquez <william.velazquez.a@gmail.com> (https://twitter.com/WilliamVlazquez)",
+  "bugs": {
+    "url": "https://github.com/WilliamVelazquez/portfolio/issues"
+  },
+  "homepage": "https://github.com/WilliamVelazquez/portfolio#readme",
+  "dependencies": {
+    "next": "7.0.0",
+    "next-offline": "3.0.2",
+    "react": "16.5.2",
+    "react-dom": "16.5.2",
+    "react-ga": "^2.5.3"
+  }
+}
