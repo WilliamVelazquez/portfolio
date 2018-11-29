@@ -6,7 +6,6 @@ import AlertText from './AlertText';
 import SocialMedia from './SocialMedia';
 
 function ContactFormUI(props) {
-  //console.log(props);
   return(
     <div className="contactContainer">
       <TitleBand title="Contáctanos" position="center"/>
@@ -20,6 +19,7 @@ function ContactFormUI(props) {
         <h2 className="text">Ingresa tu información</h2>
 
         <div className="contactForm">
+          <img src="/static/Logo_1024.png" alt="William Velazquez Logo"/>
           <form>
             <input 
               type="text"
@@ -72,7 +72,6 @@ function ContactFormUI(props) {
               Enviar
             </button>
           </form>
-          <img src="/static/Logo_1024.png" alt="Quality Publicidad Logo"/>
         </div>
 
       </div>

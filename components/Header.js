@@ -22,14 +22,14 @@ function Header(props) {
           <meta name="robots" content="index, follow" />
           :<meta name="robots" content="noindex, nofollow" />
         }
-        <title>{props.title || "Quality Publicidad"}</title>
-        <link rel="icon" href="/static/Quality.ico" />
+        <title>{props.title || "William Velazquez"}</title>
+        <link rel="icon" href="/static/William Velazquez.ico" />
         
         <meta name="theme-color" content="#052A4F" />
         <link rel="manifest" href="/static/manifest.webmanifest" />
 
         <link rel='apple-touch-icon' href='/static/Logo/Logo_512.png' />
-        <meta name="apple-mobile-web-app-title" content="Quality" />
+        <meta name="apple-mobile-web-app-title" content="William Velazquez" />
         <meta name="apple-mobile-web-app-capable" content="no" />
         <meta name="apple-mobile-web-apps-status-bar-style" content="black-translucent" />
       </Head>
@@ -37,7 +37,7 @@ function Header(props) {
       <div className="navbar">
         <div className="left">
           <Link href="/">
-            <img className="btn" src="/static/LogoWhite_512.png" alt="Quality"/>
+            <img className="btn" src="/static/LogoWhite_512.png" alt="William Velazquez"/>
           </Link>  
             <div className="Offline"><IfOffline>Offline</IfOffline></div>
         </div>
