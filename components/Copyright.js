@@ -6,16 +6,16 @@ function Copyright(props) {
 		<div>
       <hr />
       <div className="copyright">
-        <span>©2018 Quality Publicidad. Todos los derechos reservados.</span>
+        <span>©2018 William Velazquez. All rights reserved.</span>
         <div className="policies">
           <Link href="/terminos">
-            <a>Términos de Uso</a>
+            <a>Use Terms</a>
           </Link>
           <Link href="/privacidad">
-            <a>Política de Privacidad</a>
+            <a>Privacy Politics</a>
           </Link>
           <Link href="/mapa">
-            <a>Mapa del sitio</a>
+            <a>Sitemap</a>
           </Link>
         </div>
       </div>

@@ -15,10 +15,10 @@ function Header(props) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta 
           name="description" 
-          content={props.description || "Empresa de publicidad dedicada al diseño y producción de papelería, folletería, imagen corporativa, tarjetas de presentación, pósters, señalización, rotulación de transporte, fachadas, banners, colgantes, promocionales y muchos artículos innovadores más."}
+          content={props.description || "Portfolio website of William Velazquez as a Full Stack and Mobile Developer."}
         />
         {
-          (props.active=="Inicio" || props.active=="Nosotros" || props.active=="Contacto")?
+          (props.active=="Home" || props.active=="About" || props.active=="Contact")?
           <meta name="robots" content="index, follow" />
           :<meta name="robots" content="noindex, nofollow" />
         }

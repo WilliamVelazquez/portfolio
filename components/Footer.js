@@ -10,7 +10,7 @@ function Footer(props) {
 		<footer>
       <div className="footerContent">
         <ContactData />
-        <SocialMedia color="#fff" hoverColor="#56a9ff" size={32} titleColor="#fff" title="Visita nuestras redes sociales"/>
+        <SocialMedia color="#fff" hoverColor="#56a9ff" size={32} titleColor="#fff" title="Follow me!"/>
       </div>
       <Copyright />
       

@@ -10,11 +10,11 @@ class Home extends Component{
     return (
       <AnalyticsLayout>
         <Header 
-        	active="Inicio" 
-        	title="Publidad de calidad y variedad en Artículos publicitarios | Quality Publicidad" 
-        	description="Empresa de publicidad dedicada al diseño y producción de papelería, folletería, imagen corporativa, tarjetas, pósters, rotulación, banners, promocionales y más." 
+        	active="" 
+        	title="Full Stack Developer | William Velazquez" 
+        	description="Portfolio website of William Velazquez as a Full Stack and Mobile Developer." 
         />
-        <ErrorContent msg="En Construcción"/>
+        <ErrorContent msg="Under Construction"/>
         <Footer />
       </AnalyticsLayout>
     );

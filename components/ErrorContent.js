@@ -9,16 +9,16 @@ function ErrorContent(props) {
 		<div className="container">
       
       <Link href="/">
-        <img src="/static/Logo_1024.png" alt="Quality Publicidad Logo"/>
+        <img src="/static/Logo_1024.png" alt="William Velazquez Logo"/>
       </Link> 
 
       <h1 className="text">{props.msg}</h1>
 
-      <SocialMedia color="#052A4F" hoverColor="#56a9ff" size={32} titleColor="#052A4F" title="Visita nuestras redes sociales"/>
+      <SocialMedia color="#052A4F" hoverColor="#56a9ff" size={32} titleColor="#052A4F" title="Follow me!"/>
 
       <div className="btnContainer">
         <Link href="/contacto">
-          <button type="button">Contáctanos!</button>
+          <button type="button">Contact</button>
         </Link>
       </div>
 

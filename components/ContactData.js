@@ -7,14 +7,14 @@ import SmMailIcon from './icons/SmMailIcon';
 function ContactData(props) {
 	return(
 		<div className="contactData">
-      <span className="footerTitle">Hablemos</span>
+      <span className="footerTitle">Contact</span>
 
       <span className="iconLine"><PhoneIcon color="white" size={22} />5303-4097</span>
-      <span className="iconLine"><SmMailIcon color="white" size={32} /><a href="mailto:qualitypublicidadmx@gmail.com?subject=Consulta%20Vía%20Email&body=Buen%20día">qualitypublicidadmx@gmail.com</a></span>
+      <span className="iconLine"><SmMailIcon color="white" size={32} /><a href="mailto:william@williamvelazquez.com">william@williamvelazquez.com</a></span>
       <span>
-        {"¿Deseas que te marquemos? "}
+        {"Want to work together or chat about life? "}
         <Link href="/contacto">
-          <a>Contáctanos</a>
+          <a>Let's talk!</a>
         </Link>
       </span>
 

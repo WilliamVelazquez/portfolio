@@ -14,7 +14,7 @@ function SocialMedia(props) {
           type="button"
           target="_blank" 
           rel="noopener noreferrer"  
-          href="https://twitter.com/QuPublicidadMX" 
+          href="https://twitter.com/WilliamVlazquez" 
           className="icon">
           <TwitterIcon 
             color={props.color||"#fff"} 
@@ -27,7 +27,7 @@ function SocialMedia(props) {
           type="button"
           target="_blank" 
           rel="noopener noreferrer"  
-          href="" 
+          href="https://www.facebook.com/WilliamVelazquezA" 
           className="icon">
           <FacebookIcon 
             color={props.color||"#fff"} 
