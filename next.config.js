@@ -57,7 +57,10 @@ module.exports = withOffline({
         handler: 'networkFirst'
       }
     ]
-  }
+  },
+  //assetPrefix: process.env.NODE_ENV === 'production' ? 'https://williamvelazquez.github.io/portfolio' : ''
+  //assetPrefix: process.env.NODE_ENV === 'production' ? '/{portfolio}' : ''
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio/' : ''
   //Provide own no-op service worker in development
   //Useful to test web push notifications in development
   //devSwSrc: '/path/to/my/dev/service-worker.js'
