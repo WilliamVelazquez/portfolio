@@ -16,14 +16,14 @@ function ContactFormUI(props) {
       }
 
       <div className="container">
-        <h2 className="text">Ingresa tu información</h2>
+        <h2 className="text">Fill your data</h2>
 
         <div className="contactForm">
           <img src="/static/Logo_1024.png" alt="William Velazquez Logo"/>
           <form>
             <input 
               type="text"
-              placeholder="*Nombre"
+              placeholder="*Name"
               value={props.name}
               onChange={props.changeName}
               className={props.validName?"":"errorShadow"}
@@ -39,7 +39,7 @@ function ContactFormUI(props) {
 
             <input 
               type="text"
-              placeholder="Teléfono"
+              placeholder="Phone"
               value={props.phone}
               onChange={props.changePhone}
               className={props.validPhone?"":"errorShadow"}
@@ -48,15 +48,15 @@ function ContactFormUI(props) {
             <textarea 
               rows="4"
               type="text"
-              placeholder="Comentarios/Observaciones"
+              placeholder="Comments/Suggestions"
               value={props.comments}
               onChange={props.changeComments}
             />
 
-            <p className="helpText">*Datos requeridos</p>
+            <p className="helpText">*Required data</p>
 
             <div className="rowContainer">
-              <p className="text">¿Deseas que te llamémos?</p>            
+              <p className="text">Do you want me to call you?</p>            
               <input 
                 className="check"
                 type="checkbox"
@@ -69,14 +69,14 @@ function ContactFormUI(props) {
               type="button"
               onClick={props.handleSubmit}
             >
-              Enviar
+              Send
             </button>
           </form>
         </div>
 
       </div>
       
-      <SocialMedia color="#052A4F" hoverColor="#56a9ff" size={32} titleColor="#052A4F" title="Visita nuestras redes sociales"/>
+      <SocialMedia color="#111317" hoverColor="#BF0404" size={32} titleColor="#111317" title="Get in touch!"/>
 
       <style jsx>{`
         .contactContainer{
@@ -90,7 +90,7 @@ function ContactFormUI(props) {
           margin: 30px;
           height: 100%;
           text-align: center;
-          color: #052a4f;
+          color: #111317;
         }
         .text{
           margin: 10px;
@@ -115,7 +115,7 @@ function ContactFormUI(props) {
           padding: 10px;
           margin: 10px;
           border-radius: 10px;
-          border: 2px solid #052A4F;
+          border: 2px solid #111317;
         }
         .contactForm input.errorShadow,
         .contactForm textarea.errorShadow{
@@ -135,16 +135,16 @@ function ContactFormUI(props) {
           grid-template-columns: auto 1fr;
         }
         .visitUs{
-          color: #052a4f;
+          color: #111317;
           text-align: center;
         }
         button{
           cursor: pointer;
           border-radius: 5px;
-          border: 3px solid #000752;
+          border: 3px solid #791716;
           padding: 10px 30px;
           margin: 10px;
-          background: #052A4F;
+          background: #BF0404;
           color: #fff;
           font-size: 18px;
           font-weight: bold;
@@ -154,7 +154,7 @@ function ContactFormUI(props) {
         button:hover,
         button:active
         {
-          color: #052A4F;
+          color: #BF0404;
           background: #fff;
         }
         img{

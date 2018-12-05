@@ -17,18 +17,18 @@ class NavMenu extends Component{
           <Link prefetch href="/">
             <a className={`${this.props.active=="Home"?"active":""}`}>Home</a>
           </Link>
-          <Link prefetch href="/contacto">
+          <Link prefetch href="/contact">
             <a className={`${this.props.active=="Contact"?"active":""}`}>Contact</a>
           </Link>
         </div>
 
         <div className="navNarrow">
-          <span onClick={this.toggleMenu}>{this.state.menuOpened?"x":"Menú"}</span>
+          <span onClick={this.toggleMenu}>{this.state.menuOpened?"x":"Menu"}</span>
           <div className={`slider${this.state.menuOpened?"":" closed"}`}>
             <Link prefetch href="/">
               <a className={`${this.props.active=="Home"?"active":""}`}>Home</a>
             </Link>
-            <Link prefetch href="/contacto">
+            <Link prefetch href="/contact">
               <a className={`${this.props.active=="Contact"?"active":""}`}>Contact</a>
             </Link>
           </div>
@@ -72,7 +72,7 @@ class NavMenu extends Component{
           .navNarrow{
             display: none;
             grid-template-columns: 1fr;
-            background: #052A4F;
+            background: #111317;
             top: 0;
             right: 0;
             padding: 10px;
@@ -126,6 +126,9 @@ class NavMenu extends Component{
             }
             .left{
               grid-template-columns: 85px 1fr;
+            }
+            .navNarrow{
+              padding: 5px;
             }
           }
         `}</style>

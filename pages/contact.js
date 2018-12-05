@@ -5,13 +5,13 @@ import Footer from '../components/Footer';
 import ContactForm from '../containers/ContactForm';
 import AnalyticsLayout from '../containers/AnalyticsLayout';
 
-class Contacto extends Component{
+class Contact extends Component{
   
   render() {
     return (
       <AnalyticsLayout>
         <Header 
-        	active="Contacto" 
+        	active="Contact" 
         	title="" 
         	description="" 
         />
@@ -22,4 +22,4 @@ class Contacto extends Component{
   }
 }
 
-export default Contacto;
+export default Contact;

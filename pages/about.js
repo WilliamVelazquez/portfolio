@@ -4,12 +4,12 @@ import AnalyticsLayout from '../containers/AnalyticsLayout';
 import Header from '../components/Header';
 import AboutUs from '../components/AboutUs';
 
-class Nosotros extends Component{
+class About extends Component{
   render() {
     return (
       <AnalyticsLayout>
         <Header 
-        	active="Nosotros" 
+        	active="About" 
         	title="" 
         	description="" 
         />
@@ -19,4 +19,4 @@ class Nosotros extends Component{
   }
 }
 
-export default Nosotros;
+export default About;

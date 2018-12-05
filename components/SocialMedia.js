@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import TwitterIcon from './icons/TwitterIcon';
 import FacebookIcon from './icons/FacebookIcon';
-import InstagramIcon from './icons/InstagramIcon';
+import GithubIcon from './icons/GithubIcon';
 
 function SocialMedia(props) {
 	return(
@@ -40,9 +40,9 @@ function SocialMedia(props) {
           type="button"
           target="_blank" 
           rel="noopener noreferrer"  
-          href="" 
+          href="https://github.com/WilliamVelazquez" 
           className="icon">
-          <InstagramIcon 
+          <GithubIcon 
             color={props.color||"#fff"} 
             hoverColor={props.hoverColor ||"#052A4F"} 
             size={props.size||32} 
@@ -71,7 +71,8 @@ function SocialMedia(props) {
         .socialMediaTitle{
           font-size: 20px;
           font-weight: bold;
-          color: ${props.titleColor||"#fff"}
+          color: ${props.titleColor||"#fff"};
+          justify-self: center;
         }
       `}</style>
     </div>

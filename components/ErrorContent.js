@@ -14,7 +14,12 @@ function ErrorContent(props) {
 
       <h1 className="text">{props.msg}</h1>
 
-      <SocialMedia color="#052A4F" hoverColor="#56a9ff" size={32} titleColor="#052A4F" title="Follow me!"/>
+      {
+        props.error &&
+        <h2 className="text">Error {props.error}</h2>
+      }
+
+      <SocialMedia color="#111317" hoverColor="#BF0404" size={32} titleColor="#111317" title="Get in touch!"/>
 
       <div className="btnContainer">
         <Link href="/contacto">
@@ -31,7 +36,7 @@ function ErrorContent(props) {
           margin-top: -30px;
           height: 100%;
           text-align: center;
-          color: #052a4f;
+          color: #111317;
         }
         .text{
           margin: 10px;
@@ -46,9 +51,9 @@ function ErrorContent(props) {
         button{
           cursor: pointer;
           border-radius: 5px;
-          border: 3px solid #000752;
+          border: 3px solid #791716;
           padding: 10px;
-          background: #052A4F;
+          background: #BF0404;
           color: #fff;
           font-size: 18px;
           font-weight: bold;
@@ -58,7 +63,7 @@ function ErrorContent(props) {
         button:hover,
         button:active
         {
-          color: #052A4F;
+          color: #BF0404;
           background: #fff;
         }
         img{

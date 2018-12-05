@@ -10,7 +10,7 @@ function Footer(props) {
 		<footer>
       <div className="footerContent">
         <ContactData />
-        <SocialMedia color="#fff" hoverColor="#56a9ff" size={32} titleColor="#fff" title="Follow me!"/>
+        <SocialMedia color="#fff" hoverColor="#BF0404" size={32} titleColor="#fff" title="Follow me!"/>
       </div>
       <Copyright />
       
@@ -18,7 +18,7 @@ function Footer(props) {
 
       <style jsx>{`
         footer{
-          background: #052A4F;
+          background: #111317;
           left: 0;
           right: 0;
           bottom: 0;
@@ -37,7 +37,7 @@ function Footer(props) {
           justify-items: center;
         }
         .colorBar{
-          background: #1f456c;
+          background: #8e1a1a;
           height: 8px;
         }
         img{

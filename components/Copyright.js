@@ -8,13 +8,13 @@ function Copyright(props) {
       <div className="copyright">
         <span>©2018 William Velazquez. All rights reserved.</span>
         <div className="policies">
-          <Link href="/terminos">
+          <Link href="/terms">
             <a>Use Terms</a>
           </Link>
-          <Link href="/privacidad">
+          <Link href="/privacy">
             <a>Privacy Politics</a>
           </Link>
-          <Link href="/mapa">
+          <Link href="/sitemap">
             <a>Sitemap</a>
           </Link>
         </div>

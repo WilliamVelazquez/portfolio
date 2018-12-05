@@ -10,7 +10,7 @@ class Home extends Component{
     return (
       <AnalyticsLayout>
         <Header 
-        	active="" 
+        	active="Home" 
         	title="Full Stack Developer | William Velazquez" 
         	description="Portfolio website of William Velazquez as a Full Stack and Mobile Developer." 
         />

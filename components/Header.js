@@ -18,12 +18,12 @@ function Header(props) {
           content={props.description || "Portfolio website of William Velazquez as a Full Stack and Mobile Developer."}
         />
         {
-          (props.active=="Home" || props.active=="About" || props.active=="Contact")?
+          (props.active=="Home" || props.active=="About" || props.active=="Resume" || props.active=="Work" || props.active=="Contact")?
           <meta name="robots" content="index, follow" />
           :<meta name="robots" content="noindex, nofollow" />
         }
         <title>{props.title || "William Velazquez"}</title>
-        <link rel="icon" href="/static/William Velazquez.ico" />
+        <link rel="icon" href="/static/WilliamVelazquez.ico" />
         
         <meta name="theme-color" content="#052A4F" />
         <link rel="manifest" href="/static/manifest.webmanifest" />
@@ -37,7 +37,7 @@ function Header(props) {
       <div className="navbar">
         <div className="left">
           <Link href="/">
-            <img className="btn" src="/static/LogoWhite_512.png" alt="William Velazquez"/>
+            <img className="btn" src="/static/LogoWhite_55.png" alt="William Velazquez"/>
           </Link>  
             <div className="Offline"><IfOffline>Offline</IfOffline></div>
         </div>
@@ -56,7 +56,7 @@ function Header(props) {
       `}</style>
       <style jsx>{`
         header{
-          background: #052A4F;
+          background: #111317;
           padding: 10px;
           border-radius: 0px 0px 10px 10px;
           position: fixed;
@@ -72,7 +72,7 @@ function Header(props) {
           align-items:center;
         }
         img{
-          width: 35px;
+          width: 55px;
         }
         .btn{
           cursor:pointer;
@@ -82,13 +82,12 @@ function Header(props) {
           float:left;
           display:grid;
           grid-auto-flow: column;
-          grid-template-columns: 40px 1fr;
+          grid-template-columns: 60px 1fr;
         }
         .left .Offline{
           margin:0;
           padding:0;
-          color:#FFF;
-          /*color:#F1C40F;*/
+          color:#BF0404;
           font-size: 24px;
           align-self: flex-end;
           font-weight: bold;
@@ -98,10 +97,10 @@ function Header(props) {
             font-size:20px;
           }
           img{
-            width: 25px;
+            width: 45px;
           }
           .left{
-            grid-template-columns: 30px 1fr;
+            grid-template-columns: 50px 1fr;
           }
         }
         @media only screen and (max-width : 667px) {
@@ -109,10 +108,10 @@ function Header(props) {
             font-size:18px;
           }
           img{
-            width: 20px;
+            width: 30px;
           }
           .left{
-            grid-template-columns: 25px 1fr;
+            grid-template-columns: 35px 1fr;
           }
         }
       `}</style>

@@ -9,8 +9,7 @@ function ContactData(props) {
 		<div className="contactData">
       <span className="footerTitle">Contact</span>
 
-      <span className="iconLine"><PhoneIcon color="white" size={22} />5303-4097</span>
-      <span className="iconLine"><SmMailIcon color="white" size={32} /><a href="mailto:william@williamvelazquez.com">william@williamvelazquez.com</a></span>
+      <span className="iconLine"><SmMailIcon color="white" size={32} /><a href="mailto:info@williamvelazquez.com">info@williamvelazquez.com</a></span>
       <span>
         {"Want to work together or chat about life? "}
         <Link href="/contacto">
@@ -41,7 +40,7 @@ function ContactData(props) {
           -webkit-text-decoration:none;
         }
         a:hover{
-          color: #56a9ff;
+          color: #BF0404;
         }
         .footerTitle{
           font-size: 20px;

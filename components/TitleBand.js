@@ -10,7 +10,7 @@ function TitleBand(props) {
       <style jsx>{`
         .container{
           width:100%;
-          background: #052A4F;
+          background: #111317;
           margin:40px 0px;
           margin-bottom: 25px;
         }

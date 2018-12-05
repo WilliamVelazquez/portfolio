@@ -1,11 +1,11 @@
 {
 	"short_name": "William",
 	"name": "William Velazquez",
-	"description": "William Velázquez Professional Portfolio",
+	"description": "William Velazquez Portfolio",
 	"start_url":  "/",
 	"scope": "/",
 	"display": "standalone",
-	"theme_color": "#052A4F",
+	"theme_color": "#111317",
 	"background_color": "#fff",
 	"related_applications": [],
 	"prefer_related_applications": false,

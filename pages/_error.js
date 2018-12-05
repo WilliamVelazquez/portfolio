@@ -15,11 +15,15 @@ export default class Error extends React.Component {
 
     return (
       <div>
-        <Header active={`Oh no :( Error ${statusCode}`} />
+        <Header 
+          active={`Oh no :( Error ${statusCode}`} 
+          title="¡Ups! Page not found | William Velazquez" 
+        />
         {
           statusCode === 404 ?
           <ErrorContent 
-            msg="Esta página no existe :("
+            msg="I couldn't find the page you're looking for :("
+            error={statusCode}
           />
           :
           <ErrorContent 
