@@ -9,10 +9,10 @@ function Copyright(props) {
         <span>©2018 William Velazquez. All rights reserved.</span>
         <div className="policies">
           <Link href="/terms">
-            <a>Use Terms</a>
+            <a>Terms and Conditions</a>
           </Link>
           <Link href="/privacy">
-            <a>Privacy Politics</a>
+            <a>Privacy Policy</a>
           </Link>
           <Link href="/sitemap">
             <a>Sitemap</a>
@@ -24,13 +24,15 @@ function Copyright(props) {
         .copyright{
           display:grid;
           grid-template-columns: 1fr 1fr;
+          align-items: center;
           justify-items: center;
           font-size: 12px;
           margin-bottom: 10px;
         }
         .policies{
           display:grid;
-          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-columns: 116px 72px 45px;
+          /*grid-template-columns: 1fr 1fr 1fr;*/
           justify-items: center;
           grid-column-gap: 25px;
         }
@@ -48,11 +50,14 @@ function Copyright(props) {
           -webkit-text-decoration:none;
         }
         a:hover{
-          color: #56a9ff;
+          color: #BF0404;
         }
         @media only screen and (max-width : 768px) {
           .copyright{
             grid-template-columns: 1fr;
+          }
+          .policies{
+            margin-top: 5px;
           }
         }
       `}</style>

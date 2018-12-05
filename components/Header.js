@@ -59,6 +59,7 @@ function Header(props) {
           background: #111317;
           padding: 10px;
           border-radius: 0px 0px 10px 10px;
+          max-height: 28px;
           position: fixed;
           top: 0;
           left: 0;
@@ -93,6 +94,9 @@ function Header(props) {
           font-weight: bold;
         }
         @media only screen and (max-width : 768px) {
+          header{
+            max-height: 23px;
+          }
           .left .Offline{
             font-size:20px;
           }
@@ -104,8 +108,11 @@ function Header(props) {
           }
         }
         @media only screen and (max-width : 667px) {
+          header{
+            max-height: 15px;
+          }
           .left .Offline{
-            font-size:18px;
+            font-size:14px;
           }
           img{
             width: 30px;

@@ -26,17 +26,17 @@ class Api{
         console.log("responseJSON-->",responseJSON);
 
         if(responseJSON.cod=="C00000"){
-          return { success:true, msg:"Información enviada!"}
+          return { success:true, msg:"Thanks for sharing your information!\nI'll contact you soon :)"}
         }
         else{
-          return { success:false, msg:`Error ${responseJSON.cod}: Verificar los datos ingresados.`}
+          return { success:false, msg:`Error ${responseJSON.cod}: Verify the data provided.`}
           //return { success:false, msg:`Error ${responseJSON.cod}: ${responseJSON.msg}`}
         }
       }
     } catch (error) {
       console.log("Error: " + error);
       //this.setState({loading:false});
-      return { success:false, msg:"Error al enviar la Información :(\nFavor de intentar nuevamente"}
+      return { success:false, msg:"Error sending the information :(\nPlease try again"}
     }
     //const query = await fetch(`${BASE_API}contact/saveNewContact?data?${data}`);
     //const data = query.json();

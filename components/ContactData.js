@@ -12,7 +12,7 @@ function ContactData(props) {
       <span className="iconLine"><SmMailIcon color="white" size={32} /><a href="mailto:info@williamvelazquez.com">info@williamvelazquez.com</a></span>
       <span>
         {"Want to work together or chat about life? "}
-        <Link href="/contacto">
+        <Link href="/contact">
           <a>Let's talk!</a>
         </Link>
       </span>

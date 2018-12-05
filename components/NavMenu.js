@@ -80,6 +80,7 @@ class NavMenu extends Component{
             padding-left: 25px;
             position: absolute;
             border-radius: 0px 0px 10px 10px;
+            min-width: 90px;
           }
           .slider{
             display: grid;

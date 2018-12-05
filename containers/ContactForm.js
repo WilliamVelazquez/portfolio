@@ -124,7 +124,7 @@ class ContactForm extends PureComponent{
       // console.log("Información no válida!");
       this.setState({
         alert:true,
-        msg:"Información no válida!",
+        msg:"Invalid information!",
         success:false
       }, this.hideAlert);
       //() => alert(saveContact.msg)

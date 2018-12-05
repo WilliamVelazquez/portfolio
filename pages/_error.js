@@ -17,7 +17,8 @@ export default class Error extends React.Component {
       <div>
         <Header 
           active={`Oh no :( Error ${statusCode}`} 
-          title="¡Ups! Page not found | William Velazquez" 
+          title="¡Ups! Page not found | William Velazquez"
+          description="Get in touch with William Velazquez who is a Full Stack and Mobile Developer with experience working with ReactJs, NextJS, React Native and other modern technologies" 
         />
         {
           statusCode === 404 ?

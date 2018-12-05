@@ -8,7 +8,7 @@ import SocialMedia from './SocialMedia';
 function ContactFormUI(props) {
   return(
     <div className="contactContainer">
-      <TitleBand title="Contáctanos" position="center"/>
+      <TitleBand title="Let's talk !" position="center"/>
       
       {
         props.alert &&
@@ -169,6 +169,9 @@ function ContactFormUI(props) {
           img{
             display: none;
             width: 100px;
+          }
+          h2{
+            font-size: 18px;
           }
         }
       `}</style>

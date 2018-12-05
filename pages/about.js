@@ -10,8 +10,8 @@ class About extends Component{
       <AnalyticsLayout>
         <Header 
         	active="About" 
-        	title="" 
-        	description="" 
+        	title="About William Velazquez | William Velazquez"
+          description="Get in touch with William Velazquez who is a Full Stack and Mobile Developer with experience working with ReactJs, NextJS, React Native and other modern technologies" 
         />
         <AboutUs />
       </AnalyticsLayout>
