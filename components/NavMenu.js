@@ -14,10 +14,10 @@ class NavMenu extends Component{
     return(
       <nav>
         <div className="navWide">
-          <Link prefetch href="/">
+          <Link prefetch href="/" as={ process.env.BACKEND_URL + '/'}>
             <a className={`${this.props.active=="Home"?"active":""}`}>Home</a>
           </Link>
-          <Link prefetch href="/contact">
+          <Link prefetch href="/contact" as={ process.env.BACKEND_URL + '/contact'}>
             <a className={`${this.props.active=="Contact"?"active":""}`}>Contact</a>
           </Link>
         </div>
@@ -25,10 +25,10 @@ class NavMenu extends Component{
         <div className="navNarrow">
           <span onClick={this.toggleMenu}>{this.state.menuOpened?"x":"Menu"}</span>
           <div className={`slider${this.state.menuOpened?"":" closed"}`}>
-            <Link prefetch href="/">
+            <Link prefetch href="/" as={ process.env.BACKEND_URL + '/'}>
               <a className={`${this.props.active=="Home"?"active":""}`}>Home</a>
             </Link>
-            <Link prefetch href="/contact">
+            <Link prefetch href="/contact" as={ process.env.BACKEND_URL + '/contact'}>
               <a className={`${this.props.active=="Contact"?"active":""}`}>Contact</a>
             </Link>
           </div>

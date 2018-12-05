@@ -36,7 +36,7 @@ function Header(props) {
       
       <div className="navbar">
         <div className="left">
-          <Link href="/">
+          <Link href="/" as={ process.env.BACKEND_URL + '/'}>
             <img className="btn" src="/static/LogoWhite_55.png" alt="William Velazquez"/>
           </Link>  
             <div className="Offline"><IfOffline>Offline</IfOffline></div>

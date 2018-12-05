@@ -22,7 +22,7 @@ function ErrorContent(props) {
       <SocialMedia color="#111317" hoverColor="#BF0404" size={32} titleColor="#111317" title="Get in touch!"/>
 
       <div className="btnContainer">
-        <Link href="/contacto">
+        <Link href="/contact" as={ process.env.BACKEND_URL + '/contact'}>
           <button type="button">Contact</button>
         </Link>
       </div>
