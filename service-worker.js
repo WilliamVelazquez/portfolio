@@ -1,18 +1,18 @@
 self.__precacheManifest = [
   {
-    "url": "/portfolio//_next/static\\6gjNRZ6uDK3yDqHCqH3qc\\pages\\index.js"
+    "url": "/portfolio//_next/static\\EZAXulpWd1rS~PPx4e8mC\\pages\\index.js"
   },
   {
-    "url": "/portfolio//_next/static\\6gjNRZ6uDK3yDqHCqH3qc\\pages\\contact.js"
+    "url": "/portfolio//_next/static\\EZAXulpWd1rS~PPx4e8mC\\pages\\contact.js"
   },
   {
-    "url": "/portfolio//_next/static\\6gjNRZ6uDK3yDqHCqH3qc\\pages\\about.js"
+    "url": "/portfolio//_next/static\\EZAXulpWd1rS~PPx4e8mC\\pages\\about.js"
   },
   {
-    "url": "/portfolio//_next/static\\6gjNRZ6uDK3yDqHCqH3qc\\pages\\_error.js"
+    "url": "/portfolio//_next/static\\EZAXulpWd1rS~PPx4e8mC\\pages\\_error.js"
   },
   {
-    "url": "/portfolio//_next/static\\6gjNRZ6uDK3yDqHCqH3qc\\pages\\_app.js"
+    "url": "/portfolio//_next/static\\EZAXulpWd1rS~PPx4e8mC\\pages\\_app.js"
   },
   {
     "url": "/portfolio//_next/static/runtime/webpack-42652fa8b82c329c0559.js"
@@ -21,7 +21,7 @@ self.__precacheManifest = [
     "url": "/portfolio//_next/static/runtime/main-d41b31acb9d15328b905.js"
   },
   {
-    "url": "/portfolio//_next/static/chunks/commons.d42899a5dadb75a7aefe.js"
+    "url": "/portfolio//_next/static/chunks/commons.0ff2839d39a8931b6640.js"
   }
 ];
 
