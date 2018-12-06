@@ -1,7 +1,13 @@
 const withOffline = require('next-offline');
+const isProd = (process.env.NODE_ENV || 'production') === 'production'
 
 module.exports = withOffline({
   workboxOpts: {
+    //assetPrefix for github pages production deployment
+    modifyUrlPrefix: {
+      'app': isProd ? '/portfolio' : ''
+      //'app': assetPrefix,
+    },
     //offlineGoogleAnalytics: true,
     //Determine the maximum size of files that will be precached. Set limit to 5mb:
     maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
@@ -57,8 +63,9 @@ module.exports = withOffline({
         handler: 'networkFirst'
       }
     ]
-  },
-  assetPrefix: process.env.NODE_ENV === 'production' ? 'https://williamvelazquez.github.io/portfolio' : ''
+  }
+  //assetPrefix: isProd ? '/portfolio' : ''
+  //assetPrefix: process.env.NODE_ENV === 'production' ? 'https://williamvelazquez.github.io/portfolio' : ''
   //assetPrefix: process.env.NODE_ENV === 'production' ? '/{portfolio}' : ''
   //assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio/' : ''
   //Provide own no-op service worker in development
