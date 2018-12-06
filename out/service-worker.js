@@ -1,18 +1,18 @@
 self.__precacheManifest = [
   {
-    "url": "https://williamvelazquez.github.io/portfolio/_next/static\\2nwYsELOxxQwNbox9t9~M\\pages\\index.js"
+    "url": "https://williamvelazquez.github.io/portfolio/_next/static\\2RPsEbehtANqMiFILij27\\pages\\index.js"
   },
   {
-    "url": "https://williamvelazquez.github.io/portfolio/_next/static\\2nwYsELOxxQwNbox9t9~M\\pages\\contact.js"
+    "url": "https://williamvelazquez.github.io/portfolio/_next/static\\2RPsEbehtANqMiFILij27\\pages\\contact.js"
   },
   {
-    "url": "https://williamvelazquez.github.io/portfolio/_next/static\\2nwYsELOxxQwNbox9t9~M\\pages\\about.js"
+    "url": "https://williamvelazquez.github.io/portfolio/_next/static\\2RPsEbehtANqMiFILij27\\pages\\about.js"
   },
   {
-    "url": "https://williamvelazquez.github.io/portfolio/_next/static\\2nwYsELOxxQwNbox9t9~M\\pages\\_error.js"
+    "url": "https://williamvelazquez.github.io/portfolio/_next/static\\2RPsEbehtANqMiFILij27\\pages\\_error.js"
   },
   {
-    "url": "https://williamvelazquez.github.io/portfolio/_next/static\\2nwYsELOxxQwNbox9t9~M\\pages\\_app.js"
+    "url": "https://williamvelazquez.github.io/portfolio/_next/static\\2RPsEbehtANqMiFILij27\\pages\\_app.js"
   },
   {
     "url": "https://williamvelazquez.github.io/portfolio/_next/static/runtime/webpack-42652fa8b82c329c0559.js"
@@ -21,7 +21,7 @@ self.__precacheManifest = [
     "url": "https://williamvelazquez.github.io/portfolio/_next/static/runtime/main-d41b31acb9d15328b905.js"
   },
   {
-    "url": "https://williamvelazquez.github.io/portfolio/_next/static/chunks/commons.0ff2839d39a8931b6640.js"
+    "url": "https://williamvelazquez.github.io/portfolio/_next/static/chunks/commons.ad88b7dccc488a5b1b2e.js"
   }
 ];
 
