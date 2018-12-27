@@ -57,8 +57,10 @@ function ErrorContent(props) {
           color: #fff;
           font-size: 18px;
           font-weight: bold;
-          -webkit-transition-duration: 0.4s; /* Safari */
           transition-duration: 0.4s;
+          -o-transition-duration: 0.4s; /* Opera */
+          -moz-transition-duration: 0.4s; /* Mozilla */
+          -webkit-transition-duration: 0.4s; /* Safari */
         }
         button:hover,
         button:active

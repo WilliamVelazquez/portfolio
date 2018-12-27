@@ -119,9 +119,10 @@ function ContactFormUI(props) {
         }
         .contactForm input.errorShadow,
         .contactForm textarea.errorShadow{
+          box-shadow:         0px 0px 10px 1px #f00;
+          -o-box-shadow:      0px 0px 10px 1px #f00;
           -moz-box-shadow:    0px 0px 10px 1px #f00;
           -webkit-box-shadow: 0px 0px 10px 1px #f00;
-          box-shadow:         0px 0px 10px 1px #f00;
           /*-moz-box-shadow:    3px 3px 5px 6px #ccc;
           -webkit-box-shadow: 3px 3px 5px 6px #ccc;
           box-shadow:         3px 3px 5px 6px #ccc;*/
@@ -148,8 +149,10 @@ function ContactFormUI(props) {
           color: #fff;
           font-size: 18px;
           font-weight: bold;
-          -webkit-transition-duration: 0.4s; /* Safari */
           transition-duration: 0.4s;
+          -o-transition-duration: 0.4s; /* Opera */
+          -moz-transition-duration: 0.4s; /* Mozilla */
+          -webkit-transition-duration: 0.4s; /* Safari */
         }
         button:hover,
         button:active

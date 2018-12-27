@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
+import TopButton from '../containers/TopButton';
 import SocialMedia from './SocialMedia';
 import ContactData from './ContactData';
 import Copyright from './Copyright';
@@ -8,6 +9,7 @@ import Copyright from './Copyright';
 function Footer(props) {
 	return(
 		<footer>
+      <TopButton />
       <div className="footerContent">
         <ContactData />
         <SocialMedia color="#fff" hoverColor="#BF0404" size={32} titleColor="#fff" title="Follow me!"/>
@@ -24,6 +26,9 @@ function Footer(props) {
           bottom: 0;
           z-index: 99;
           box-shadow: 0 1px 5px 0 rgba(0,0,0,0.4);
+          -o-box-shadow: 0 1px 5px 0 rgba(0,0,0,0.4);
+          -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,0.4);
+          -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,0.4);
           /*height: 200px;*/
         }
         .footerContent{
