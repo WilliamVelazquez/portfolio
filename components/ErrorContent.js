@@ -73,17 +73,16 @@ function ErrorContent(props) {
           margin-top: 25px;
           cursor:pointer;
         }
+        @media only screen and (max-width : 768px) {
+          img{
+            width: 50%;
+          }
+        }
         @media only screen and (max-width : 667px) {
           .btnContainer{
             grid-auto-flow: row;
             grid-row-gap: 15px;
             grid-template-columns: 1fr;
-            gap-row
-          }
-        }
-        @media only screen and (max-width : 768px) {
-          img{
-            width: 50%;
           }
         }
       `}</style>
