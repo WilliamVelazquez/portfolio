@@ -12,9 +12,9 @@ function Hero(props) {
 
       <div className="right">
         <RoundedImage
-          src={props.src}
-          alt={props.alt}
-          size={props.size}
+          src={props.imgSrc}
+          alt={props.imgAlt}
+          size={props.imgSize}
         />
       </div>
 
@@ -27,7 +27,7 @@ function Hero(props) {
         .hero{
           padding-top: 80px;
           padding-bottom: 10px;
-          background: #BF0404;
+          background: ${props.color};
           display: grid;
           grid-template-columns: 2fr 1fr;
         }

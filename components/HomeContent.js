@@ -2,14 +2,20 @@ import React from 'react';
 import Link from 'next/link';
 
 import Hero from './Hero';
+import HeroWave from './HeroWave';
 
 function HomeContent(props) {
 	return(
 		<div>
+      <HeroWave 
+        color="#BF0404"
+        background="#ffffff"
+      />
       <Hero
-        src="/static/William.jpg"
-        alt="William Velazquez Photo"
-        size="50%"
+        imgSrc="/static/William.jpg"
+        imgAlt="William Velazquez Photo"
+        imgSize="60%"
+        color="#BF0404"
       >
         <div>
           <span className="text">Hi, I'm </span>
@@ -17,6 +23,10 @@ function HomeContent(props) {
           <span className="text">Full Stack Developer</span>
         </div>
       </Hero>
+      <HeroWave 
+        color="#BF0404"
+        background="#ffffff"
+      />
 
       <style jsx>{`
         .title{
@@ -39,10 +49,10 @@ function HomeContent(props) {
         }
         @media only screen and (max-width : 667px) {
           .title{
-            font-size: 28px
+            font-size: 24px
           }
           .text{
-            font-size: 18px
+            font-size: 14px
           }
         }
         
