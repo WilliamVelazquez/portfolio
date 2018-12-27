@@ -13,7 +13,7 @@ class IfOffline extends Component{
     window.addEventListener('offline', this.goOffline);
   }
 
-  compnentWillUnmount(){
+  componentWillUnmount(){
     window.removeEventListener('online', this.goOnline);
     window.removeEventListener('offline', this.goOffline);
   }
