@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 
 import IfOffline from '../containers/IfOffline';
-import NavMenu from '../components/NavMenu';
+import NavMenu from '../containers/NavMenu';
 
 function Header(props) {
 	//console.log(props);
@@ -52,6 +52,11 @@ function Header(props) {
           margin-top: 100px;
           font-family: system-ui;
           background: #fff;
+        }
+        @media only screen and (max-width : 667px) {
+          body{
+            margin-top: 80px;
+          }
         }
       `}</style>
       <style jsx>{`
