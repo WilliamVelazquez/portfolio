@@ -7,10 +7,6 @@ import HeroWave from './HeroWave';
 function HomeContent(props) {
 	return(
 		<div>
-      <HeroWave 
-        color="#BF0404"
-        background="#ffffff"
-      />
       <Hero
         imgSrc="/static/William.jpg"
         imgAlt="William Velazquez Photo"
@@ -23,11 +19,6 @@ function HomeContent(props) {
           <span className="text">Full Stack Developer</span>
         </div>
       </Hero>
-      <HeroWave 
-        color="#BF0404"
-        background="#ffffff"
-      />
-
       <style jsx>{`
         .title{
           margin: 10px;
