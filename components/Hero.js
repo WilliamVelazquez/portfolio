@@ -25,8 +25,8 @@ function Hero(props) {
       `}</style>
       <style jsx>{`
         .hero{
-          padding-top: 80px;
-          padding-bottom: 10px;
+          padding-top: 70px;
+          padding-bottom: 25px;
           background: ${props.color};
           display: grid;
           grid-template-columns: 2fr 1fr;
@@ -37,6 +37,19 @@ function Hero(props) {
         }
         .right{
           text-align: center;
+          align-self: center;
+        }
+        @media only screen and (max-width : 768px) {
+          .hero{
+            padding-top: 65px;
+            padding-bottom: 20px;
+          }
+        }
+        @media only screen and (max-width : 667px) {
+          .hero{
+            padding-top: 50px;
+            padding-bottom: 15px;
+          }
         }
       `}</style>
     </div>

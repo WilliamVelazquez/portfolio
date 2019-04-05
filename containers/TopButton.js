@@ -77,7 +77,7 @@ class TopButton extends Component {
             position: fixed; /* Fixed/sticky position */
             bottom: 20px; /* Place the button at the bottom of the page */
             right: 30px; /* Place the button 30px from the right */
-            z-index: 99; /* Make sure it does not overlap */
+            z-index: 98; /* Make sure it does not overlap, except NavMenu */
           }
           .hidden{
             display: none;

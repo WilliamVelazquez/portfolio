@@ -20,7 +20,7 @@ function NavWide(props) {
       <style jsx>{`
           .navWide{
             display:grid;
-            grid-template-columns: repeat(2,1fr);
+            grid-auto-flow: column;
             align-items:center;
           }
       `}</style>
