@@ -2,11 +2,10 @@ import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 
-import IfOffline from '../containers/IfOffline';
-import NavMenu from '../containers/NavMenu';
+import IfOffline from '../../containers/IfOffline';
+import NavMenu from '../../containers/NavMenu';
 
 function Header(props) {
-	//console.log(props);
 	return(
 		<header>
       <Head>
