@@ -1,24 +1,20 @@
 import React from 'react';
 import Link from 'next/link';
 
-import Hero from './Hero';
-import HeroWave from './HeroWave';
+import Technologies from './sections/Technologies';
+import Hero from './sections/Hero';
 
 function HomeContent(props) {
 	return(
 		<div>
-      <Hero
-        imgSrc="/static/William.jpg"
-        imgAlt="William Velazquez Photo"
-        imgSize="60%"
-        color="#BF0404"
-      >
-        <div>
-          <span className="text">Hi, I'm </span>
-          <h1 className="title">William Velazquez</h1>
-          <span className="text">Full Stack Developer</span>
-        </div>
-      </Hero>
+      <Hero />
+      <Technologies />
+      
+      <style jsx global>{`
+        body{
+          background-color: #8e1a1a;
+        }
+      `}</style>
       <style jsx>{`
         .title{
           margin: 10px;
@@ -29,7 +25,6 @@ function HomeContent(props) {
           font-size: 30px;
           color: #fff;
         }
-        
         @media only screen and (max-width : 768px) {
           .title{
             font-size: 38px
@@ -46,7 +41,6 @@ function HomeContent(props) {
             font-size: 14px
           }
         }
-        
       `}</style>
     </div>
 	);
