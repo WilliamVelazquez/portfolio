@@ -1,27 +1,33 @@
 self.__precacheManifest = [
   {
-    "url": "/_next/static\\dDuWb_mb8QxZ48EURsOIB\\pages\\index.js"
+    "url": "/_next/static\\vCcevVJLTlvbcWCFRLpny\\pages\\index.js"
   },
   {
-    "url": "/_next/static\\dDuWb_mb8QxZ48EURsOIB\\pages\\contact.js"
+    "url": "/_next/static/chunks/commons.0a289f44507ba97a56ac.js"
   },
   {
-    "url": "/_next/static\\dDuWb_mb8QxZ48EURsOIB\\pages\\about.js"
+    "url": "/_next/static/runtime/main-7667278044a271b6049a.js"
   },
   {
-    "url": "/_next/static\\dDuWb_mb8QxZ48EURsOIB\\pages\\_error.js"
+    "url": "/_next/static\\vCcevVJLTlvbcWCFRLpny\\pages\\_error.js"
   },
   {
-    "url": "/_next/static\\dDuWb_mb8QxZ48EURsOIB\\pages\\_app.js"
+    "url": "/_next/static\\vCcevVJLTlvbcWCFRLpny\\pages\\about.js"
+  },
+  {
+    "url": "/_next/static\\vCcevVJLTlvbcWCFRLpny\\pages\\contact.js"
   },
   {
     "url": "/_next/static/runtime/webpack-42652fa8b82c329c0559.js"
   },
   {
-    "url": "/_next/static/runtime/main-d41b31acb9d15328b905.js"
+    "url": "/_next/static\\vCcevVJLTlvbcWCFRLpny\\pages\\resume.js"
   },
   {
-    "url": "/_next/static/chunks/commons.ad88b7dccc488a5b1b2e.js"
+    "url": "/_next/static\\vCcevVJLTlvbcWCFRLpny\\pages\\work.js"
+  },
+  {
+    "url": "/_next/static\\vCcevVJLTlvbcWCFRLpny\\pages\\_app.js"
   }
 ];
 
