@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 import TwitterIcon from './icons/TwitterIcon';
 import FacebookIcon from './icons/FacebookIcon';
+import LinkedInIcon from './icons/LinkedInIcon';
 import GithubIcon from './icons/GithubIcon';
 
 function SocialMedia(props) {
@@ -23,13 +24,29 @@ function SocialMedia(props) {
           />
         </a>
 
+        {
+          props.withFB &&
+          <a 
+            type="button"
+            target="_blank" 
+            rel="noopener noreferrer"  
+            href="https://www.facebook.com/WilliamVelazquezA" 
+            className="icon">
+            <FacebookIcon 
+              color={props.color||"#fff"} 
+              hoverColor={props.hoverColor ||"#052A4F"} 
+              size={props.size||32} 
+            />
+          </a>
+        }
+
         <a 
           type="button"
           target="_blank" 
           rel="noopener noreferrer"  
-          href="https://www.facebook.com/WilliamVelazquezA" 
+          href="https://www.linkedin.com/in/williamvelazquez/" 
           className="icon">
-          <FacebookIcon 
+          <LinkedInIcon 
             color={props.color||"#fff"} 
             hoverColor={props.hoverColor ||"#052A4F"} 
             size={props.size||32} 
