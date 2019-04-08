@@ -50,7 +50,7 @@ function Header(props) {
           margin: 0;
           margin-top: 100px;
           font-family: system-ui;
-          background: #fff;
+          background-color: #fff;
         }
         @media only screen and (max-width : 667px) {
           body{
@@ -60,15 +60,15 @@ function Header(props) {
       `}</style>
       <style jsx>{`
         header{
-          background: #111317;
-          padding: 10px;
-          border-radius: 0px 0px 10px 10px;
-          max-height: 28px;
-          position: fixed;
           top: 0;
           left: 0;
           right: 0;
           z-index: 99;
+          padding: 10px;
+          position: fixed;
+          max-height: 28px;
+          background: #111317;
+          border-radius: 0px 0px 10px 10px;
           box-shadow: 0 1px 5px 0 rgba(0,0,0,0.4);
         }
         .navbar{

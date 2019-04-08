@@ -2,9 +2,9 @@ import React from 'react';
 
 import RoundedImage from './RoundedImage';
 
-function Hero(props) {
+function PhotoBand(props) {
 	return(
-		<div className="hero">
+		<div className="photo-band" id={props.id}>
       
       <div className="left">
         {props.children}
@@ -24,14 +24,15 @@ function Hero(props) {
         }
       `}</style>
       <style jsx>{`
-        .hero{
+        .photo-band{
           padding-top: 70px;
           padding-bottom: 25px;
-          background: ${props.color};
+          background: ${props.color||'#fff'};
           display: grid;
           grid-template-columns: 2fr 1fr;
         }
         .left{
+          display: grid;
           text-align: center;
           align-self: center;
         }
@@ -40,13 +41,13 @@ function Hero(props) {
           align-self: center;
         }
         @media only screen and (max-width : 768px) {
-          .hero{
+          .photo-band{
             padding-top: 65px;
             padding-bottom: 20px;
           }
         }
         @media only screen and (max-width : 667px) {
-          .hero{
+          .photo-band{
             padding-top: 50px;
             padding-bottom: 15px;
           }
@@ -56,4 +57,4 @@ function Hero(props) {
 	);
 }
 
-export default Hero;
+export default PhotoBand;

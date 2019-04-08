@@ -1,10 +1,9 @@
 import React from 'react';
-import Link from 'next/link';
 
 import TopButton from '../../containers/TopButton';
 import SocialMedia from '../SocialMedia';
 import ContactData from '../ContactData';
-import Copyright from '../Copyright';
+import Copyright from './Copyright';
 
 function Footer(props) {
 	return(
