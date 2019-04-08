@@ -42,11 +42,12 @@ function Hero(props) {
         p{
           color: #fff;
           font-size: 24px;
+          margin: 10px 0px;
           text-align: center;
         }
         h1{
           color: #fff;
-          font-size: 40px;
+          font-size: 38px;
           text-align: center;
         }
         .caret{
