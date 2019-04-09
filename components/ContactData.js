@@ -13,7 +13,7 @@ function ContactData(props) {
       <span>
         {"Want to work together or chat about life? "}
         <Link href="/contact" as={ process.env.BACKEND_URL + '/contact'}>
-          <a>Let's talk!</a>
+          <a className="not-breakable">Let's talk!</a>
         </Link>
       </span>
 
@@ -30,6 +30,7 @@ function ContactData(props) {
         }
         p, a, span{
           color: #fff;
+          text-align: center;
         }
         a{
           cursor: pointer;
@@ -41,6 +42,9 @@ function ContactData(props) {
         }
         a:hover{
           color: #BF0404;
+        }
+        .not-breakable{
+          white-space: nowrap;
         }
         .footerTitle{
           font-size: 20px;

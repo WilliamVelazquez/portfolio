@@ -6,7 +6,7 @@ function Copyright(props) {
 		<div>
       <hr />
       <div className="copyright">
-        <span>©2018 William Velazquez. All rights reserved.</span>
+        <span>©2018 William Velazquez. <span className="not-breakable">All rights reserved.</span></span>
         <div className="policies">
           <Link href="/terms">
             <a>Terms and Conditions</a>
@@ -40,7 +40,9 @@ function Copyright(props) {
           width: 50px;
         }
         a, span{
-					color: #fff;
+          color: #fff;
+          text-align: center;
+          align-self: center;
         }
         a{
           cursor: pointer;
@@ -51,6 +53,9 @@ function Copyright(props) {
         }
         a:hover{
           color: #BF0404;
+        }
+        .not-breakable{
+          white-space: nowrap;
         }
         @media only screen and (max-width : 768px) {
           .copyright{
