@@ -2,7 +2,7 @@ import React from 'react';
 
 function SimplePanel(props) {
   return(
-    <div className="textContainer" ref={props.setRef || null}>
+    <div className="textContainer" ref={props.setRef || null} id={props.id || null}>
       <p className="title">{props.title}</p>
       {props.children}
       <style jsx>{`

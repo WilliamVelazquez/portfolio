@@ -3,6 +3,15 @@ import React from 'react';
 import CaretIcon from '../icons/CaretIcon';
 
 function Hero(props) {
+  const scrollTo=function scrollIt(element) {
+    //console.log("offsetTop-->",element.offsetTop-200);
+    window.scrollTo({
+      'behavior': 'smooth',
+      'left': 0,
+      'top': (element.offsetTop-200)
+    });
+  }
+
 	return(
       <div className="hero">
         <div className="fixed-hero-img"></div>
@@ -11,7 +20,7 @@ function Hero(props) {
           <h1>William Velazquez</h1>
           <p>Full Stack Developer</p>
         </div>
-        <a href="#intro" className="caret">
+        <a className="caret" onClick={()=>scrollTo(document.getElementById('intro'))}>
           <CaretIcon 
             direction="down" 
             color={"#fff"} 

@@ -1,44 +1,31 @@
 import React from 'react';
 
-import SimplePanel from '../SimplePanel';
-import RoundedImage from '../RoundedImage';
-import ImageGrayToColor from '../ImageGrayToColor';
+import ImageSepiaToColor from '../ImageSepiaToColor';
 
-function HomeContent(props) {
+function Technologies(props) {
 	return(
-	  <SimplePanel backgroundColor="#111317" color="#fff">
-        <RoundedImage
-        src={"/static/William.jpg"}
-        alt={"William Velazquez Photo"}
-        size={"25%"}
-        />
         <div className="technologies-container">
-            <ImageGrayToColor 
-                imgSrc="/static/react_logo.png"
-                imgWidth="60%"
-            />
-            <ImageGrayToColor 
-                imgSrc="/static/react_logo.png"
-                imgWidth="60%"
-            />
-            <ImageGrayToColor 
-                imgSrc="/static/react_logo.png"
-                imgWidth="60%"
-            />
-            <ImageGrayToColor 
-                imgSrc="/static/react_logo.png"
-                imgWidth="60%"
-            />
-        </div>
-
-        <style jsx>{`
-            .technologies-container{
-                display:grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
+            {
+                props.technologies.map(
+                technology =>
+                <ImageSepiaToColor
+                    key={technology.id}
+                    imgSrc={technology.src}
+                    imgAlt={technology.alt}
+                    imgWidth={props.width}
+                />
+                )
             }
-        `}</style>
-    </SimplePanel>
+
+            <style jsx>{`
+                .technologies-container{
+                    display:grid;
+                    grid-row-gap: 20px;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                }
+            `}</style>
+        </div>
 	);
 }
 
-export default HomeContent;
+export default Technologies;
