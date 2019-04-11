@@ -49,7 +49,7 @@ function NavWide(props) {
             transition-duration: .6s;
             transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
           }
-          .slider .closed{
+          .slider.closed{
             max-height: 0;
             margin-top: 0px;
             margin-bottom: 0px;
