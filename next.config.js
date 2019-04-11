@@ -1,11 +1,15 @@
+const reponame='portfolio';
 const withOffline = require('next-offline');
-const isProd = (process.env.NODE_ENV || 'production') === 'production'
+const isProd = process.env.NODE_ENV === 'production';
+//const isProd = (process.env.NODE_ENV || 'production') === 'production'
 
 module.exports = withOffline({
   workboxOpts: {
     //assetPrefix for github pages production deployment
     modifyUrlPrefix: {
-      'app': isProd ? '/portfolio' : ''
+      'app': isProd ? `/${reponame}` : ''
+      //'app': isProd ? `https://williamvelazquez.github.io/${reponame}` : ''
+      //'app': isProd ? '/portfolio' : ''
       //'app': assetPrefix,
     },
     //offlineGoogleAnalytics: true,

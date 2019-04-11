@@ -1,5 +1,6 @@
-const prod = process.env.NODE_ENV === 'production'
+const reponame='portfolio';
+const prod = process.env.NODE_ENV === 'production';
 
 module.exports = {
-  'process.env.BACKEND_URL': prod ? '/portfolio' : ''
+  'process.env.BACKEND_URL': prod ? `/${reponame}` : ''
 }

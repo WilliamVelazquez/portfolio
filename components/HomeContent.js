@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 
 import Hero from './sections/Hero';
 import UserImageCard from './UserImageCard';
@@ -37,9 +36,6 @@ function HomeContent(props) {
           margin-top: 0px;
           background-color: #8e1a1a;
         }
-      `}</style>
-      <style jsx>{`
-        
       `}</style>
     </div>
 	);
