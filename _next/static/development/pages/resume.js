@@ -1,4 +1,4 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\_error.js"],{
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\resume.js"],{
 
 /***/ "./components/ContactData.js":
 /*!***********************************!*\
@@ -16237,21 +16237,20 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/_error.js":
+/***/ "./pages/resume.js":
 /*!*************************!*\
-  !*** ./pages/_error.js ***!
+  !*** ./pages/resume.js ***!
   \*************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Error; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_ErrorContent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/ErrorContent */ "./components/ErrorContent.js");
 /* harmony import */ var _containers_AnalyticsLayout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../containers/AnalyticsLayout */ "./containers/AnalyticsLayout.js");
-var _jsxFileName = "C:\\Projects\\portfolio\\pages\\_error.js";
+var _jsxFileName = "C:\\Projects\\portfolio\\pages\\resume.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -16275,63 +16274,44 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var Error =
+var Resume =
 /*#__PURE__*/
-function (_React$Component) {
-  _inherits(Error, _React$Component);
+function (_Component) {
+  _inherits(Resume, _Component);
 
-  function Error() {
-    _classCallCheck(this, Error);
+  function Resume() {
+    _classCallCheck(this, Resume);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Error).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(Resume).apply(this, arguments));
   }
 
-  _createClass(Error, [{
+  _createClass(Resume, [{
     key: "render",
     value: function render() {
-      var statusCode = this.props.statusCode;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_containers_AnalyticsLayout__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        active: "Oh no :( Error ".concat(statusCode),
-        title: "\xA1Ups! Page not found | William Velazquez",
-        description: "Get in touch with William Velazquez who is a Full Stack and Mobile Developer with experience working with ReactJs, NextJS, React Native and other modern technologies",
+        active: "Resume",
+        title: "William's Resume | William Velazquez",
+        description: "Discover and test some of the projects that William Velazquez has developed.",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 9
         },
         __self: this
-      }, statusCode === 404 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ErrorContent__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        msg: "I couldn't find the page you're looking for :(",
-        error: statusCode,
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ErrorContent__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        msg: "Under Construction",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
-        },
-        __self: this
-      }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ErrorContent__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        msg: "Hubo un problema :( Intenta nuevamente en un momento",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 14
         },
         __self: this
       }));
     }
-  }], [{
-    key: "getInitialProps",
-    value: function getInitialProps(_ref) {
-      var res = _ref.res,
-          err = _ref.err;
-      var statusCode = res ? res.statusCode : err ? err.statusCode : null;
-      return {
-        statusCode: statusCode
-      };
-    }
   }]);
 
-  return Error;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+  return Resume;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
-
+/* harmony default export */ __webpack_exports__["default"] = (Resume);
     (function (Component, route) {
       if(!Component) return
       if (false) {}
@@ -16348,7 +16328,7 @@ function (_React$Component) {
           next.router.update(r, Component)
         }
       }
-    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/_error")
+    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/resume")
   
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/webpack/buildin/harmony-module.js */ "./node_modules/webpack/buildin/harmony-module.js")(module)))
 
@@ -16439,15 +16419,15 @@ var scrollFunction = function scrollFunction() {
 
 /***/ }),
 
-/***/ 1:
+/***/ 5:
 /*!*******************************!*\
-  !*** multi ./pages/_error.js ***!
+  !*** multi ./pages/resume.js ***!
   \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__NEXT_REGISTER_PAGE('/_error', function() {
-module.exports = __webpack_require__(/*! ./pages/_error.js */"./pages/_error.js");
+__NEXT_REGISTER_PAGE('/resume', function() {
+module.exports = __webpack_require__(/*! ./pages/resume.js */"./pages/resume.js");
 
 return { page: module.exports.default }});
 
@@ -16464,5 +16444,5 @@ module.exports = dll_5d62d38be3592dca3a42;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]));;
-//# sourceMappingURL=_error.js.map
+},[[5,"static/runtime/webpack.js"]]]));;
+//# sourceMappingURL=resume.js.map
