@@ -20,9 +20,10 @@ function ErrorContent(props) {
       }
 
       <SocialMedia color="#111317" hoverColor="#BF0404" size={32} titleColor="#111317" title="Get in touch!"/>
+      <a href="mailto:info@williamvelazquez.com">info@williamvelazquez.com</a>
 
       <div className="btnContainer">
-        <Link href="/contact" as={ process.env.BACKEND_URL + '/contact'}>
+        <Link href="/contact">
           <button type="button">Contact</button>
         </Link>
       </div>
@@ -40,6 +41,21 @@ function ErrorContent(props) {
         }
         .text{
           margin: 10px;
+        }
+        a{
+          display:grid;
+          color: #111317;
+          cursor: pointer;
+          font-weight: bold;
+          text-align: center;
+          margin-bottom: 20px;
+          text-decoration:none;
+          -o-text-decoration:none;
+          -moz-text-decoration:none;
+          -webkit-text-decoration:none;
+        }
+        a:hover{
+          color: #BF0404;
         }
         .btnContainer{
           display: grid;

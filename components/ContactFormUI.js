@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 
 import TitleBand from './TitleBand';
 import AlertText from './AlertText';
@@ -9,7 +8,9 @@ function ContactFormUI(props) {
   return(
     <div className="contactContainer">
       <TitleBand title="Let's talk !" position="center"/>
-      
+      <SocialMedia color="#111317" hoverColor="#BF0404" size={32} titleColor="#111317" title="Get in touch!"/>
+      <a href="mailto:info@williamvelazquez.com">info@williamvelazquez.com</a>
+
       {
         props.alert &&
         <AlertText title={props.msg} success={props.success}/>
@@ -76,12 +77,25 @@ function ContactFormUI(props) {
 
       </div>
       
-      <SocialMedia color="#111317" hoverColor="#BF0404" size={32} titleColor="#111317" title="Get in touch!"/>
 
       <style jsx>{`
         .contactContainer{
           width:100%;
           margin-top: -30px;
+        }
+        a{
+          display:grid;
+          color: #111317;
+          cursor: pointer;
+          font-weight: bold;
+          text-align: center;
+          text-decoration:none;
+          -o-text-decoration:none;
+          -moz-text-decoration:none;
+          -webkit-text-decoration:none;
+        }
+        a:hover{
+          color: #BF0404;
         }
         .container{
           border-radius: 10px;

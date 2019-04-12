@@ -6,7 +6,7 @@ function Copyright(props) {
 		<div>
       <hr />
       <div className="copyright">
-        <span>©2018 William Velazquez. <span className="not-breakable">All rights reserved.</span></span>
+        <span>©2019 William Velazquez. <span className="not-breakable">All rights reserved.</span></span>
         <div className="policies">
           <Link href="/terms">
             <a>Terms and Conditions</a>

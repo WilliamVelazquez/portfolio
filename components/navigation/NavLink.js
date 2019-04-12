@@ -4,7 +4,7 @@ import Link from 'next/link';
 function NavLink(props) {
   return(
     <div className="container">
-      <Link prefetch href={`/${props.contextRef}`} as={ process.env.BACKEND_URL + `/${props.contextRef}`}>
+      <Link prefetch href={`/${props.contextRef}`} >
         <a className={`${props.active==props.text?"active":""}`}>{props.text}</a>
       </Link>
 
