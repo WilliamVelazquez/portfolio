@@ -403,7 +403,7 @@ function CaretIcon(props) {
       lineNumber: 21
     },
     __self: this
-  }), "}");
+  }));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (CaretIcon);
