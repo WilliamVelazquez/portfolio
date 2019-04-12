@@ -1,33 +1,33 @@
 self.__precacheManifest = [
   {
-    "url": "/_next/static\\E3IwOFwr2ad5t3rrPZ~wx\\pages\\index.js"
+    "url": "/_next/static\\DfZKR4BQ2mgpQxwncajgP\\pages\\index.js"
   },
   {
-    "url": "/_next/static/chunks/commons.a1f38132076c97431162.js"
+    "url": "/_next/static/chunks/commons.5d21cf13c70e604796a1.js"
   },
   {
     "url": "/_next/static/runtime/main-31c36825698cbda68015.js"
   },
   {
-    "url": "/_next/static\\E3IwOFwr2ad5t3rrPZ~wx\\pages\\_error.js"
+    "url": "/_next/static\\DfZKR4BQ2mgpQxwncajgP\\pages\\_error.js"
   },
   {
-    "url": "/_next/static\\E3IwOFwr2ad5t3rrPZ~wx\\pages\\about.js"
+    "url": "/_next/static\\DfZKR4BQ2mgpQxwncajgP\\pages\\about.js"
   },
   {
-    "url": "/_next/static\\E3IwOFwr2ad5t3rrPZ~wx\\pages\\contact.js"
+    "url": "/_next/static\\DfZKR4BQ2mgpQxwncajgP\\pages\\contact.js"
   },
   {
     "url": "/_next/static/runtime/webpack-42652fa8b82c329c0559.js"
   },
   {
-    "url": "/_next/static\\E3IwOFwr2ad5t3rrPZ~wx\\pages\\resume.js"
+    "url": "/_next/static\\DfZKR4BQ2mgpQxwncajgP\\pages\\resume.js"
   },
   {
-    "url": "/_next/static\\E3IwOFwr2ad5t3rrPZ~wx\\pages\\work.js"
+    "url": "/_next/static\\DfZKR4BQ2mgpQxwncajgP\\pages\\work.js"
   },
   {
-    "url": "/_next/static\\E3IwOFwr2ad5t3rrPZ~wx\\pages\\_app.js"
+    "url": "/_next/static\\DfZKR4BQ2mgpQxwncajgP\\pages\\_app.js"
   }
 ];
 
