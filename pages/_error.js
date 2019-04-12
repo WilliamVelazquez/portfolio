@@ -1,8 +1,7 @@
 import React from 'react';
 
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import ErrorContent from '../components/ErrorContent';
+import AnalyticsLayout from '../containers/AnalyticsLayout';
 
 export default class Error extends React.Component {
   static getInitialProps({ res, err }) {
@@ -14,12 +13,11 @@ export default class Error extends React.Component {
     const { statusCode } = this.props;
 
     return (
-      <div>
-        <Header 
-          active={`Oh no :( Error ${statusCode}`} 
-          title="¡Ups! Page not found | William Velazquez"
-          description="Get in touch with William Velazquez who is a Full Stack and Mobile Developer with experience working with ReactJs, NextJS, React Native and other modern technologies" 
-        />
+      <AnalyticsLayout
+        active={`Oh no :( Error ${statusCode}`} 
+        title="¡Ups! Page not found | William Velazquez"
+        description="Get in touch with William Velazquez who is a Full Stack and Mobile Developer with experience working with ReactJs, NextJS, React Native and other modern technologies"
+      >
         {
           statusCode === 404 ?
           <ErrorContent 
@@ -31,8 +29,7 @@ export default class Error extends React.Component {
             msg="Hubo un problema :( Intenta nuevamente en un momento"
           />
         }
-        <Footer />
-      </div>
+      </AnalyticsLayout>
     )
   }
 }

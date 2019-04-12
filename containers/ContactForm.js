@@ -2,6 +2,7 @@ import React, {PureComponent} from 'react';
 
 import ContactFormUI from '../components/ContactFormUI';
 import API from '../utils/api';
+import { scrollToTop } from '../utils/functions';
 
 class ContactForm extends PureComponent{
   state={
@@ -130,6 +131,8 @@ class ContactForm extends PureComponent{
       //() => alert(saveContact.msg)
       //alert("Información no válida!");
     }
+    //Scrolling to the Top of the Page in order to see the message.
+    scrollToTop();
   }
 
   hideAlert = () => {
