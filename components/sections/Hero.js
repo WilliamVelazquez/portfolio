@@ -1,6 +1,6 @@
 import React from 'react';
 
-import CaretIcon from '../icons/CaretIcon';
+import ChevronIcon from '../icons/ChevronIcon';
 
 function Hero(props) {
   const scrollTo=function scrollIt(element) {
@@ -21,11 +21,11 @@ function Hero(props) {
           <p>Full Stack Developer</p>
         </div>
         <a className="caret" onClick={()=>scrollTo(document.getElementById('intro'))}>
-          <CaretIcon 
+          <ChevronIcon 
             direction="down" 
             color={"#fff"} 
             hoverColor={"#BF0404"} 
-            size={22}
+            size={32}
           />
         </a>
       <style jsx>{`

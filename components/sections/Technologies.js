@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ImageSepiaToColor from '../ImageSepiaToColor';
+import ToneImageToColor from '../ToneImageToColor';
 
 function Technologies(props) {
 	return(
@@ -8,11 +8,14 @@ function Technologies(props) {
             {
                 props.technologies.map(
                 technology =>
-                <ImageSepiaToColor
+                <ToneImageToColor
+                    tone='sepia'
                     key={technology.id}
+                    text={technology.alt}
+                    imgWidth={props.width}
                     imgSrc={technology.src}
                     imgAlt={technology.alt}
-                    imgWidth={props.width}
+                    hoverTextColor='#BF0404'
                 />
                 )
             }
@@ -20,7 +23,7 @@ function Technologies(props) {
             <style jsx>{`
                 .technologies-container{
                     display:grid;
-                    grid-row-gap: 20px;
+                    grid-row-gap: 15px;
                     grid-template-columns: 1fr 1fr 1fr 1fr;
                 }
             `}</style>
