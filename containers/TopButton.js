@@ -32,7 +32,7 @@ class TopButton extends Component {
   	return(
   		<div>
         <button
-          className={`toTopBtn ${showBtn?"":"hidden"}`}
+          className={`toTopBtn${showBtn?"":" move-btn-out-screen"}`}
           onClick={scrollToTop}
         >
           <CaretIcon 
@@ -78,6 +78,11 @@ class TopButton extends Component {
             bottom: 20px; /* Place the button at the bottom of the page */
             right: 30px; /* Place the button 30px from the right */
             z-index: 98; /* Make sure it does not overlap, except NavMenu */
+            opacity: 1;
+          }
+          .move-btn-out-screen{
+            opacity: 0;
+            bottom: -50px;
           }
           .hidden{
             display: none;

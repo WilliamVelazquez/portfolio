@@ -12,7 +12,7 @@
 	"icons": [
     {
       "src": "./Logo_192.png",
-      "sizes": "192x192",
+      "sizes": "192x96",
       "type": "image/png"
     },
     {

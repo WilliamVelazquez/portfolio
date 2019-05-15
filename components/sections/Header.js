@@ -57,6 +57,53 @@ function Header(props) {
             margin-top: 80px;
           }
         }
+        ::-webkit-scrollbar {
+          width: 10px;
+          height: 10px;
+        }
+        /*COLOR Normal*/
+        ::-webkit-scrollbar-thumb {
+          background: #7b0b0b;
+          border-radius: 10px;
+          border: 0px none #ffffff;
+          box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+          -moz-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+          -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        }
+        /*COLOR HOVER*/
+        ::-webkit-scrollbar-thumb:hover {
+          background: #670909;
+        }
+        ::-webkit-scrollbar-thumb:active {
+          background: #5d0808;
+        }
+        ::-webkit-scrollbar-track {
+          background: #2d2d2d;
+          border-radius: 10px;
+          border: 0px none #ffffff;
+          box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+          -moz-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+          -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        }
+        ::-webkit-scrollbar-track:hover {
+          background: #2d2d2d;
+        }
+        ::-webkit-scrollbar-track:active {
+          background: #272727;
+        }
+        ::-webkit-scrollbar-corner {
+          background: transparent;
+        }
+        ::-webkit-scrollbar-button {
+          width: 0px;
+          height: 0px;
+        }
+        ::-webkit-scrollbar-button:start {
+          display: none;
+        }
+        ::-webkit-scrollbar-button:end {
+          display: none;
+        }
       `}</style>
       <style jsx>{`
         header{

@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 
 import HomeContent from '../components/HomeContent';
-import ErrorContent from '../components/ErrorContent';
 import AnalyticsLayout from '../containers/AnalyticsLayout';
 
 class Home extends Component{
