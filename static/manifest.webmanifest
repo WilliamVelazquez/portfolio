@@ -6,13 +6,13 @@
 	"scope": "/",
 	"display": "standalone",
 	"theme_color": "#111317",
-	"background_color": "#fff",
+	"background_color": "#8E1A1A",
 	"related_applications": [],
 	"prefer_related_applications": false,
 	"icons": [
     {
       "src": "./Logo_192.png",
-      "sizes": "192x192",
+      "sizes": "192x96",
       "type": "image/png"
     },
     {
