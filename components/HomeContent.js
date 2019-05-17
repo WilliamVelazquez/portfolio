@@ -2,6 +2,7 @@ import React from 'react';
 
 import Hero from './sections/Hero';
 import UserImageCard from './ui/UserImageCard';
+import SimplePanel from './ui/SimplePanel';
 import Technologies from './sections/Technologies';
 
 function HomeContent(props) {
@@ -24,16 +25,40 @@ function HomeContent(props) {
 	return(
 		<div>
       <Hero />
-      <UserImageCard id="intro">
+      <UserImageCard>
+        <p>I am a computer systems engineer lover of the tech world. I develop software to build the future. 💻</p>
+        <p>Mentor, teacher, student and good friend! 😉</p>
+      </UserImageCard>
+
+      <SimplePanel backgroundColor="#111317" color="#fff">
+        <h2>Technologies</h2>
         <Technologies 
           technologies={technologies}
           width="50%"
         />
-      </UserImageCard>
+      </SimplePanel>
       
       <style jsx global>{`
         body{
           margin-top: 0px;
+        }
+      `}</style>
+      <style jsx>{`
+        p{
+          font-size: 22px;
+        }
+        h2{
+          margin: 20px;
+          font-size: 38px;
+        }
+        @media only screen and (max-width : 768px) {
+          p{
+            font-size: 16px;
+          }
+          h2{
+            margin: 10px;
+            font-size: 25px;
+          }
         }
       `}</style>
     </div>

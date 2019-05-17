@@ -9,7 +9,7 @@ function SimplePanel(props) {
         .textContainer{
           border-radius: 10px;
           background: ${props.backgroundColor || '#eaeaea'};
-          padding: 10px;
+          padding: 20px 10px;
           margin: 20px;
           height: 100%;
           color: ${props.color || '#052a4f'};
@@ -20,6 +20,11 @@ function SimplePanel(props) {
           font-weight: bold;
           font-size: 24px;
           text-align: left;
+        }
+        @media only screen and (max-width : 768px) {
+          .textContainer{
+            padding: 10px;
+          }
         }
       `}</style>
     </div>

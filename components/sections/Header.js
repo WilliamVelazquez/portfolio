@@ -1,11 +1,16 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import { logEvent } from '../../utils/analytics';
 
 import IfOffline from '../../containers/IfOffline';
 import NavMenu from '../../containers/NavMenu';
 
 function Header(props) {
+  const { description, active, title,  } = props;
+  const GA_CATEGORY="Navigation";
+  const GA_ACTION="Nav Logo";
+  const GA_LABEL=`From ${active} to Home`
 	return(
 		<header>
       <Head>
@@ -14,14 +19,14 @@ function Header(props) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta 
           name="description" 
-          content={props.description || "Portfolio website of William Velazquez as a Full Stack and Mobile Developer."}
+          content={description || "Portfolio website of William Velazquez as a Full Stack Developer with experience working on modern technologies like ReactJs, NextJS, React Native, PWA and more"}
         />
         {
-          (props.active=="Home" || props.active=="About" || props.active=="Resume" || props.active=="Work" || props.active=="Contact")?
+          (active=="Home" || active=="About" || active=="Resume" || active=="Work" || active=="Contact")?
           <meta name="robots" content="index, follow" />
           :<meta name="robots" content="noindex, nofollow" />
         }
-        <title>{props.title || "William Velazquez"}</title>
+        <title>{title || "William Velazquez"}</title>
         <link rel="icon" href="/static/WilliamVelazquez.ico" />
         
         <meta name="theme-color" content="#052A4F" />
@@ -36,12 +41,17 @@ function Header(props) {
       <div className="navbar">
         <div className="left">
           <Link href="/">
-            <img className="btn" src="/static/LogoWhite_55.png" alt="William Velazquez"/>
+            <img 
+              className="btn" 
+              src="/static/LogoWhite_55.png" 
+              alt="William Velazquez"
+              onClick={()=>logEvent(GA_CATEGORY,GA_ACTION,GA_LABEL)}
+            />
           </Link>  
-            <div className="Offline"><IfOffline>Offline</IfOffline></div>
+          <div className="Offline"><IfOffline>Offline</IfOffline></div>
         </div>
 
-        <NavMenu active={props.active}/>
+        <NavMenu active={active}/>
         
       </div>
       

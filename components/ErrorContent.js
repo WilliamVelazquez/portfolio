@@ -11,6 +11,7 @@ function ErrorContent(props) {
   const { msg, error } = props
   const GA_CATEGORY="NotFound";
   const GA_ACTION="Visit Contact Page";
+  const GA_LABEL=`Message->${msg}${error?" || Error->"+error:""}`
 	return(
 		<div className="container">
       <TitleBand 
@@ -45,7 +46,7 @@ function ErrorContent(props) {
         borderColor="#070708"
         hoverColor="#111317"
         hoverBackgroundColor="#fff"
-        handleClick={()=>logEvent(GA_CATEGORY,GA_ACTION)}
+        handleClick={()=>logEvent(GA_CATEGORY,GA_ACTION,GA_LABEL)}
       />
 
       <style jsx>{`
