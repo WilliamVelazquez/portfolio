@@ -1,29 +1,32 @@
 import React from 'react';
 
 function TitleBand(props) {
-	//console.log(props);
+  const { rounded, title, backgroundColor, color, position } = props;
 	return(
-		<div className="container">
+		<div className={`container${rounded?" rounded-band":""}`}>
       
-      <h2>{props.title}</h2>
+      <h2>{title}</h2>
 
       <style jsx>{`
         .container{
           width:100%;
-          background: #111317;
           margin:40px 0px;
           margin-bottom: 25px;
+          background: ${backgroundColor||"#111317"};
+        }
+        .rounded-band{
+          border-radius: 10px;
         }
         h2{
           margin:0;
           padding:15px;
-          color:#fff;
-          text-align: ${props.position || "left"};
+          color:${color||"#fff"};
+          text-align: ${position || "left"};
         }
         @media only screen and (max-width : 768px) {
           h2{
-            font-size: 18px;
             padding:10px;
+            font-size: 18px;
           }
         }
       `}</style>

@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 
 import TwitterIcon from '../icons/TwitterIcon';
 import FacebookIcon from '../icons/FacebookIcon';
