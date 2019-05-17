@@ -17,12 +17,14 @@ export const logPageView = () => {
 
 export const logEvent = (category = '', action = '') => {
   if (category && action) {
+    console.log(`Logging event for Category:${category} and Action:${action}`);
     ReactGA.event({ category, action });
   }
 }
 
 export const logException = (description = '', fatal = false) => {
   if (description) {
+    console.log(`Logging event for exception ${description} | ${fatal}`);
     ReactGA.exception({ description, fatal });
   }
 }

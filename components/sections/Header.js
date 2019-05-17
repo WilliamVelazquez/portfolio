@@ -50,7 +50,8 @@ function Header(props) {
           margin: 0;
           margin-top: 100px;
           font-family: system-ui;
-          background-color: #fff;
+          /*background-color: #fff;*/
+          background-color: #8e1a1a;
         }
         @media only screen and (max-width : 667px) {
           body{

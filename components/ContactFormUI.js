@@ -83,12 +83,6 @@ function ContactFormUI(props) {
         </div>
 
       </div>
-      
-      <style jsx global>{`
-        body{
-          background-color: #8e1a1a;
-        }
-      `}</style>
       <style jsx>{`
         .contactContainer{
           width:100%;

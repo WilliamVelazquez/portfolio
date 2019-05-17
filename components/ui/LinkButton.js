@@ -2,11 +2,11 @@ import React from 'react';
 import Link from 'next/link';
 
 function LinkButton(props) {
-	const { href, text, color, backgroundColor, borderColor, hoverColor, hoverBackgroundColor } = props;
+	const { href, handleClick, text, color, backgroundColor, borderColor, hoverColor, hoverBackgroundColor } = props;
 	return(
 		<div className="link-btn-container">
 			<Link href={href}>
-				<button type="button">{text}</button>
+				<button type="button" onClick={handleClick||null}>{text}</button>
 			</Link>
 			<style jsx>{`
 				.link-btn-container{

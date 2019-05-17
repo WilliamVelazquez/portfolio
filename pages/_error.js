@@ -26,7 +26,9 @@ export default class Error extends React.Component {
           />
           :
           <ErrorContent 
-            msg="Hubo un problema :( Intenta nuevamente en un momento"
+            msg={`There was a problem :(
+              Please try again in a moment
+            `}
           />
         }
       </AnalyticsLayout>

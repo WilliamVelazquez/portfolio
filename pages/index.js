@@ -9,7 +9,7 @@ class Home extends Component{
       <AnalyticsLayout
         active="Home" 
         title="Full Stack Developer | William Velazquez" 
-        description="Portfolio website of William Velazquez as a Full Stack and Mobile Developer." 
+        description="Portfolio website of William Velazquez as a Full Stack Developer with experience working on modern technologies like ReactJs, NextJS, React Native, PWA and more" 
       >
         <HomeContent />
       </AnalyticsLayout>

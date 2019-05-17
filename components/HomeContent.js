@@ -34,7 +34,6 @@ function HomeContent(props) {
       <style jsx global>{`
         body{
           margin-top: 0px;
-          background-color: #8e1a1a;
         }
       `}</style>
     </div>
