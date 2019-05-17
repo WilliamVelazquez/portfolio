@@ -3,13 +3,20 @@ import React from 'react';
 import TitleBand from './TitleBand';
 import AlertText from './AlertText';
 import SocialMedia from './SocialMedia';
+import UnderlinedLink from './ui/UnderlinedLink';
 
 function ContactFormUI(props) {
   return(
     <div className="contactContainer">
       <TitleBand title="Let's talk !" position="center"/>
-      <SocialMedia color="#111317" hoverColor="#BF0404" size={32} titleColor="#111317" title="Get in touch!"/>
-      <a href="mailto:info@williamvelazquez.com">info@williamvelazquez.com</a>
+      <SocialMedia color="#fff" hoverColor="#111317" size={32} titleColor="#fff" title="Get in touch!"/>
+      <UnderlinedLink 
+        href="mailto:info@williamvelazquez.com"
+        text="info@williamvelazquez.com"
+        color="#fff"
+        hoverColor="#111317"
+        lineColor="#111317"
+      />
 
       {
         props.alert &&
@@ -20,7 +27,7 @@ function ContactFormUI(props) {
         <h2 className="text">Fill your data</h2>
 
         <div className="contactForm">
-          <img src="/static/Logo_1024.png" alt="William Velazquez Logo"/>
+          <img src="/static/Logo_512.png" alt="William Velazquez Logo"/>
           <form>
             <input 
               type="text"
@@ -77,25 +84,15 @@ function ContactFormUI(props) {
 
       </div>
       
-
+      <style jsx global>{`
+        body{
+          background-color: #8e1a1a;
+        }
+      `}</style>
       <style jsx>{`
         .contactContainer{
           width:100%;
           margin-top: -30px;
-        }
-        a{
-          display:grid;
-          color: #111317;
-          cursor: pointer;
-          font-weight: bold;
-          text-align: center;
-          text-decoration:none;
-          -o-text-decoration:none;
-          -moz-text-decoration:none;
-          -webkit-text-decoration:none;
-        }
-        a:hover{
-          color: #BF0404;
         }
         .container{
           border-radius: 10px;
@@ -156,10 +153,10 @@ function ContactFormUI(props) {
         button{
           cursor: pointer;
           border-radius: 5px;
-          border: 3px solid #791716;
+          border: 3px solid #070708;
           padding: 10px 30px;
           margin: 10px;
-          background: #BF0404;
+          background: #111317;
           color: #fff;
           font-size: 18px;
           font-weight: bold;
@@ -171,7 +168,7 @@ function ContactFormUI(props) {
         button:hover,
         button:active
         {
-          color: #BF0404;
+          color: #111317;
           background: #fff;
         }
         img{
