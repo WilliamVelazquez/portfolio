@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 
-import PhoneIcon from './icons/PhoneIcon';
-import SmMailIcon from './icons/SmMailIcon';
+import PhoneIcon from '../icons/PhoneIcon';
+import SmMailIcon from '../icons/SmMailIcon';
 
 function ContactData(props) {
 	return(

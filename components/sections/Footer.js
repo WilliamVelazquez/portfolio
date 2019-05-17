@@ -1,8 +1,8 @@
 import React from 'react';
 
 import TopButton from '../../containers/TopButton';
-import SocialMedia from '../SocialMedia';
-import ContactData from '../ContactData';
+import SocialMedia from './SocialMedia';
+import ContactData from './ContactData';
 import Copyright from './Copyright';
 
 function Footer(props) {

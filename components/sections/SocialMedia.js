@@ -1,10 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 
-import TwitterIcon from './icons/TwitterIcon';
-import FacebookIcon from './icons/FacebookIcon';
-import LinkedInIcon from './icons/LinkedInIcon';
-import GithubIcon from './icons/GithubIcon';
+import TwitterIcon from '../icons/TwitterIcon';
+import FacebookIcon from '../icons/FacebookIcon';
+import LinkedInIcon from '../icons/LinkedInIcon';
+import GithubIcon from '../icons/GithubIcon';
 
 function SocialMedia(props) {
 	return(

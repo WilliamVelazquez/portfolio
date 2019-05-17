@@ -1,8 +1,8 @@
 import React from 'react';
 
-import TitleBand from './TitleBand';
-import AlertText from './AlertText';
-import SocialMedia from './SocialMedia';
+import TitleBand from './ui/TitleBand';
+import AlertText from './ui/AlertText';
+import SocialMedia from './sections/SocialMedia';
 import UnderlinedLink from './ui/UnderlinedLink';
 
 function ContactFormUI(props) {

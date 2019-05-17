@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-import SocialMedia from './SocialMedia';
+import SocialMedia from './sections/SocialMedia';
 
 function ErrorContent(props) {
 	//console.log(props);

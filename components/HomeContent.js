@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Hero from './sections/Hero';
-import UserImageCard from './UserImageCard';
+import UserImageCard from './ui/UserImageCard';
 import Technologies from './sections/Technologies';
 
 function HomeContent(props) {

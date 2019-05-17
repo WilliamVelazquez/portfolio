@@ -21,7 +21,8 @@ function AlertText(props) {
           font-size: 18px;
         }
         .alertError{
-          border: 3px solid #ce0000;
+          /*border: 3px solid #ce0000;*/
+          border: 3px solid #7b0b0b;
           background: #fff5f5;
         }
         .alertSuccess{

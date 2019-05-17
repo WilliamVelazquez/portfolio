@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ToneImageToColor from '../ToneImageToColor';
+import ToneImageToColor from '../ui/ToneImageToColor';
 
 function Technologies(props) {
 	return(
