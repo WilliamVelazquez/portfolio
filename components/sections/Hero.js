@@ -13,7 +13,7 @@ function Hero(props) {
           <h1>William Velazquez</h1>
           <p>Full Stack Developer</p>
         </div>
-        <a className="caret" onClick={()=>scrollToClassElementBottom('hero')}>
+        <a className="hero-caret-down" onClick={()=>scrollToClassElementBottom('hero')}>
           <ChevronIcon 
             direction="down" 
             color={"#fff"} 
@@ -52,7 +52,7 @@ function Hero(props) {
           font-size: 38px;
           text-align: center;
         }
-        .caret{
+        .hero-caret-down{
           bottom: 0;
           width: 100%;
           margin-bottom: 20px;
@@ -64,7 +64,7 @@ function Hero(props) {
           -moz-transition-duration: 0.4s; /* Mozilla */
           -webkit-transition-duration: 0.4s; /* Safari */
         }
-        .caret:hover{
+        .hero-caret-down:hover{
           cursor: pointer;
           margin-bottom: 10px;
         }

@@ -6,7 +6,7 @@ import TitleBand from './TitleBand';
 function SectionList(props) {
   const { title, data, color } = props;
 	return(
-		<div className="">
+		<div className="section-list-container">
 			<TitleBand 
 				rounded={true}
         position="center"
@@ -19,7 +19,9 @@ function SectionList(props) {
 				descriptionColor={color}
 			/>
       <style jsx>{`
-        
+				.section-list-container{
+					margin-top: -10px;
+				}
       `}</style>
     </div>
 	);

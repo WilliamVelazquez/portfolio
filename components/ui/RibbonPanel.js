@@ -3,7 +3,7 @@ import React from 'react';
 function RibbonPanel(props) {
   const { title, children, img, contentColor, panelColor, textAlign, textColor, ribbonColor  } = props;
   return(
-    <div className="content">
+    <div className="ribbon-container">
       <h1 className="ribbon">{title}</h1>
       {children}
       {
@@ -11,10 +11,12 @@ function RibbonPanel(props) {
         <img src={`/static/${img}`} alt={title}/>
       }
       <style jsx>{`
-        .content{
+        .ribbon-container{
           width: 89%;
+          margin: 0 auto;
           padding: 1.250em;
-          margin: 2em auto;
+          margin-top: -30px;
+          margin-bottom: 20px;
           line-height: 1.5em;
           min-height: 3.750em; 
           border-radius: 0.313em;
@@ -23,13 +25,13 @@ function RibbonPanel(props) {
           box-shadow: 0 2px 5px 0 rgba(0,0,0,0.5);
         }
         .ribbon{
-          text-align: ${textAlign||"left"};
           padding: 0 0.5em;
           font-size:2.000em;
           position:relative;
           line-height: 1.875em;
           margin: 0 0 0 -0.625em;
           color: ${textColor||"#fff"};
+          text-align: ${textAlign||"left"};
           border-radius: 0 0.156em 0.156em 0;
           background: ${ribbonColor||"#183352"};
           box-shadow: -1px 2px 3px rgba(0,0,0,0.5);
@@ -63,8 +65,8 @@ function RibbonPanel(props) {
           object-fit: cover;
         }
         @media only screen and (max-width : 768px) {
-          .content{
-            width: 85%;
+          .ribbon-container{
+            width: 82%;
           }
         }
         @media (max-width: 667px) {
