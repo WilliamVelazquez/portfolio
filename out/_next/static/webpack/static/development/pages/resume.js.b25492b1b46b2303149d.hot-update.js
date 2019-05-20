@@ -1,0 +1,103 @@
+webpackHotUpdate("static\\development\\pages\\resume.js",{
+
+/***/ "./components/ResumeContent.js":
+/*!*************************************!*\
+  !*** ./components/ResumeContent.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _ui_RibbonPanel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ui/RibbonPanel */ "./components/ui/RibbonPanel.js");
+/* harmony import */ var _ui_SimplePanel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ui/SimplePanel */ "./components/ui/SimplePanel.js");
+/* harmony import */ var _ui_List__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ui/List */ "./components/ui/List.js");
+var _jsxFileName = "E:\\Proyectos\\React\\portfolio\\components\\ResumeContent.js";
+
+
+
+
+
+
+function ResumeContent(props) {
+  var experience = [{
+    id: 1,
+    title: 'Secretary of Public Education (Government)',
+    description: 'Area Director of the General Directorate of Information Systems. Management of National Projects, Software Development (Java, AngularJS and ReacJS), Database Management (MySQL and SQL Server).'
+  }, {
+    id: 2,
+    title: 'Secretary of Public Education (Government)',
+    description: 'Area Director of the General Directorate of Information Systems. Management of National Projects, Software Development (Java, AngularJS and ReacJS), Database Management (MySQL and SQL Server).'
+  }, {
+    id: 3,
+    title: 'Secretary of Public Education (Government)',
+    description: 'Area Director of the General Directorate of Information Systems. Management of National Projects, Software Development (Java, AngularJS and ReacJS), Database Management (MySQL and SQL Server).'
+  }];
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-3631648800",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ui_RibbonPanel__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "William's Resume",
+    ribbonColor: "#111317",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "jsx-3631648800" + " " + "resume-text",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, "Develop myself professionally as part of a leading company in which I can contribute with my skills and knowledge in the systems area, always seeking to progress and improve the performance of my activities to achieve positions of greater responsibility and challenge. Offer solutions according to the expectations of the companies, creating opportunities for personal and professional development."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-3631648800" + " " + "resume-content",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ui_SimplePanel__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    backgroundColor: "#111317",
+    color: "#fff",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
+    className: "jsx-3631648800",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, "Work experience"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ui_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    data: experience,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  })))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    styleId: "3631648800",
+    css: ".resume-text.jsx-3631648800{font-size:22px;text-align:justify;line-height:normal;}.resume-content.jsx-3631648800{display:grid;grid-template-columns:repeat(2,1fr);}@media only screen and (max-width :768px){.resume-text.jsx-3631648800{font-size:16px;}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkU6XFxQcm95ZWN0b3NcXFJlYWN0XFxwb3J0Zm9saW9cXGNvbXBvbmVudHNcXFJlc3VtZUNvbnRlbnQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBaUNrQixBQUdxQixBQUtGLEFBS1MsYUFKZSxFQUxsQixBQVVkLG1CQVRjLGVBS3BCLElBSkEiLCJmaWxlIjoiRTpcXFByb3llY3Rvc1xcUmVhY3RcXHBvcnRmb2xpb1xcY29tcG9uZW50c1xcUmVzdW1lQ29udGVudC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XHJcblxyXG5pbXBvcnQgUmliYm9uUGFuZWwgZnJvbSAnLi91aS9SaWJib25QYW5lbCc7XHJcbmltcG9ydCBTaW1wbGVQYW5lbCBmcm9tICcuL3VpL1NpbXBsZVBhbmVsJztcclxuaW1wb3J0IExpc3QgZnJvbSAnLi91aS9MaXN0JztcclxuXHJcbmZ1bmN0aW9uIFJlc3VtZUNvbnRlbnQocHJvcHMpIHtcclxuXHJcbiAgY29uc3QgZXhwZXJpZW5jZSA9IFtcclxuICAgIHtpZDoxLCB0aXRsZTonU2VjcmV0YXJ5IG9mIFB1YmxpYyBFZHVjYXRpb24gKEdvdmVybm1lbnQpJywgZGVzY3JpcHRpb246J0FyZWEgRGlyZWN0b3Igb2YgdGhlIEdlbmVyYWwgRGlyZWN0b3JhdGUgb2YgSW5mb3JtYXRpb24gU3lzdGVtcy4gTWFuYWdlbWVudCBvZiBOYXRpb25hbCBQcm9qZWN0cywgU29mdHdhcmUgRGV2ZWxvcG1lbnQgKEphdmEsIEFuZ3VsYXJKUyBhbmQgUmVhY0pTKSwgRGF0YWJhc2UgTWFuYWdlbWVudCAoTXlTUUwgYW5kIFNRTCBTZXJ2ZXIpLid9LFxyXG4gICAge2lkOjIsIHRpdGxlOidTZWNyZXRhcnkgb2YgUHVibGljIEVkdWNhdGlvbiAoR292ZXJubWVudCknLCBkZXNjcmlwdGlvbjonQXJlYSBEaXJlY3RvciBvZiB0aGUgR2VuZXJhbCBEaXJlY3RvcmF0ZSBvZiBJbmZvcm1hdGlvbiBTeXN0ZW1zLiBNYW5hZ2VtZW50IG9mIE5hdGlvbmFsIFByb2plY3RzLCBTb2Z0d2FyZSBEZXZlbG9wbWVudCAoSmF2YSwgQW5ndWxhckpTIGFuZCBSZWFjSlMpLCBEYXRhYmFzZSBNYW5hZ2VtZW50IChNeVNRTCBhbmQgU1FMIFNlcnZlcikuJ30sXHJcbiAgICB7aWQ6MywgdGl0bGU6J1NlY3JldGFyeSBvZiBQdWJsaWMgRWR1Y2F0aW9uIChHb3Zlcm5tZW50KScsIGRlc2NyaXB0aW9uOidBcmVhIERpcmVjdG9yIG9mIHRoZSBHZW5lcmFsIERpcmVjdG9yYXRlIG9mIEluZm9ybWF0aW9uIFN5c3RlbXMuIE1hbmFnZW1lbnQgb2YgTmF0aW9uYWwgUHJvamVjdHMsIFNvZnR3YXJlIERldmVsb3BtZW50IChKYXZhLCBBbmd1bGFySlMgYW5kIFJlYWNKUyksIERhdGFiYXNlIE1hbmFnZW1lbnQgKE15U1FMIGFuZCBTUUwgU2VydmVyKS4nfSxcclxuICBdO1xyXG5cclxuXHRyZXR1cm4oXHJcblx0XHQ8ZGl2PlxyXG5cdFx0XHQ8UmliYm9uUGFuZWwgXHJcblx0XHRcdFx0dGl0bGU9XCJXaWxsaWFtJ3MgUmVzdW1lXCJcclxuXHRcdFx0XHRyaWJib25Db2xvcj1cIiMxMTEzMTdcIlxyXG5cdFx0XHQ+XHJcblx0XHRcdFx0PHAgY2xhc3NOYW1lPVwicmVzdW1lLXRleHRcIj5cclxuXHRcdFx0XHRcdERldmVsb3AgbXlzZWxmIHByb2Zlc3Npb25hbGx5IGFzIHBhcnQgb2YgYSBsZWFkaW5nIGNvbXBhbnkgaW4gd2hpY2ggSSBjYW4gY29udHJpYnV0ZSB3aXRoIG15IHNraWxscyBhbmQga25vd2xlZGdlIGluIHRoZSBzeXN0ZW1zIGFyZWEsIGFsd2F5cyBzZWVraW5nIHRvIHByb2dyZXNzIGFuZCBpbXByb3ZlIHRoZSBwZXJmb3JtYW5jZSBvZiBteSBhY3Rpdml0aWVzIHRvIGFjaGlldmUgcG9zaXRpb25zIG9mIGdyZWF0ZXIgcmVzcG9uc2liaWxpdHkgYW5kIGNoYWxsZW5nZS4gT2ZmZXIgc29sdXRpb25zIGFjY29yZGluZyB0byB0aGUgZXhwZWN0YXRpb25zIG9mIHRoZSBjb21wYW5pZXMsIGNyZWF0aW5nIG9wcG9ydHVuaXRpZXMgZm9yIHBlcnNvbmFsIGFuZCBwcm9mZXNzaW9uYWwgZGV2ZWxvcG1lbnQuXHJcblx0XHRcdFx0PC9wPlxyXG5cdFx0XHRcdDxkaXYgY2xhc3NOYW1lPVwicmVzdW1lLWNvbnRlbnRcIj5cclxuXHRcdFx0XHRcdDxTaW1wbGVQYW5lbCBiYWNrZ3JvdW5kQ29sb3I9XCIjMTExMzE3XCIgY29sb3I9XCIjZmZmXCI+XHJcblx0XHRcdFx0XHRcdDxoMj5Xb3JrIGV4cGVyaWVuY2U8L2gyPlxyXG5cdFx0XHRcdFx0XHQ8TGlzdCBcclxuXHRcdFx0XHRcdFx0XHRkYXRhPXtleHBlcmllbmNlfVxyXG5cdFx0XHRcdFx0XHQvPlxyXG5cdFx0XHRcdFx0PC9TaW1wbGVQYW5lbD5cclxuXHJcblx0XHRcdFx0PC9kaXY+XHJcblx0XHRcdDwvUmliYm9uUGFuZWw+XHJcbiAgICAgIDxzdHlsZSBqc3g+e2BcclxuXHRcdFx0XHQucmVzdW1lLXRleHR7XHJcblx0XHRcdFx0XHRmb250LXNpemU6IDIycHg7XHJcblx0XHRcdFx0XHR0ZXh0LWFsaWduOiBqdXN0aWZ5O1xyXG5cdFx0XHRcdFx0bGluZS1oZWlnaHQ6IG5vcm1hbDtcclxuXHRcdFx0XHR9XHJcblx0XHRcdFx0LnJlc3VtZS1jb250ZW50e1xyXG5cdFx0XHRcdFx0ZGlzcGxheTogZ3JpZDtcclxuXHRcdFx0XHRcdGdyaWQtdGVtcGxhdGUtY29sdW1uczogcmVwZWF0KDIsIDFmcik7XHJcblx0XHRcdFx0fVxyXG5cdFx0XHRcdEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aCA6IDc2OHB4KSB7XHJcbiAgICAgICAgICAucmVzdW1lLXRleHR7XHJcbiAgICAgICAgICAgIGZvbnQtc2l6ZTogMTZweDtcclxuICAgICAgICAgIH1cclxuICAgICAgICB9XHJcbiAgICAgIGB9PC9zdHlsZT5cclxuICAgIDwvZGl2PlxyXG5cdCk7XHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IFJlc3VtZUNvbnRlbnQ7Il19 */\n/*@ sourceURL=E:\\Proyectos\\React\\portfolio\\components\\ResumeContent.js */",
+    __self: this
+  }));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (ResumeContent);
+
+/***/ })
+
+})
+//# sourceMappingURL=resume.js.b25492b1b46b2303149d.hot-update.js.map
