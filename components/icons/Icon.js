@@ -15,11 +15,13 @@ function Icon(props) {
     >
       {props.children}
       <style jsx>{`
-        svg:hover{
+        svg{
           transition-duration: 0.4s;
           -o-transition-duration: 0.4s; /* Opera */
           -moz-transition-duration: 0.4s; /* Mozilla */
           -webkit-transition-duration: 0.4s; /* Safari */
+        }
+        svg:hover{
           fill: ${hoverColor};
         }
       `}</style>
