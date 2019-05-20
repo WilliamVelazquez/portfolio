@@ -1488,19 +1488,20 @@ function List(props) {
   var data = props.data,
       titleColor = props.titleColor,
       titlePosition = props.titlePosition,
+      dateColor = props.dateColor,
       descriptionColor = props.descriptionColor,
       descriptionPosition = props.descriptionPosition;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, data.map(function (item) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       key: item.id,
-      className: "container",
+      className: "list-container",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 10
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-      className: "title",
+      className: "list-title",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 11
@@ -1514,7 +1515,7 @@ function List(props) {
       },
       __self: this
     }, " | ".concat(item.date))), item.description && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-      className: "description",
+      className: "list-description",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 22
@@ -1528,7 +1529,7 @@ function List(props) {
       lineNumber: 29
     },
     __self: this
-  }, "\n        .container{\n          margin: 0px 10px;\n        }\n        .date-not-breakable{\n          white-space: nowrap;\n        }\n        .title{\n          font-weight: bold;\n          margin: 10px 0px 0px 0px;\n          color: ".concat(titleColor || "#fff", ";\n          text-align: ").concat(titlePosition || "left", ";\n        }\n        .description{\n          margin: 10px 10px;\n          color: ").concat(descriptionColor || "#fff", ";\n          text-align: ").concat(descriptionPosition || "justify", ";\n        }\n      ")));
+  }, "\n        .list-container{\n          margin: 0px 10px;\n        }\n        .list-title{\n          font-weight: bold;\n          margin: 10px 0px 0px 0px;\n          color: ".concat(titleColor || "#fff", ";\n          text-align: ").concat(titlePosition || "left", ";\n        }\n        .date-not-breakable{\n          color: ").concat(dateColor || "#000", ";\n          white-space: nowrap;\n        }\n        .list-description{\n          margin: 10px 10px;\n          color: ").concat(descriptionColor || "#fff", ";\n          text-align: ").concat(descriptionPosition || "justify", ";\n        }\n      ")));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (List);
@@ -1639,6 +1640,7 @@ function SectionList(props) {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_List__WEBPACK_IMPORTED_MODULE_2__["default"], {
     data: data,
+    dateColor: color,
     titleColor: color,
     descriptionColor: color,
     __source: {
@@ -1648,7 +1650,7 @@ function SectionList(props) {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     styleId: "1486862249",
-    css: "\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkU6XFxQcm95ZWN0b3NcXFJlYWN0XFxwb3J0Zm9saW9cXGNvbXBvbmVudHNcXHVpXFxTZWN0aW9uTGlzdC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFtQmtCIiwiZmlsZSI6IkU6XFxQcm95ZWN0b3NcXFJlYWN0XFxwb3J0Zm9saW9cXGNvbXBvbmVudHNcXHVpXFxTZWN0aW9uTGlzdC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XHJcblxyXG5pbXBvcnQgTGlzdCBmcm9tICcuL0xpc3QnO1xyXG5pbXBvcnQgVGl0bGVCYW5kIGZyb20gJy4vVGl0bGVCYW5kJztcclxuXHJcbmZ1bmN0aW9uIFNlY3Rpb25MaXN0KHByb3BzKSB7XHJcbiAgY29uc3QgeyB0aXRsZSwgZGF0YSwgY29sb3IgfSA9IHByb3BzO1xyXG5cdHJldHVybihcclxuXHRcdDxkaXYgY2xhc3NOYW1lPVwiXCI+XHJcblx0XHRcdDxUaXRsZUJhbmQgXHJcblx0XHRcdFx0cm91bmRlZD17dHJ1ZX1cclxuICAgICAgICBwb3NpdGlvbj1cImNlbnRlclwiXHJcbiAgICAgICAgdGl0bGU9e3RpdGxlfVxyXG5cdFx0XHQvPlxyXG4gICAgICA8TGlzdCBcclxuXHRcdFx0XHRkYXRhPXtkYXRhfVxyXG5cdFx0XHRcdHRpdGxlQ29sb3I9e2NvbG9yfVxyXG5cdFx0XHRcdGRlc2NyaXB0aW9uQ29sb3I9e2NvbG9yfVxyXG5cdFx0XHQvPlxyXG4gICAgICA8c3R5bGUganN4PntgXHJcbiAgICAgICAgXHJcbiAgICAgIGB9PC9zdHlsZT5cclxuICAgIDwvZGl2PlxyXG5cdCk7XHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IFNlY3Rpb25MaXN0OyJdfQ== */\n/*@ sourceURL=E:\\Proyectos\\React\\portfolio\\components\\ui\\SectionList.js */",
+    css: "\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkU6XFxQcm95ZWN0b3NcXFJlYWN0XFxwb3J0Zm9saW9cXGNvbXBvbmVudHNcXHVpXFxTZWN0aW9uTGlzdC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFvQmtCIiwiZmlsZSI6IkU6XFxQcm95ZWN0b3NcXFJlYWN0XFxwb3J0Zm9saW9cXGNvbXBvbmVudHNcXHVpXFxTZWN0aW9uTGlzdC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XHJcblxyXG5pbXBvcnQgTGlzdCBmcm9tICcuL0xpc3QnO1xyXG5pbXBvcnQgVGl0bGVCYW5kIGZyb20gJy4vVGl0bGVCYW5kJztcclxuXHJcbmZ1bmN0aW9uIFNlY3Rpb25MaXN0KHByb3BzKSB7XHJcbiAgY29uc3QgeyB0aXRsZSwgZGF0YSwgY29sb3IgfSA9IHByb3BzO1xyXG5cdHJldHVybihcclxuXHRcdDxkaXYgY2xhc3NOYW1lPVwiXCI+XHJcblx0XHRcdDxUaXRsZUJhbmQgXHJcblx0XHRcdFx0cm91bmRlZD17dHJ1ZX1cclxuICAgICAgICBwb3NpdGlvbj1cImNlbnRlclwiXHJcbiAgICAgICAgdGl0bGU9e3RpdGxlfVxyXG5cdFx0XHQvPlxyXG4gICAgICA8TGlzdCBcclxuXHRcdFx0XHRkYXRhPXtkYXRhfVxyXG5cdFx0XHRcdGRhdGVDb2xvcj17Y29sb3J9XHJcblx0XHRcdFx0dGl0bGVDb2xvcj17Y29sb3J9XHJcblx0XHRcdFx0ZGVzY3JpcHRpb25Db2xvcj17Y29sb3J9XHJcblx0XHRcdC8+XHJcbiAgICAgIDxzdHlsZSBqc3g+e2BcclxuICAgICAgICBcclxuICAgICAgYH08L3N0eWxlPlxyXG4gICAgPC9kaXY+XHJcblx0KTtcclxufVxyXG5cclxuZXhwb3J0IGRlZmF1bHQgU2VjdGlvbkxpc3Q7Il19 */\n/*@ sourceURL=E:\\Proyectos\\React\\portfolio\\components\\ui\\SectionList.js */",
     __self: this
   }));
 }
@@ -1733,22 +1735,22 @@ function TitleBand(props) {
       color = props.color,
       position = props.position;
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["2514844465", [backgroundColor || "#111317", color || "#fff", position || "left"]]]) + " " + "container".concat(rounded ? " rounded-band" : ""),
+    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["1560549764", [backgroundColor || "#111317", color || "#fff", position || "left"]]]) + " " + "band-container".concat(rounded ? " rounded-band" : ""),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
-    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["2514844465", [backgroundColor || "#111317", color || "#fff", position || "left"]]]),
+    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["1560549764", [backgroundColor || "#111317", color || "#fff", position || "left"]]]),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: this
   }, title), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    styleId: "2514844465",
-    css: ".container.__jsx-style-dynamic-selector{width:100%;margin:20px 0px;background:".concat(backgroundColor || "#111317", ";}.rounded-band.__jsx-style-dynamic-selector{border-radius:10px;}h2.__jsx-style-dynamic-selector{margin:0;padding:15px;color:").concat(color || "#fff", ";text-align:").concat(position || "left", ";}@media only screen and (max-width :768px){h2.__jsx-style-dynamic-selector{padding:10px;font-size:18px;}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkU6XFxQcm95ZWN0b3NcXFJlYWN0XFxwb3J0Zm9saW9cXGNvbXBvbmVudHNcXHVpXFxUaXRsZUJhbmQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBU2tCLEFBR3FCLEFBS1MsQUFHWCxBQU9NLFNBTkYsRUFSRyxFQWVFLE1BVm5CLEdBSW9DLEtBUk0sQ0FleEMsNkJBTndDLFVBUjFDLDhCQVNBIiwiZmlsZSI6IkU6XFxQcm95ZWN0b3NcXFJlYWN0XFxwb3J0Zm9saW9cXGNvbXBvbmVudHNcXHVpXFxUaXRsZUJhbmQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xyXG5cclxuZnVuY3Rpb24gVGl0bGVCYW5kKHByb3BzKSB7XHJcbiAgY29uc3QgeyByb3VuZGVkLCB0aXRsZSwgYmFja2dyb3VuZENvbG9yLCBjb2xvciwgcG9zaXRpb24gfSA9IHByb3BzO1xyXG5cdHJldHVybihcclxuXHRcdDxkaXYgY2xhc3NOYW1lPXtgY29udGFpbmVyJHtyb3VuZGVkP1wiIHJvdW5kZWQtYmFuZFwiOlwiXCJ9YH0+XHJcbiAgICAgIFxyXG4gICAgICA8aDI+e3RpdGxlfTwvaDI+XHJcblxyXG4gICAgICA8c3R5bGUganN4PntgXHJcbiAgICAgICAgLmNvbnRhaW5lcntcclxuICAgICAgICAgIHdpZHRoOjEwMCU7XHJcbiAgICAgICAgICBtYXJnaW46MjBweCAwcHg7XHJcbiAgICAgICAgICBiYWNrZ3JvdW5kOiAke2JhY2tncm91bmRDb2xvcnx8XCIjMTExMzE3XCJ9O1xyXG4gICAgICAgIH1cclxuICAgICAgICAucm91bmRlZC1iYW5ke1xyXG4gICAgICAgICAgYm9yZGVyLXJhZGl1czogMTBweDtcclxuICAgICAgICB9XHJcbiAgICAgICAgaDJ7XHJcbiAgICAgICAgICBtYXJnaW46MDtcclxuICAgICAgICAgIHBhZGRpbmc6MTVweDtcclxuICAgICAgICAgIGNvbG9yOiR7Y29sb3J8fFwiI2ZmZlwifTtcclxuICAgICAgICAgIHRleHQtYWxpZ246ICR7cG9zaXRpb24gfHwgXCJsZWZ0XCJ9O1xyXG4gICAgICAgIH1cclxuICAgICAgICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGggOiA3NjhweCkge1xyXG4gICAgICAgICAgaDJ7XHJcbiAgICAgICAgICAgIHBhZGRpbmc6MTBweDtcclxuICAgICAgICAgICAgZm9udC1zaXplOiAxOHB4O1xyXG4gICAgICAgICAgfVxyXG4gICAgICAgIH1cclxuICAgICAgYH08L3N0eWxlPlxyXG4gICAgPC9kaXY+XHJcblx0KTtcclxufVxyXG5cclxuZXhwb3J0IGRlZmF1bHQgVGl0bGVCYW5kOyJdfQ== */\n/*@ sourceURL=E:\\Proyectos\\React\\portfolio\\components\\ui\\TitleBand.js */"),
+    styleId: "1560549764",
+    css: ".band-container.__jsx-style-dynamic-selector{width:100%;margin:20px 0px;background:".concat(backgroundColor || "#111317", ";}.rounded-band.__jsx-style-dynamic-selector{border-radius:10px;}h2.__jsx-style-dynamic-selector{margin:0;padding:15px;color:").concat(color || "#fff", ";text-align:").concat(position || "left", ";}@media only screen and (max-width :768px){h2.__jsx-style-dynamic-selector{padding:10px;font-size:18px;}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkU6XFxQcm95ZWN0b3NcXFJlYWN0XFxwb3J0Zm9saW9cXGNvbXBvbmVudHNcXHVpXFxUaXRsZUJhbmQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBU2tCLEFBR3FCLEFBS1MsQUFHWCxBQU9NLFNBTkYsRUFSRyxFQWVFLE1BVm5CLEdBSW9DLEtBUk0sQ0FleEMsNkJBTndDLFVBUjFDLDhCQVNBIiwiZmlsZSI6IkU6XFxQcm95ZWN0b3NcXFJlYWN0XFxwb3J0Zm9saW9cXGNvbXBvbmVudHNcXHVpXFxUaXRsZUJhbmQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xyXG5cclxuZnVuY3Rpb24gVGl0bGVCYW5kKHByb3BzKSB7XHJcbiAgY29uc3QgeyByb3VuZGVkLCB0aXRsZSwgYmFja2dyb3VuZENvbG9yLCBjb2xvciwgcG9zaXRpb24gfSA9IHByb3BzO1xyXG5cdHJldHVybihcclxuXHRcdDxkaXYgY2xhc3NOYW1lPXtgYmFuZC1jb250YWluZXIke3JvdW5kZWQ/XCIgcm91bmRlZC1iYW5kXCI6XCJcIn1gfT5cclxuICAgICAgXHJcbiAgICAgIDxoMj57dGl0bGV9PC9oMj5cclxuXHJcbiAgICAgIDxzdHlsZSBqc3g+e2BcclxuICAgICAgICAuYmFuZC1jb250YWluZXJ7XHJcbiAgICAgICAgICB3aWR0aDoxMDAlO1xyXG4gICAgICAgICAgbWFyZ2luOjIwcHggMHB4O1xyXG4gICAgICAgICAgYmFja2dyb3VuZDogJHtiYWNrZ3JvdW5kQ29sb3J8fFwiIzExMTMxN1wifTtcclxuICAgICAgICB9XHJcbiAgICAgICAgLnJvdW5kZWQtYmFuZHtcclxuICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XHJcbiAgICAgICAgfVxyXG4gICAgICAgIGgye1xyXG4gICAgICAgICAgbWFyZ2luOjA7XHJcbiAgICAgICAgICBwYWRkaW5nOjE1cHg7XHJcbiAgICAgICAgICBjb2xvcjoke2NvbG9yfHxcIiNmZmZcIn07XHJcbiAgICAgICAgICB0ZXh0LWFsaWduOiAke3Bvc2l0aW9uIHx8IFwibGVmdFwifTtcclxuICAgICAgICB9XHJcbiAgICAgICAgQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoIDogNzY4cHgpIHtcclxuICAgICAgICAgIGgye1xyXG4gICAgICAgICAgICBwYWRkaW5nOjEwcHg7XHJcbiAgICAgICAgICAgIGZvbnQtc2l6ZTogMThweDtcclxuICAgICAgICAgIH1cclxuICAgICAgICB9XHJcbiAgICAgIGB9PC9zdHlsZT5cclxuICAgIDwvZGl2PlxyXG5cdCk7XHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IFRpdGxlQmFuZDsiXX0= */\n/*@ sourceURL=E:\\Proyectos\\React\\portfolio\\components\\ui\\TitleBand.js */"),
     dynamic: [backgroundColor || "#111317", color || "#fff", position || "left"],
     __self: this
   }));
@@ -16809,7 +16811,7 @@ var scrollToClassElement = function scrollToClassElement(elementClass) {
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!*******************************!*\
   !*** multi ./pages/resume.js ***!
   \*******************************/
@@ -16834,5 +16836,5 @@ module.exports = dll_5d62d38be3592dca3a42;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js"]]]));;
+},[[4,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=resume.js.map
