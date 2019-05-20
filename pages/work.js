@@ -9,7 +9,7 @@ class Work extends Component{
       <AnalyticsLayout
         active="Work" 
         title="William's Work | William Velazquez" 
-        description="Discover and test some of the projects that William Velazquez has developed." 
+        description="Discover and test some of the projects that William Velazquez has developed" 
       >
         <ErrorContent msg="Under Construction" />
       </AnalyticsLayout>

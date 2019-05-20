@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import ErrorContent from '../components/ErrorContent';
+import ResumeContent from '../components/ResumeContent';
 import AnalyticsLayout from '../containers/AnalyticsLayout';
 
 class Resume extends Component{
@@ -9,9 +9,9 @@ class Resume extends Component{
       <AnalyticsLayout
         active="Resume" 
         title="William's Resume | William Velazquez" 
-        description="Discover and test some of the projects that William Velazquez has developed." 
+        description="Find out the experience, education, skills, tools and more details of William Velazquez" 
       >
-        <ErrorContent msg="Under Construction" />
+        <ResumeContent />
       </AnalyticsLayout>
     );
   }

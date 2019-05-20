@@ -1,16 +1,26 @@
 import React from 'react';
 
 function List(props) {
-	//console.log(props);
+	const { data, titleColor, titlePosition, descriptionColor, descriptionPosition } = props;
 	return(
-		<div className="container">
-      
+		<>
       {
-        props.items.map(item => {
+        data.map(item => {
           return(
-            <div key={item.key}>
-              <p className="title">{`• ${item.key}: `}</p>
-              <p className="description">{item.description}</p>
+            <div key={item.id} className="container">
+              <p className="title">
+                {`• ${item.title}`}
+                {
+                  item.date &&
+                  <span className="date-not-breakable">
+                    {` | ${item.date}`}
+                  </span>
+                }
+              </p>
+              {
+                item.description &&
+                <p className="description">{item.description}</p>
+              }
             </div>
           )
         })
@@ -18,20 +28,24 @@ function List(props) {
 
       <style jsx>{`
         .container{
-          width: 100%;
+          margin: 0px 10px;
+        }
+        .date-not-breakable{
+          white-space: nowrap;
         }
         .title{
-          color: ${props.textColor || "#fff"};
           font-weight: bold;
-          text-align: ${props.position || "left"};
+          margin: 10px 0px 0px 0px;
+          color: ${titleColor || "#fff"};
+          text-align: ${titlePosition || "left"};
         }
         .description{
-          color: ${props.textColor || "#fff"};
-          margin-left: 10px;
-          text-align: ${props.position || "justify"};
+          margin: 10px 10px;
+          color: ${descriptionColor || "#fff"};
+          text-align: ${descriptionPosition || "justify"};
         }
       `}</style>
-    </div>
+    </>
 	);
 }
 

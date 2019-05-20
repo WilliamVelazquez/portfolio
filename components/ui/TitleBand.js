@@ -10,8 +10,7 @@ function TitleBand(props) {
       <style jsx>{`
         .container{
           width:100%;
-          margin:40px 0px;
-          margin-bottom: 25px;
+          margin:20px 0px;
           background: ${backgroundColor||"#111317"};
         }
         .rounded-band{

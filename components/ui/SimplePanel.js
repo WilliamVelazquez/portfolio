@@ -1,25 +1,25 @@
 import React from 'react';
 
 function SimplePanel(props) {
+  const { setRef, id, title, children, color, backgroundColor } = props;
   return(
-    <div className="textContainer" ref={props.setRef || null} id={props.id || null}>
-      <p className="title">{props.title}</p>
-      {props.children}
+    <div className="textContainer" ref={setRef || null} id={id || null}>
+      <p className="title">{title}</p>
+      {children}
       <style jsx>{`
         .textContainer{
-          border-radius: 10px;
-          background: ${props.backgroundColor || '#eaeaea'};
-          padding: 20px 10px;
           margin: 20px;
-          height: 100%;
-          color: ${props.color || '#052a4f'};
+          padding: 20px 10px;
           text-align: center;
+          border-radius: 10px;
+          color: ${color || '#052a4f'};
+          background: ${backgroundColor || '#eaeaea'};
         }
         .title{
           margin: 10px ;
-          font-weight: bold;
           font-size: 24px;
           text-align: left;
+          font-weight: bold;
         }
         @media only screen and (max-width : 768px) {
           .textContainer{
