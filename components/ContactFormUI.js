@@ -8,8 +8,8 @@ import UnderlinedLink from './ui/UnderlinedLink';
 function ContactFormUI(props) {
   return(
     <div className="contactContainer">
-      <TitleBand title="Let's talk !" position="center"/>
-      <SocialMedia color="#fff" hoverColor="#111317" size={32} titleColor="#fff" title="Get in touch!"/>
+      <TitleBand title="Let's make something great together!" position="center"/>
+      <SocialMedia color="#fff" hoverColor="#111317" size={32} titleColor="#fff"/>
       <UnderlinedLink 
         href="mailto:info@williamvelazquez.com"
         text="info@williamvelazquez.com"
@@ -17,7 +17,6 @@ function ContactFormUI(props) {
         hoverColor="#111317"
         lineColor="#111317"
       />
-
       {
         props.alert &&
         <AlertText title={props.msg} success={props.success}/>
@@ -166,7 +165,7 @@ function ContactFormUI(props) {
           background: #fff;
         }
         img{
-          width: 350px;
+          width: 400px;
           justify-self: center;
           align-self: center;
         }

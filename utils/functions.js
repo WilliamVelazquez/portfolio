@@ -1,4 +1,4 @@
-const NAV_HEIGHT = 30;
+const NAV_HEIGHT = 25;
 const OFFSET_TOP = 20;
 
 export const scrollToTop = () => {

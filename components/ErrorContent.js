@@ -11,6 +11,7 @@ function ErrorContent(props) {
   const { msg, error } = props
   const GA_CATEGORY="NotFound";
   const GA_ACTION="Visit Contact Page";
+  const GA_IMAGE_ACTION="Visit Home Page";
   const GA_LABEL=`Message->${msg}${error?" || Error->"+error:""}`
 	return(
 		<div className="container">
@@ -20,7 +21,11 @@ function ErrorContent(props) {
         title="The content of the page will be available soon!"
       />
       <Link href="/">
-        <img src="/static/Logo_512.png" alt="William Velazquez Logo"/>
+        <img 
+          src="/static/Logo_512.png" 
+          alt="William Velazquez Logo"
+          onClick={()=>logEvent(GA_CATEGORY,GA_IMAGE_ACTION,GA_LABEL)}
+        />
       </Link> 
 
       <h1 className="text">{msg}</h1>

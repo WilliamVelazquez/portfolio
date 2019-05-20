@@ -9,7 +9,10 @@ function ContactData(props) {
 		<div className="contactData">
       <span className="footerTitle">Contact</span>
 
-      <span className="iconLine"><SmMailIcon color="white" size={32} /><a href="mailto:info@williamvelazquez.com">info@williamvelazquez.com</a></span>
+      <span className="iconLine">
+        <SmMailIcon color="white" size={32} />
+        <a href="mailto:info@williamvelazquez.com">info@williamvelazquez.com</a>
+      </span>
       <span>
         {"Want to work together or any advice? "}
         <Link href="/contact">
@@ -26,7 +29,7 @@ function ContactData(props) {
         }
         .iconLine{
           display:grid;
-          grid-template-columns: 30px 1fr;
+          grid-template-columns: min-content 1fr;
         }
         p, a, span{
           color: #fff;

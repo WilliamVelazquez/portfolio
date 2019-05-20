@@ -6,9 +6,13 @@ import LinkedInIcon from '../icons/LinkedInIcon';
 import GithubIcon from '../icons/GithubIcon';
 
 function SocialMedia(props) {
+  const { title, color, hoverColor, size, withFB, titleColor } = props;
 	return(
 		<div className="socialMediaContainer">
-      <span className="socialMediaTitle">{props.title}</span>
+      {
+        title &&
+        <span className="socialMediaTitle">{title}</span>
+      }
       <div className="socialMedia">
         <a
           type="button"
@@ -17,14 +21,14 @@ function SocialMedia(props) {
           href="https://twitter.com/WilliamVlazquez" 
           className="icon">
           <TwitterIcon 
-            color={props.color||"#fff"} 
-            hoverColor={props.hoverColor ||"#052A4F"} 
-            size={props.size||32} 
+            color={color||"#fff"} 
+            hoverColor={hoverColor ||"#052A4F"} 
+            size={size||32} 
           />
         </a>
 
         {
-          props.withFB &&
+          withFB &&
           <a 
             type="button"
             target="_blank" 
@@ -32,9 +36,9 @@ function SocialMedia(props) {
             href="https://www.facebook.com/WilliamVelazquezA" 
             className="icon">
             <FacebookIcon 
-              color={props.color||"#fff"} 
-              hoverColor={props.hoverColor ||"#052A4F"} 
-              size={props.size||32} 
+              color={color||"#fff"} 
+              hoverColor={hoverColor ||"#052A4F"} 
+              size={size||32} 
             />
           </a>
         }
@@ -46,9 +50,9 @@ function SocialMedia(props) {
           href="https://www.linkedin.com/in/williamvelazquez/" 
           className="icon">
           <LinkedInIcon 
-            color={props.color||"#fff"} 
-            hoverColor={props.hoverColor ||"#052A4F"} 
-            size={props.size||32} 
+            color={color||"#fff"} 
+            hoverColor={hoverColor ||"#052A4F"} 
+            size={size||32} 
           />
         </a>
 
@@ -59,36 +63,37 @@ function SocialMedia(props) {
           href="https://github.com/WilliamVelazquez" 
           className="icon">
           <GithubIcon 
-            color={props.color||"#fff"} 
-            hoverColor={props.hoverColor ||"#052A4F"} 
-            size={props.size||32} 
+            color={color||"#fff"} 
+            hoverColor={hoverColor ||"#052A4F"} 
+            size={size||32} 
           />
         </a>
       </div>
 
       <style jsx>{`
         .socialMediaContainer{
-          display:grid;
-          grid-template-rows: repeat(2, 1fr);
-          align-items: center;
-          grid-row-gap: 20px;
           margin: 20px;
+          display:grid;
+          grid-row-gap: 20px;
+          align-items: center;
           justify-content: center;
+          grid-template-rows: repeat(${title?"2":"1"}, 1fr);
         }
         .socialMedia{
           display:grid;
-          grid-template-columns: repeat(3, 80px);
           grid-column-gap: 20px;
+          grid-template-columns: repeat(3, 80px);
         }
         .icon{
-          justify-self: center;
           cursor: pointer;
+          justify-self: center;
         }
         .socialMediaTitle{
           font-size: 20px;
           font-weight: bold;
-          color: ${props.titleColor||"#fff"};
+          white-space: nowrap;
           justify-self: center;
+          color: ${titleColor||"#fff"};
         }
       `}</style>
     </div>

@@ -1,12 +1,13 @@
 import React from 'react';
 
 function ToneImageToColor(props) {
+  const { imgSrc, imgAlt, text, initialTextColor, hoverTextColor, imgWidth, tone, } = props;
 	return(
     <div className="img-container">
-      <img className="tone-to-color" src={props.imgSrc} alt={props.imgAlt || null}></img>
+      <img className="tone-to-color" src={imgSrc} alt={imgAlt || null}></img>
       {
-        props.text &&
-        <span className="img-text">{props.text}</span>
+        text &&
+        <span className="img-text">{text}</span>
       }
       <style jsx>{`
         .img-container{
@@ -16,21 +17,22 @@ function ToneImageToColor(props) {
           justify-items: center;
           grid-template-columns: 1fr;
           grid-template-rows: 1fr auto;
-          color: ${props.initialTextColor || 'transparent'};
+          color: ${initialTextColor || 'transparent'};
         }
         .img-container:hover{
-          color: ${props.hoverTextColor || '#fff'};
+          color: ${hoverTextColor || '#fff'};
         }
         .tone-to-color{
-          width: ${props.imgWidth};
-          filter: ${props.tone === 'gray'?'gray':''} ${props.tone === 'sepia'?'sepia':''}; /* IE5+ */
-          -webkit-filter: ${props.tone === 'gray'?'grayscale(1)':''} ${props.tone === 'sepia'?'sepia(1)':''}; /* Webkit Nightlies & Chrome Canary */
+          width: ${imgWidth};
+          filter: ${tone === 'gray'?'gray':''} ${tone === 'sepia'?'sepia':''}; /* IE5+ */
+          -webkit-filter: ${tone === 'gray'?'grayscale(1)':''} ${tone === 'sepia'?'sepia(1)':''}; /* Webkit Nightlies & Chrome Canary */
           transition: all .8s ease-in-out;
           -webkit-transition: all .8s ease-in-out;
         }
-        .tone-to-color:hover{
+        .img-container:hover > .tone-to-color{
           filter: none;
-          -webkit-filter: ${props.tone === 'gray'?'grayscale(0)':''} ${props.tone === 'sepia'?'sepia(0)':''};
+          width: ${imgWidth+30};
+          -webkit-filter: ${tone === 'gray'?'grayscale(0)':''} ${tone === 'sepia'?'sepia(0)':''};
           transform: scale(1.01);
           -webkit-transform: scale(1.01);
         }
@@ -38,8 +40,13 @@ function ToneImageToColor(props) {
           font-size: 20px;
           font-weight: bold;
           text-align: center;
+          bottom: -5px;
+          position: relative;
           transition: all .8s ease-in-out;
           -webkit-transition: all 1s ease-in-out;
+        }
+        .img-container:hover > .img-text{
+          bottom: 6px;
         }
         @media only screen and (max-width : 768px) {
           .img-text{
@@ -47,6 +54,9 @@ function ToneImageToColor(props) {
           }
           .img-container{
             grid-row-gap: 2px;
+          }
+          .img-container:hover > .img-text{
+            bottom: 2px;
           }
         }
       `}</style>

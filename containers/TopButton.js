@@ -10,11 +10,11 @@ class TopButton extends Component {
 
   componentDidMount() {
     if(!window) return
-
     window.addEventListener('scroll', this.showToTopBtn);
   }
 
   componentWillUnmount(){
+    if(!window) return
     window.removeEventListener('scroll', this.showToTopBtn);
   }
 

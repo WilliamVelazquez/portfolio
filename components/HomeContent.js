@@ -26,15 +26,15 @@ function HomeContent(props) {
 		<div>
       <Hero />
       <UserImageCard>
-        <p>I am a computer systems engineer lover of the tech world. I develop software to build the future. 💻</p>
-        <p>Mentor, teacher, student and good friend! 😉</p>
+        <p>I am a computer systems engineer lover of the tech world. I develop software to build the future.</p>
+        <p>Software developer, geek, mentor and good friend!</p>
       </UserImageCard>
 
       <SimplePanel backgroundColor="#111317" color="#fff">
         <h2>Technologies</h2>
         <Technologies 
           technologies={technologies}
-          width="50%"
+          width="25%"
         />
       </SimplePanel>
       
