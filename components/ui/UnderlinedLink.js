@@ -1,19 +1,28 @@
 import React from 'react';
 
 function SimpleCard(props) {
-	const { href, text, color, hoverColor, lineColor } = props;
+	const { href, target, text, children, flow, justify, color, hoverColor, lineColor } = props;
   return(
     <div className="link-container">
-      <a className="animated-link" href={href}>{text}</a>
+			<a
+				href={href}
+				target={target||"_self"}
+				rel="noopener noreferrer"   
+				className="animated-link" 
+			>
+				{text}
+				{children}
+			</a>
 			<style jsx>{`
 				.link-container{
 					display: grid;
 					align-items: center;
-					justify-content: center;
+					justify-content: ${justify||"center"};
 				}
         a{
-					color: ${color};
 					display:grid;
+					grid-gap: 5px;
+					color: ${color};
 					cursor: pointer;
 					font-weight: bold;
 					text-align: center;
@@ -26,6 +35,7 @@ function SimpleCard(props) {
 					-o-transition: all 0.3s;
 					-moz-transition: all 0.3s;
 					-webkit-transition: all 0.3s;
+					grid-auto-flow: ${flow||"column"};
           }
 				a:hover{
 					color: ${hoverColor};
