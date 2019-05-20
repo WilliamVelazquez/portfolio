@@ -14,6 +14,7 @@ function SectionList(props) {
 			/>
       <List 
 				data={data}
+				dateColor={color}
 				titleColor={color}
 				descriptionColor={color}
 			/>

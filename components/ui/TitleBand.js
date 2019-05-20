@@ -3,12 +3,12 @@ import React from 'react';
 function TitleBand(props) {
   const { rounded, title, backgroundColor, color, position } = props;
 	return(
-		<div className={`container${rounded?" rounded-band":""}`}>
+		<div className={`band-container${rounded?" rounded-band":""}`}>
       
       <h2>{title}</h2>
 
       <style jsx>{`
-        .container{
+        .band-container{
           width:100%;
           margin:20px 0px;
           background: ${backgroundColor||"#111317"};

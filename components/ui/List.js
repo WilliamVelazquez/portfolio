@@ -1,14 +1,14 @@
 import React from 'react';
 
 function List(props) {
-	const { data, titleColor, titlePosition, descriptionColor, descriptionPosition } = props;
+	const { data, titleColor, titlePosition, dateColor, descriptionColor, descriptionPosition } = props;
 	return(
 		<>
       {
         data.map(item => {
           return(
-            <div key={item.id} className="container">
-              <p className="title">
+            <div key={item.id} className="list-container">
+              <p className="list-title">
                 {`• ${item.title}`}
                 {
                   item.date &&
@@ -19,7 +19,7 @@ function List(props) {
               </p>
               {
                 item.description &&
-                <p className="description">{item.description}</p>
+                <p className="list-description">{item.description}</p>
               }
             </div>
           )
@@ -27,19 +27,20 @@ function List(props) {
       }
 
       <style jsx>{`
-        .container{
+        .list-container{
           margin: 0px 10px;
         }
-        .date-not-breakable{
-          white-space: nowrap;
-        }
-        .title{
+        .list-title{
           font-weight: bold;
           margin: 10px 0px 0px 0px;
           color: ${titleColor || "#fff"};
           text-align: ${titlePosition || "left"};
         }
-        .description{
+        .date-not-breakable{
+          color: ${dateColor || "#000"};
+          white-space: nowrap;
+        }
+        .list-description{
           margin: 10px 10px;
           color: ${descriptionColor || "#fff"};
           text-align: ${descriptionPosition || "justify"};
