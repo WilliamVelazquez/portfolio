@@ -16,7 +16,7 @@ function ToneImageToColor(props) {
           align-items: center;
           justify-items: center;
           grid-template-columns: 1fr;
-          grid-template-rows: 1fr auto;
+          grid-template-rows: 1fr 18px;
           color: ${initialTextColor || 'transparent'};
         }
         .img-container:hover{
@@ -37,11 +37,13 @@ function ToneImageToColor(props) {
           -webkit-transform: scale(1.01);
         }
         .img-text{
+          bottom: -5px;
+          line-height: 1;
           font-size: 20px;
           font-weight: bold;
           text-align: center;
-          bottom: -5px;
           position: relative;
+          white-space: nowrap;
           transition: all .8s ease-in-out;
           -webkit-transition: all 1s ease-in-out;
         }
@@ -57,6 +59,11 @@ function ToneImageToColor(props) {
           }
           .img-container:hover > .img-text{
             bottom: 2px;
+          }
+        }
+        @media only screen and (max-width: 667px) {
+          .img-text{
+            font-size: 10px;
           }
         }
       `}</style>

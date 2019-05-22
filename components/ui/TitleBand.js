@@ -19,12 +19,13 @@ function TitleBand(props) {
         h2{
           margin:0;
           padding:15px;
+          font-size: 24px;
           color:${color||"#fff"};
           text-align: ${position || "left"};
         }
         @media only screen and (max-width : 768px) {
           h2{
-            padding:10px;
+            padding:8px;
             font-size: 18px;
           }
         }

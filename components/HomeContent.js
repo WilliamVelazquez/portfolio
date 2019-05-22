@@ -33,8 +33,11 @@ function HomeContent(props) {
       <SimplePanel backgroundColor="#111317" color="#fff">
         <h2>Technologies</h2>
         <Technologies 
-          technologies={technologies}
+          tone="sepia"
           width="25%"
+          columns="4"
+          hoverColor="#BF0404"
+          technologies={technologies}
         />
       </SimplePanel>
       

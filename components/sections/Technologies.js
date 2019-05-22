@@ -3,20 +3,20 @@ import React from 'react';
 import ToneImageToColor from '../ui/ToneImageToColor';
 
 function Technologies(props) {
-    const { technologies, width } = props;
+    const { technologies, tone, width, hoverColor, columns } = props;
 	return(
         <div className="technologies-container">
             {
                 technologies.map(
                 technology =>
                 <ToneImageToColor
-                    tone='sepia'
+                    tone={tone||'sepia'}
                     key={technology.id}
                     text={technology.alt}
                     imgWidth={width}
                     imgSrc={technology.src}
                     imgAlt={technology.alt}
-                    hoverTextColor='#BF0404'
+                    hoverTextColor={hoverColor||'#BF0404'}
                 />
                 )
             }
@@ -25,7 +25,8 @@ function Technologies(props) {
                 .technologies-container{
                     display:grid;
                     grid-row-gap: 15px;
-                    grid-template-columns: repeat(${Math.ceil(technologies.length/3)||1}, 1fr);
+                    grid-column-gap: 5px;
+                    grid-template-columns: repeat(${columns}, 1fr);/*Math.ceil(technologies.length/3)||1*/
                 }
             `}</style>
         </div>

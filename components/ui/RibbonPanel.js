@@ -65,11 +65,15 @@ function RibbonPanel(props) {
           object-fit: cover;
         }
         @media only screen and (max-width : 768px) {
+          .ribbon{
+            font-size:1.5em;
+            margin: 0 0 0 -0.825em;
+          }
           .ribbon-container{
             width: 82%;
           }
         }
-        @media (max-width: 667px) {
+        @media only screen and (max-width: 667px) {
           .ribbon{
             padding: 0.5em;
             line-height: 1.143em;

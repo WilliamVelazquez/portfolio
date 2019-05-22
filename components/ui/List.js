@@ -22,8 +22,10 @@ function List(props) {
               <style jsx>{`
                 .list-container{
                   margin: 0px 10px;
+                  white-space: pre-line;
                 }
                 .list-title{
+                  font-size: 16px;
                   font-weight: bold;
                   margin: 10px 0px 0px 0px;
                   color: ${titleColor || "#fff"};
@@ -34,9 +36,18 @@ function List(props) {
                   white-space: nowrap;
                 }
                 .list-description{
+                  font-size: 15px;
                   margin: 0px 10px 10px 10px;
                   color: ${descriptionColor || "#fff"};
                   text-align: ${descriptionPosition || "justify"};
+                }
+                @media only screen and (max-width : 768px) {
+                  .list-title{
+                    font-size: 14px;
+                  }
+                  .list-description{
+                    font-size: 13px;
+                  }
                 }
               `}</style>
             </div>
