@@ -3,7 +3,7 @@ import { logEvent } from '../utils/analytics';
 
 import ContactFormUI from '../components/ContactFormUI';
 import API from '../utils/api';
-import { scrollToTop } from '../utils/functions';
+import { scrollToClassElement } from '../utils/functions';
 
 const GA_CONTACT_CATEGORY="Contact";
 const GA_CONTACT_INVALID_DATA_ACTION="Invalid Data";
@@ -22,7 +22,20 @@ class ContactForm extends PureComponent{
     validPhone:true,
     alert:false,
     msg:"",
-    success:false
+    success:false,
+    loading: false
+  }
+
+  startLoading = () => {
+    this.setState({
+      loading: true
+    });
+  }
+
+  finishLoading = () => {
+    this.setState({
+      loading: false
+    });
   }
 
   changeName = (event) => {
@@ -88,6 +101,7 @@ class ContactForm extends PureComponent{
 
   handleSubmit = async () => {
     //console.log("State--->",this.state);
+    this.startLoading();
     let validForm=this.validateForm();
     if (validForm){
       const { name, email, phone, comments, askForCall } = this.state;
@@ -160,10 +174,12 @@ class ContactForm extends PureComponent{
       //alert("Información no válida!");
     }
     //Scrolling to the Top of the Page in order to see the message.
-    scrollToTop();
+    // scrollToTop();
   }
 
   hideAlert = () => {
+    scrollToClassElement('alertBox', 10);
+    this.finishLoading();
     setTimeout(() => {
       this.setState({
         alert:false, 

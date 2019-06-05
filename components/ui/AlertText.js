@@ -9,16 +9,16 @@ function AlertText(props) {
 
       <style jsx>{`
         .container{
-          margin: 30px;
-          border-radius: 10px;
-          background: #eaeaea;
           color: #052a4f;
           text-align: left;
+          margin: 15px 30px;
+          border-radius: 10px;
+          background: #eaeaea;
         }
         .alertBox{
-          margin-bottom: 15px;
           padding: 10px;
           font-size: 18px;
+          /*margin-bottom: 15px;*/
         }
         .alertError{
           /*border: 3px solid #ce0000;*/

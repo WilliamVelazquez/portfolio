@@ -15,24 +15,24 @@ export const scrollFunction = () => {
   }
 }
 
-export const scrollToClassElementBottom = (elementClass) => {
+export const scrollToClassElementBottom = (elementClass, offset=0) => {
   if (typeof window !== 'undefined') {
     const element = document.querySelector(`.${elementClass}`)
     window.scrollTo({
       'behavior': 'smooth',
       'left': 0,
-      'top': (element.scrollHeight-NAV_HEIGHT) //Element height - nav height
+      'top': (element.scrollHeight-NAV_HEIGHT-offset) //Element height - nav height
     });
   }
 }
 
-export const scrollToClassElement = (elementClass) => {
+export const scrollToClassElement = (elementClass, offset=0) => {
   if (typeof window !== 'undefined') {
     const element = document.querySelector(`.${elementClass}`)
     window.scrollTo({
       'behavior': 'smooth',
       'left': 0,
-      'top': (element.offsetTop-OFFSET_TOP-NAV_HEIGHT) //Element height - minus offset - minus nav height
+      'top': (element.offsetTop-OFFSET_TOP-NAV_HEIGHT-offset) //Element height - minus offset - minus nav height
     });
   }
 }

@@ -4,6 +4,7 @@ import TitleBand from './ui/TitleBand';
 import AlertText from './ui/AlertText';
 import SocialMedia from './sections/SocialMedia';
 import UnderlinedLink from './ui/UnderlinedLink';
+import CubeLoader from './ui/CubeLoader';
 
 function ContactFormUI(props) {
   return(
@@ -80,31 +81,36 @@ function ContactFormUI(props) {
             </button>
           </form>
         </div>
-
       </div>
+
+      {
+        props.loading &&
+        <CubeLoader cubeColor='#111317'/>
+      }
+
       <style jsx>{`
         .contactContainer{
           width:100%;
           margin-top: -30px;
         }
         .container{
+          height: 100%;
+          padding: 10px;
+          color: #111317;
+          margin: 20px 30px;
+          text-align: center;
           border-radius: 10px;
           background: #eaeaea;
-          padding: 10px;
-          margin: 30px;
-          height: 100%;
-          text-align: center;
-          color: #111317;
         }
         .text{
           margin: 10px;
         }
         .helpText{
-          text-align: left;
           font-size: 10px;
-          font-weight: bold;
+          text-align: left;
           margin: 0px 15px;
           margin-top: -5px;
+          font-weight: bold;
         }
         .contactForm{
           display: grid;
@@ -116,8 +122,8 @@ function ContactFormUI(props) {
         }
         .contactForm input,
         .contactForm textarea{
-          padding: 10px;
           margin: 10px;
+          padding: 10px;
           border-radius: 10px;
           border: 2px solid #111317;
         }
@@ -166,16 +172,16 @@ function ContactFormUI(props) {
         }
         img{
           width: 400px;
-          justify-self: center;
           align-self: center;
+          justify-self: center;
         }
         @media only screen and (max-width : 768px) {
           .contactForm{
             grid-template-columns: 1fr;
           }
           img{
-            display: none;
             width: 100px;
+            display: none;
           }
           h2{
             font-size: 18px;
