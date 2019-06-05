@@ -1,10 +1,11 @@
-const BASE_API = 'https://hayd.us-west-1.elasticbeanstalk.com/rest/';
+const BASE_API = 'https://us-central1-william-velazquez-portfolio.cloudfunctions.net'//'https://hayd.us-west-1.elasticbeanstalk.com/rest/';
 
 class Api{
   async saveContactInfo(data){
   	try {
       const response = await fetch(
-        `${BASE_API}contact/saveNewContact`,
+        //`${BASE_API}contact/saveNewContact`,
+        `${BASE_API}/contact`,
         {
           method: 'POST',
           headers: {
@@ -25,6 +26,7 @@ class Api{
         const responseJSON = await response.json();
         console.log("responseJSON-->",responseJSON);
 
+        //statusCode 200 : 500
         if(responseJSON.cod=="C00000"){
           return { success:true, msg:"Thanks for sharing your information!\nI'll contact you soon :)"}
         }

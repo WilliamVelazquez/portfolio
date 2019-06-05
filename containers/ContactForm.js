@@ -85,11 +85,18 @@ class ContactForm extends PureComponent{
     let validForm=this.validateForm();
     if (validForm){
       const { name, email, phone, comments, askForCall } = this.state;
+      // let data={
+      //   companyName:name,
+      //   email,
+      //   phoneNumber:phone,
+      //   commentary:comments || "Sin observaciones",
+      //   callBack: askForCall
+      // };
       let data={
-        companyName:name,
+        name,
         email,
-        phoneNumber:phone,
-        commentary:comments || "Sin observaciones",
+        phone,
+        comments,
         callBack: askForCall
       };
       console.log("Contact Data-->",data);
