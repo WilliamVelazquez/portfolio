@@ -1,4 +1,5 @@
 import React from 'react';
+import { logEvent } from '../utils/analytics';
 
 import RibbonPanel from './ui/RibbonPanel';
 import SectionList from './ui/SectionList';
@@ -6,6 +7,10 @@ import TitleBand from './ui/TitleBand';
 import Technologies from './sections/Technologies';
 import UnderlinedLink from './ui/UnderlinedLink';
 import DownloadIcon from './icons/DownloadIcon';
+
+const GA_RESUME_CATEGORY="Resume";
+const GA_DOWNLOAD_RESUME_ACTION="Download Resume";
+const GA_RESUME_LABEL="Resume downloaded";
 
 function ResumeContent(props) {
 	const RESUME_URL = "https://github.com/WilliamVelazquez/Blog-Articles/raw/master/Portfolio/WilliamVelazquez_Resume.pdf";
@@ -105,6 +110,7 @@ function ResumeContent(props) {
 					justify="flex-end"
 					hoverColor="#BF0404"
 					lineColor="#BF0404"
+					handleClik={()=>logEvent(GA_RESUME_CATEGORY,GA_DOWNLOAD_RESUME_ACTION,GA_RESUME_LABEL)}
 				>
 					<DownloadIcon
 						size={20}

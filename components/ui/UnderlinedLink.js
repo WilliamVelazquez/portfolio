@@ -1,9 +1,9 @@
 import React from 'react';
 
 function SimpleCard(props) {
-	const { href, target, text, children, flow, justify, color, hoverColor, lineColor } = props;
+	const { handleClik, href, target, text, children, flow, justify, color, hoverColor, lineColor } = props;
   return(
-    <div className="link-container">
+    <div className="link-container" onClick={handleClik||null}>
 			<a
 				href={href}
 				target={target||"_self"}

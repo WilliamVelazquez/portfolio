@@ -9,10 +9,10 @@ import SocialMedia from './sections/SocialMedia';
 
 function ErrorContent(props) {
   const { msg, error } = props
-  const GA_CATEGORY="NotFound";
-  const GA_ACTION="Visit Contact Page";
-  const GA_IMAGE_ACTION="Visit Home Page";
-  const GA_LABEL=`Message->${msg}${error?" || Error->"+error:""}`
+  const GA_NOTFOUND_CATEGORY="NotFound";
+  const GA_NOTFOUND_ACTION="Visit Contact Page";
+  const GA_NOTFOUND_IMAGE_ACTION="Visit Home Page";
+  const GA_NOTFOUND_LABEL=`Message->${msg}${error?" || Error->"+error:""}`
 	return(
 		<div className="container">
       <TitleBand 
@@ -24,7 +24,7 @@ function ErrorContent(props) {
         <img 
           src="/static/Logo_512.png" 
           alt="William Velazquez Logo"
-          onClick={()=>logEvent(GA_CATEGORY,GA_IMAGE_ACTION,GA_LABEL)}
+          onClick={()=>logEvent(GA_NOTFOUND_CATEGORY,GA_NOTFOUND_IMAGE_ACTION,GA_NOTFOUND_LABEL)}
         />
       </Link> 
 
@@ -51,7 +51,7 @@ function ErrorContent(props) {
         borderColor="#070708"
         hoverColor="#111317"
         hoverBackgroundColor="#fff"
-        handleClick={()=>logEvent(GA_CATEGORY,GA_ACTION,GA_LABEL)}
+        handleClick={()=>logEvent(GA_NOTFOUND_CATEGORY,GA_NOTFOUND_ACTION,GA_NOTFOUND_LABEL)}
       />
 
       <style jsx>{`

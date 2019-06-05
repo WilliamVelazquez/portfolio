@@ -5,7 +5,7 @@ import ContactFormUI from '../components/ContactFormUI';
 import API from '../utils/api';
 import { scrollToTop } from '../utils/functions';
 
-const GA_CATEGORY="Contact";
+const GA_CONTACT_CATEGORY="Contact";
 const GA_CONTACT_INVALID_DATA_ACTION="Invalid Data";
 const GA_CONTACT_SUCCESS_ACTION="Contact Data Sent";
 const GA_CONTACT_ERROR_ACTION="Error Sending Data";
@@ -124,7 +124,7 @@ class ContactForm extends PureComponent{
           success:saveContact.success
         }, 
           ()=>{
-            logEvent(GA_CATEGORY,GA_CONTACT_SUCCESS_ACTION,`Message-->${this.state.msg}}`)
+            logEvent(GA_CONTACT_CATEGORY,GA_CONTACT_SUCCESS_ACTION,`Message-->${this.state.msg}}`)
             this.hideAlert();
           }
         );
@@ -138,7 +138,7 @@ class ContactForm extends PureComponent{
           success:saveContact.success
         }, 
           ()=>{
-            logEvent(GA_CATEGORY,GA_CONTACT_ERROR_ACTION,`Message-->${this.state.msg}}`)
+            logEvent(GA_CONTACT_CATEGORY,GA_CONTACT_ERROR_ACTION,`Message-->${this.state.msg}}`)
             this.hideAlert();
           }
         );
@@ -152,7 +152,7 @@ class ContactForm extends PureComponent{
         success:false
       }, 
         ()=>{
-          logEvent(GA_CATEGORY,GA_CONTACT_INVALID_DATA_ACTION,`Message-->${this.state.msg}}`)
+          logEvent(GA_CONTACT_CATEGORY,GA_CONTACT_INVALID_DATA_ACTION,`Message-->${this.state.msg}}`)
           this.hideAlert();
         }
       );

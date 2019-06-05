@@ -8,9 +8,9 @@ import NavMenu from '../../containers/NavMenu';
 
 function Header(props) {
   const { description, active, title,  } = props;
-  const GA_CATEGORY="Navigation";
-  const GA_ACTION="Nav Logo";
-  const GA_LABEL=`From ${active} to Home`
+  const GA_NAVIGATION_CATEGORY="Navigation";
+  const GA_NAVIGATION_ACTION="Nav Logo";
+  const GA_NAVIGATION_LABEL=`From ${active} to Home`
 	return(
 		<header>
       <Head>
@@ -45,7 +45,7 @@ function Header(props) {
               className="btn" 
               src="/static/LogoWhite_55.png" 
               alt="William Velazquez"
-              onClick={()=>logEvent(GA_CATEGORY,GA_ACTION,GA_LABEL)}
+              onClick={()=>logEvent(GA_NAVIGATION_CATEGORY,GA_NAVIGATION_ACTION,GA_NAVIGATION_LABEL)}
             />
           </Link>  
           <div className="Offline"><IfOffline>Offline</IfOffline></div>
