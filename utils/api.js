@@ -26,19 +26,28 @@ class Api{
         const responseJSON = await response.json();
         console.log("responseJSON-->",responseJSON);
 
-        //statusCode 200 : 500
-        if(responseJSON.cod=="C00000"){
+        if(responseJSON.statusCode=="200"){
           return { success:true, msg:"Thanks for sharing your information!\nI'll contact you soon :)"}
         }
-        else{
-          return { success:false, msg:`Error ${responseJSON.cod}: Verify the data provided.`}
-          //return { success:false, msg:`Error ${responseJSON.cod}: ${responseJSON.msg}`}
+        else if(responseJSON.statusCode=="500"){
+          return { success:false, msg:"Error sending the information :( Please try again."}
         }
+        else{
+          return { success:false, msg:"Server under maintenance :(\nPlease try again later."}
+        }
+        //statusCode 200 : 500
+        // if(responseJSON.cod=="C00000"){
+        //   return { success:true, msg:"Thanks for sharing your information!\nI'll contact you soon :)"}
+        // }
+        // else{
+        //   return { success:false, msg:`Error ${responseJSON.cod}: Verify the data provided.`}
+        //   //return { success:false, msg:`Error ${responseJSON.cod}: ${responseJSON.msg}`}
+        // }
       }
     } catch (error) {
       console.log("Error: " + error);
       //this.setState({loading:false});
-      return { success:false, msg:"Error sending the information :(\nPlease try again"}
+      return { success:false, msg:"Service not available. Error sending the information :("}
     }
     //const query = await fetch(`${BASE_API}contact/saveNewContact?data?${data}`);
     //const data = query.json();

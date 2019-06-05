@@ -3,7 +3,7 @@ import React from 'react';
 function AlertText(props) {
   return (
     <div className={`container alertBox${props.success?" alertSuccess":" alertError" }`}>
-      <strong className="title">{ props.title }</strong>
+      <strong>{ props.title }</strong>
       <p className="text">{ props.msg }</p>
       { props.children }
 
@@ -29,9 +29,6 @@ function AlertText(props) {
           border: 3px solid #00940a;
           background: #f3fff0;
         }
-        .title{
-          text-align: center;
-        }
         .text{
           text-align: left;
           margin: 0px;
@@ -40,6 +37,9 @@ function AlertText(props) {
           .alertBox{
             padding: 5px;
             font-size: 14px;
+          }
+          .container{
+            text-align: center;
           }
         }
       `}</style>

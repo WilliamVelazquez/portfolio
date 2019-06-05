@@ -1,8 +1,14 @@
 import React, {PureComponent} from 'react';
+import { logEvent } from '../utils/analytics';
 
 import ContactFormUI from '../components/ContactFormUI';
 import API from '../utils/api';
 import { scrollToTop } from '../utils/functions';
+
+const GA_CATEGORY="Contact";
+const GA_CONTACT_INVALID_DATA_ACTION="Invalid Data";
+const GA_CONTACT_SUCCESS_ACTION="Contact Data Sent";
+const GA_CONTACT_ERROR_ACTION="Error Sending Data";
 
 class ContactForm extends PureComponent{
   state={
@@ -116,7 +122,12 @@ class ContactForm extends PureComponent{
           alert:true,
           msg:saveContact.msg,
           success:saveContact.success
-        }, this.hideAlert);
+        }, 
+          ()=>{
+            logEvent(GA_CATEGORY,GA_CONTACT_SUCCESS_ACTION,`Message-->${this.state.msg}}`)
+            this.hideAlert();
+          }
+        );
       }
       else{
         // console.log(saveContact.msg);
@@ -125,7 +136,12 @@ class ContactForm extends PureComponent{
           alert:true,
           msg:saveContact.msg,
           success:saveContact.success
-        }, this.hideAlert);
+        }, 
+          ()=>{
+            logEvent(GA_CATEGORY,GA_CONTACT_ERROR_ACTION,`Message-->${this.state.msg}}`)
+            this.hideAlert();
+          }
+        );
       }
     }
     else{
@@ -134,7 +150,12 @@ class ContactForm extends PureComponent{
         alert:true,
         msg:"Invalid information!",
         success:false
-      }, this.hideAlert);
+      }, 
+        ()=>{
+          logEvent(GA_CATEGORY,GA_CONTACT_INVALID_DATA_ACTION,`Message-->${this.state.msg}}`)
+          this.hideAlert();
+        }
+      );
       //() => alert(saveContact.msg)
       //alert("Información no válida!");
     }
