@@ -1,33 +1,33 @@
 self.__precacheManifest = [
   {
-    "url": "/_next/static\\ttL5Nnlf1mDzgRFaRcchR\\pages\\index.js"
+    "url": "/_next/static\\ngo3IOnPYD4aYtLCLJq72\\pages\\index.js"
   },
   {
-    "url": "/_next/static/chunks/commons.f64d8190d50ee55c7f44.js"
+    "url": "/_next/static/chunks/commons.632904aeec63a3626c29.js"
   },
   {
-    "url": "/_next/static/runtime/main-0324fc4b71edcd892bd5.js"
+    "url": "/_next/static/runtime/main-ce6e42d7f989ff8b57d8.js"
   },
   {
-    "url": "/_next/static\\ttL5Nnlf1mDzgRFaRcchR\\pages\\_error.js"
+    "url": "/_next/static\\ngo3IOnPYD4aYtLCLJq72\\pages\\_error.js"
   },
   {
-    "url": "/_next/static\\ttL5Nnlf1mDzgRFaRcchR\\pages\\about.js"
+    "url": "/_next/static\\ngo3IOnPYD4aYtLCLJq72\\pages\\about.js"
   },
   {
-    "url": "/_next/static\\ttL5Nnlf1mDzgRFaRcchR\\pages\\contact.js"
+    "url": "/_next/static\\ngo3IOnPYD4aYtLCLJq72\\pages\\contact.js"
   },
   {
     "url": "/_next/static/runtime/webpack-42652fa8b82c329c0559.js"
   },
   {
-    "url": "/_next/static\\ttL5Nnlf1mDzgRFaRcchR\\pages\\resume.js"
+    "url": "/_next/static\\ngo3IOnPYD4aYtLCLJq72\\pages\\resume.js"
   },
   {
-    "url": "/_next/static\\ttL5Nnlf1mDzgRFaRcchR\\pages\\work.js"
+    "url": "/_next/static\\ngo3IOnPYD4aYtLCLJq72\\pages\\work.js"
   },
   {
-    "url": "/_next/static\\ttL5Nnlf1mDzgRFaRcchR\\pages\\_app.js"
+    "url": "/_next/static\\ngo3IOnPYD4aYtLCLJq72\\pages\\_app.js"
   }
 ];
 
