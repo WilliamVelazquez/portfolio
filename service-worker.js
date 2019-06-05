@@ -1,33 +1,33 @@
 self.__precacheManifest = [
   {
-    "url": "/_next/static\\WiA9lgX1fRkfbx9LIjz0~\\pages\\index.js"
+    "url": "/_next/static\\ttL5Nnlf1mDzgRFaRcchR\\pages\\index.js"
   },
   {
-    "url": "/_next/static/chunks/commons.f4d2d4b99a5b25ade9c3.js"
+    "url": "/_next/static/chunks/commons.f64d8190d50ee55c7f44.js"
   },
   {
-    "url": "/_next/static/runtime/main-d0b277e3e69e1143bee0.js"
+    "url": "/_next/static/runtime/main-0324fc4b71edcd892bd5.js"
   },
   {
-    "url": "/_next/static\\WiA9lgX1fRkfbx9LIjz0~\\pages\\_error.js"
+    "url": "/_next/static\\ttL5Nnlf1mDzgRFaRcchR\\pages\\_error.js"
   },
   {
-    "url": "/_next/static\\WiA9lgX1fRkfbx9LIjz0~\\pages\\about.js"
+    "url": "/_next/static\\ttL5Nnlf1mDzgRFaRcchR\\pages\\about.js"
   },
   {
-    "url": "/_next/static\\WiA9lgX1fRkfbx9LIjz0~\\pages\\contact.js"
+    "url": "/_next/static\\ttL5Nnlf1mDzgRFaRcchR\\pages\\contact.js"
   },
   {
     "url": "/_next/static/runtime/webpack-42652fa8b82c329c0559.js"
   },
   {
-    "url": "/_next/static\\WiA9lgX1fRkfbx9LIjz0~\\pages\\resume.js"
+    "url": "/_next/static\\ttL5Nnlf1mDzgRFaRcchR\\pages\\resume.js"
   },
   {
-    "url": "/_next/static\\WiA9lgX1fRkfbx9LIjz0~\\pages\\work.js"
+    "url": "/_next/static\\ttL5Nnlf1mDzgRFaRcchR\\pages\\work.js"
   },
   {
-    "url": "/_next/static\\WiA9lgX1fRkfbx9LIjz0~\\pages\\_app.js"
+    "url": "/_next/static\\ttL5Nnlf1mDzgRFaRcchR\\pages\\_app.js"
   }
 ];
 
