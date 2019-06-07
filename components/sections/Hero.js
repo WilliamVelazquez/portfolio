@@ -6,21 +6,22 @@ import ChevronIcon from '../icons/ChevronIcon';
 
 function Hero(props) {
 	return(
-      <div className="hero">
-        <div className="fixed-hero-img"></div>
-        <div className="hero-text">
-          <p>Hi, I'm</p>
-          <h1>William Velazquez</h1>
-          <p>Full Stack Developer</p>
-        </div>
-        <a className="hero-caret-down" onClick={()=>scrollToClassElementBottom('hero')}>
-          <ChevronIcon 
-            direction="down" 
-            color={"#fff"} 
-            hoverColor={"#BF0404"} 
-            size={32}
-          />
-        </a>
+    <div className="hero">
+      <div className="fixed-hero-img"></div>
+      <div className="hero-text">
+        <p>Hi, I'm</p>
+        <h1>William Velazquez</h1>
+        <p>Full Stack Developer</p>
+      </div>
+      <a className="hero-caret-down" onClick={()=>scrollToClassElementBottom('hero')}>
+        <ChevronIcon 
+          direction="down" 
+          color={"#fff"} 
+          hoverColor={"#BF0404"} 
+          size={32}
+        />
+      </a>
+      
       <style jsx>{`
         .hero{
           height: 100vh;
