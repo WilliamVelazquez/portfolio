@@ -2,7 +2,7 @@ import React from 'react';
 import SkewedSection from './SkewedSection';
 
 function SkewedList(props) {
-	const {data, primaryColor, secondaryColor} = props;
+	const {data, titleColor, contentColor, primaryColor, secondaryColor} = props;
   return (
     <section className="se-container">
       {
@@ -12,10 +12,14 @@ function SkewedList(props) {
 							key={item.id}
 							title={item.title} 
 							text={item.text}
-							odd={item.id%2?true:false}
+              odd={item.id%2?true:false}
+              titleColor={titleColor||null}
+              contentColor={contentColor||null}
 							primaryColor={primaryColor}
 							secondaryColor={secondaryColor}
-						/>
+						>
+              {item.content}
+            </SkewedSection>
           )
         })
       }

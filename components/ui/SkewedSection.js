@@ -1,8 +1,10 @@
 import React from 'react';
+
 import SkewedTitle from './SkewedTitle';
+import SkewedText from './SkewedText';
 
 function SkewedSection(props) {
-	const {title, text, children, primaryColor, secondaryColor, odd} = props;
+	const {title, text, children, titleColor, contentColor, primaryColor, secondaryColor, odd} = props;
   return(
     <div className="se-slope">
 			<article className="se-content">
@@ -10,11 +12,14 @@ function SkewedSection(props) {
 					title && 
 					<SkewedTitle 
 						text={title} 
-						textColor={odd?primaryColor:secondaryColor}
-						backgroundColor={odd?secondaryColor:primaryColor} 
+						textColor={titleColor||(odd?primaryColor:secondaryColor)}
+						backgroundColor={(odd?secondaryColor:primaryColor)} 
 					/>
 				}
-				{text && <p>{text}</p>}
+				{
+					text && 
+					<SkewedText text={text}/>
+				}
 				{children}
 			</article>
 
@@ -37,30 +42,15 @@ function SkewedSection(props) {
 				.se-content{
 					margin: 0 auto;
 					text-align: center;
-				}
-
-				.se-content p{
-					width: 75%;
-					margin: 0 auto;
-					font-size: 18px;
-					max-width: 500px;
-					line-height: 24px;
-					padding-top: 10px;
-					font-style: italic;
-				}
-				.se-content p:first-letter{
-					font-size: 40px;
-					/*font-family: 'Adobe Garamond Pro', Georgia, serif;*/
-				}
-
+				}	
 				.se-slope:nth-child(odd) .se-content{
 					transform: rotate(-5deg);
 					padding: 130px 100px 250px 100px;
-					color: ${secondaryColor||'#e90089'};
+					color: ${contentColor||secondaryColor||'#e90089'};
 				}
 				.se-slope:nth-child(even) .se-content{
 					transform: rotate(5deg);
-					color: ${primaryColor||'#000'};
+					color: ${contentColor||primaryColor||'#000'};
 					padding: 150px 100px 250px 100px;
 				}
       `}</style>
