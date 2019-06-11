@@ -1,5 +1,4 @@
 import React from 'react';
-import SkewedTitle from './SkewedTitle';
 
 function SkewedText(props) {
 	const {text, children, textColor} = props;
@@ -10,17 +9,17 @@ function SkewedText(props) {
 
 			<style jsx>{`
 				.skewed-text{
-					width: 75%;
+					/*width: 75%;*/
 					margin: 0 auto;
 					font-size: 18px;
-					max-width: 500px;
+					max-width: 800px;
 					line-height: 24px;
 					padding-top: 10px;
 					font-style: italic;
 					${textColor && `color: ${textColor}`}
 				}
 				.skewed-text:first-letter{
-					font-size: 40px;
+					font-size: 30px;
 					/*font-family: 'Adobe Garamond Pro', Georgia, serif;*/
 				}
       `}</style>

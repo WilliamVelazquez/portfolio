@@ -4,9 +4,9 @@ import SkewedTitle from './SkewedTitle';
 import SkewedText from './SkewedText';
 
 function SkewedSection(props) {
-	const {title, text, children, titleColor, contentColor, primaryColor, secondaryColor, odd} = props;
+	const {id, title, text, children, titleColor, contentColor, primaryColor, secondaryColor, odd} = props;
   return(
-    <div className="se-slope">
+    <div id={id||null} className="se-slope">
 			<article className="se-content">
 				{
 					title && 
@@ -51,8 +51,26 @@ function SkewedSection(props) {
 				.se-slope:nth-child(even) .se-content{
 					transform: rotate(5deg);
 					color: ${contentColor||primaryColor||'#000'};
-					padding: 150px 100px 250px 100px;
+					padding: 130px 100px 250px 100px;
 				}
+				.se-slope:nth-last-child(odd) .se-content,
+				.se-slope:nth-last-child(even) .se-content{
+					padding: 130px 100px 200px 100px;
+				}
+				.se-slope:first-child .se-content{
+					padding: 60px 100px 250px 100px;
+				}
+				@media only screen and (max-width : 768px) {
+					.se-slope:nth-child(odd) .se-content{
+						padding: 50px 80px 110px 80px;
+					}
+					.se-slope:nth-child(even) .se-content{
+						padding: 50px 80px 220px 80px;
+					}
+					.se-slope:first-child .se-content{
+						padding-top: 20px;
+					}
+        }
       `}</style>
     </div>
   );

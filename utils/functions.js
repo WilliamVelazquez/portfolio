@@ -36,3 +36,14 @@ export const scrollToClassElement = (elementClass, offset=0) => {
     });
   }
 }
+
+export const scrollToId = (elementId, offset=0) => {
+  if (typeof window !== 'undefined') {
+    const element = document.querySelector(`#${elementId}`)
+    window.scrollTo({
+      'behavior': 'smooth',
+      'left': 0,
+      'top': (element.offsetTop-document.body.scrollTop-OFFSET_TOP-NAV_HEIGHT-offset) //Element height - minus offset - minus nav height
+    });
+  }
+}

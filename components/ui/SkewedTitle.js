@@ -3,7 +3,7 @@ import React from 'react';
 function SkewedTitle(props) {
 	const {text, textColor, backgroundColor} = props;
   return(
-    <h3 className="skewed-title">
+    <h2 className="skewed-title">
 			{text||'-'}
 
 			<style jsx>{`
@@ -44,8 +44,31 @@ function SkewedTitle(props) {
 					border-bottom: 60px solid transparent;
 					border-left: 60px solid ${backgroundColor||'#e90089'};
 				}
+				@media only screen and (max-width : 768px) {
+					.skewed-title{
+						height: 60px;
+						font-size: 38px;
+						line-height: 60px;
+					}
+					.skewed-title:before,
+					.skewed-title:after{
+						border-bottom: 40px solid transparent;
+					}
+        }
+        @media only screen and (max-width: 667px) {
+					.skewed-title{
+						height: 32px;
+						font-size: 28px;
+						line-height: 32px;
+					}
+					.skewed-title:before,
+					.skewed-title:after{
+						border-top: 25px solid transparent;
+						border-bottom: 25px solid transparent;
+					}
+        }
       `}</style>
-    </h3>
+    </h2>
   );
 }
 
