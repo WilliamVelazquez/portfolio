@@ -19,7 +19,7 @@ function Header(props) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta 
           name="description" 
-          content={description || "Portfolio website of William Velazquez as a Full Stack Developer with experience working on modern technologies like ReactJs, NextJS, React Native, PWA and more"}
+          content={description || "Portfolio website of William Velazquez as a Full Stack Developer with experience working on modern technologies like ReactJs, NextJS, React Native, PWA and more."}
         />
         {
           (active=="Home" || active=="About" || active=="Resume" || active=="Work" || active=="Contact")?

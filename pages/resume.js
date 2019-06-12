@@ -9,7 +9,7 @@ class Resume extends Component{
       <AnalyticsLayout
         active="Resume" 
         title="William's Resume | William Velazquez" 
-        description="Find out the experience, education, skills, tools and more details of William Velazquez" 
+        description="Find out the experience, education, skills, tools and more details of William Velazquez." 
       >
         <ResumeContent />
       </AnalyticsLayout>

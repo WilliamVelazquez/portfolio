@@ -10,7 +10,7 @@ class Contact extends Component{
       <AnalyticsLayout
         active="Contact" 
         title="Let's talk | William Velazquez" 
-        description="Get in touch with William Velazquez who is a Full Stack Developer with experience working on modern technologies like ReactJs, NextJS, React Native, PWA and more" 
+        description="Get in touch with William Velazquez and make something great taking his experience working on modern technologies like ReactJs, NextJS, React Native, PWA and more." 
       >
         <ContactForm />
       </AnalyticsLayout>

@@ -1,14 +1,15 @@
 import React from 'react';
 
-function SimpleCard(props) {
-	const { handleClik, href, target, text, children, flow, justify, color, hoverColor, lineColor } = props;
+function UnderlinedLink(props) {
+	const { handleClik, href, title, target, text, children, fontSize,flow, justify, color, hoverColor, lineColor } = props;
   return(
     <div className="link-container" onClick={handleClik||null}>
 			<a
 				href={href}
+				title={title||text}
 				target={target||"_self"}
-				rel="noopener noreferrer"   
-				className="animated-link" 
+				rel="noopener noreferrer"  
+				className="animated-link"
 			>
 				{text}
 				{children}
@@ -17,13 +18,15 @@ function SimpleCard(props) {
 				.link-container{
 					display: grid;
 					align-items: center;
+					white-space: nowrap;
 					justify-content: ${justify||"center"};
 				}
         a{
 					display:grid;
 					grid-gap: 5px;
-					color: ${color};
+					color: ${color||'#111317'};
 					cursor: pointer;
+					font-size: ${fontSize||"16px"};
 					font-weight: bold;
 					text-align: center;
 					position: relative;
@@ -38,7 +41,7 @@ function SimpleCard(props) {
 					grid-auto-flow: ${flow||"column"};
           }
 				a:hover{
-					color: ${hoverColor};
+					color: ${hoverColor||'#BF0404'};
 				}
 				.animated-link:before{
 					left: 0;
@@ -47,7 +50,7 @@ function SimpleCard(props) {
 					content: "";
 					width: 100%;
 					position: absolute;
-					background-color: ${lineColor};
+					background-color: ${lineColor||'#BF0404'};
 					visibility: hidden;
 					transform: scaleX(0);
 					-o-transform: scaleX(0);
@@ -70,4 +73,4 @@ function SimpleCard(props) {
   );
 }
 
-export default SimpleCard;
+export default UnderlinedLink;

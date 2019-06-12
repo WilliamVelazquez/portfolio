@@ -1,7 +1,7 @@
 import React from 'react';
 
 function List(props) {
-	const { data, titleColor, titlePosition, dateColor, descriptionColor, descriptionPosition } = props;
+	const { data, titleWeight, titleColor, titleSize, titlePosition, dateColor, descriptionColor, descriptionSize, descriptionPosition, titleTabletSize, descriptionTabletSize, titleMobileSize, descriptionMobileSize } = props;
 	return(
 		<>
       {
@@ -25,28 +25,36 @@ function List(props) {
                   white-space: pre-line;
                 }
                 .list-title{
-                  font-size: 16px;
-                  font-weight: bold;
+                  font-weight: ${titleWeight||'bold'};
                   margin: 10px 0px 0px 0px;
-                  color: ${titleColor || "#fff"};
-                  text-align: ${titlePosition || "left"};
+                  color: ${titleColor||"#fff"};
+                  font-size: ${titleSize||"16px"};
+                  text-align: ${titlePosition||"left"};
                 }
                 .date-not-breakable{
-                  color: ${dateColor || "#000"};
                   white-space: nowrap;
+                  color: ${dateColor||"#000"};
                 }
                 .list-description{
-                  font-size: 15px;
                   margin: 0px 10px 10px 10px;
-                  color: ${descriptionColor || "#fff"};
-                  text-align: ${descriptionPosition || "justify"};
+                  color: ${descriptionColor||"#fff"};
+                  font-size: ${descriptionSize||"15px"};
+                  text-align: ${descriptionPosition||"justify"};
                 }
                 @media only screen and (max-width : 768px) {
                   .list-title{
-                    font-size: 14px;
+                    font-size: ${titleTabletSize||"14px"};
                   }
                   .list-description{
-                    font-size: 13px;
+                    font-size: ${descriptionTabletSize||"13px"};
+                  }
+                }
+                @media only screen and (max-width : 667px) {
+                  .list-title{
+                    font-size: ${titleMobileSize||"14px"};
+                  }
+                  .list-description{
+                    font-size: ${descriptionMobileSize||"13px"};
                   }
                 }
               `}</style>
