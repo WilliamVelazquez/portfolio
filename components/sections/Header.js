@@ -10,7 +10,7 @@ function Header(props) {
   const { description, active, title,  } = props;
   const GA_NAVIGATION_CATEGORY="Navigation";
   const GA_NAVIGATION_ACTION="Nav Logo";
-  const GA_NAVIGATION_LABEL=`From ${active} to Home`
+  const GA_NAVIGATION_LABEL=`Nav Logo From ${active||'-'} to Home`
 	return(
 		<header>
       <Head>

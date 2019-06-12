@@ -1,12 +1,22 @@
 import React from 'react';
+import { logEvent } from '../../utils/analytics';
 
 import TwitterIcon from '../icons/TwitterIcon';
 import FacebookIcon from '../icons/FacebookIcon';
 import LinkedInIcon from '../icons/LinkedInIcon';
-import GithubIcon from '../icons/GithubIcon';
+import GitHubIcon from '../icons/GitHubIcon';
 
 function SocialMedia(props) {
   const { title, color, hoverColor, size, withFB, titleColor } = props;
+  const GA_SOCIAL_MEDIA_CATEGORY="Social Media";
+  const GA_SOCIAL_MEDIA_TWITTER_ACTION="Visit Twitter";
+  const GA_SOCIAL_MEDIA_FACEBOOK_ACTION="Visit Facebook";
+  const GA_SOCIAL_MEDIA_LINKEDIN_ACTION="Visit LinkedIn";
+  const GA_SOCIAL_MEDIA_GITHUB_ACTION="Visit GitHub";
+  const GA_SOCIAL_MEDIA_TWITTER_LABEL="Visit Twitter from Social Media";
+  const GA_SOCIAL_MEDIA_FACEBOOK_LABEL="Visit Facebook from Social Media";
+  const GA_SOCIAL_MEDIA_LINKEDIN_LABEL="Visit LinkedIn from Social Media";
+  const GA_SOCIAL_MEDIA_GITHUB_LABEL="Visit GitHub from Social Media";
 	return(
 		<div className="socialMediaContainer">
       {
@@ -16,56 +26,68 @@ function SocialMedia(props) {
       <div className="socialMedia">
         <a
           type="button"
-          target="_blank" 
-          rel="noopener noreferrer"  
-          href="https://twitter.com/WilliamVlazquez" 
-          className="icon">
-          <TwitterIcon 
-            color={color||"#fff"} 
-            hoverColor={hoverColor ||"#052A4F"} 
-            size={size||32} 
+          target="_blank"
+          className="icon"
+          title="William's Twitter"
+          rel="noopener noreferrer"
+          href="https://twitter.com/WilliamVlazquez"
+          onClick={()=>logEvent(GA_SOCIAL_MEDIA_CATEGORY,GA_SOCIAL_MEDIA_TWITTER_ACTION,GA_SOCIAL_MEDIA_TWITTER_LABEL)}
+        >
+          <TwitterIcon
+            size={size||32}
+            color={color||"#fff"}
+            hoverColor={hoverColor ||"#052A4F"}
           />
         </a>
 
         {
           withFB &&
-          <a 
+          <a
             type="button"
-            target="_blank" 
-            rel="noopener noreferrer"  
-            href="https://www.facebook.com/WilliamVelazquezA" 
-            className="icon">
-            <FacebookIcon 
-              color={color||"#fff"} 
-              hoverColor={hoverColor ||"#052A4F"} 
-              size={size||32} 
+            target="_blank"
+            className="icon"
+            title="William's Facebook"
+            rel="noopener noreferrer"
+            href="https://www.facebook.com/WilliamVelazquezA"
+            onClick={()=>logEvent(GA_SOCIAL_MEDIA_CATEGORY,GA_SOCIAL_MEDIA_FACEBOOK_ACTION,GA_SOCIAL_MEDIA_FACEBOOK_LABEL)}
+          >
+            <FacebookIcon
+              size={size||32}
+              color={color||"#fff"}
+              hoverColor={hoverColor ||"#052A4F"}
             />
           </a>
         }
 
-        <a 
+        <a
           type="button"
-          target="_blank" 
-          rel="noopener noreferrer"  
-          href="https://www.linkedin.com/in/williamvelazquez/" 
-          className="icon">
-          <LinkedInIcon 
-            color={color||"#fff"} 
-            hoverColor={hoverColor ||"#052A4F"} 
-            size={size||32} 
+          target="_blank"
+          className="icon"
+          title="William's LinkedIn"
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/williamvelazquez/"
+          onClick={()=>logEvent(GA_SOCIAL_MEDIA_CATEGORY,GA_SOCIAL_MEDIA_LINKEDIN_ACTION,GA_SOCIAL_MEDIA_LINKEDIN_LABEL)}
+        >
+          <LinkedInIcon
+            size={size||32}
+            color={color||"#fff"}
+            hoverColor={hoverColor ||"#052A4F"}
           />
         </a>
 
-        <a 
+        <a
           type="button"
-          target="_blank" 
-          rel="noopener noreferrer"  
-          href="https://github.com/WilliamVelazquez" 
-          className="icon">
-          <GithubIcon 
-            color={color||"#fff"} 
-            hoverColor={hoverColor ||"#052A4F"} 
-            size={size||32} 
+          target="_blank"
+          className="icon"
+          title="William's GitHub"
+          rel="noopener noreferrer"
+          href="https://github.com/WilliamVelazquez"
+          onClick={()=>logEvent(GA_SOCIAL_MEDIA_CATEGORY,GA_SOCIAL_MEDIA_GITHUB_ACTION,GA_SOCIAL_MEDIA_GITHUB_LABEL)}
+        >
+          <GitHubIcon
+            size={size||32}
+            color={color||"#fff"}
+            hoverColor={hoverColor ||"#052A4F"}
           />
         </a>
       </div>

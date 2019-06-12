@@ -1,16 +1,20 @@
 import React from 'react';
 import Link from 'next/link';
+import { logEvent } from '../../../utils/analytics';
 
 import RoundedImage from '../../ui/RoundedImage';
 
 function AboutIntro(props) {
+  const GA_ABOUT_INTRO_CATEGORY="About";
+  const GA_ABOUT_INTRO_CONTACT_ACTION="About - Drop a line!";
+  const GA_ABOUT_INTRO_CONTACT_LABEL='About to Contact';
   return(
     <React.Fragment>
 			<h1 className="about-intro-title">Want to know about William Velazquez?</h1>
       <div className="intro-container">
         <div className="intro-text-container">
           <p className="intro-text">In the following sections you can find about my hobbies, the things that I like to do on my free time, some others that I used to do and things that I'm planing to do!</p>
-          <p className="intro-text">If you want to know more about me, you can always <Link href="/contact"><a title="Contact William Velazquez" className="contact-text not-breakable">drop me a line!</a></Link></p>
+          <p className="intro-text">If you want to know more about me, you can always <Link href="/contact"><a title="Contact William Velazquez" className="contact-text not-breakable" onClick={()=>logEvent(GA_ABOUT_INTRO_CATEGORY,GA_ABOUT_INTRO_CONTACT_ACTION,GA_ABOUT_INTRO_CONTACT_LABEL)}>drop me a line!</a></Link></p>
         </div>
         <RoundedImage
           src={"/static/William.jpg"}

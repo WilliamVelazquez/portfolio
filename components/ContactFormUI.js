@@ -1,4 +1,5 @@
 import React from 'react';
+import { logEvent } from '../utils/analytics';
 
 import TitleBand from './ui/TitleBand';
 import AlertText from './ui/AlertText';
@@ -7,16 +8,22 @@ import UnderlinedLink from './ui/UnderlinedLink';
 import CubeLoader from './ui/CubeLoader';
 
 function ContactFormUI(props) {
+  const GA_CONTACT_FORM_CATEGORY="Contact Form";
+	const GA_CONTACT_FORM_MAIL_ACTION="Contact Form - Mail to Info";
+  const GA_CONTACT_FORM_MAIL_LABEL="Contact Form Mail to Info";
+  
   return(
     <div className="contactContainer">
       <TitleBand title="Let's make something great together!" position="center"/>
       <SocialMedia color="#fff" hoverColor="#111317" size={32} titleColor="#fff"/>
       <UnderlinedLink 
-        href="mailto:info@williamvelazquez.com"
-        text="info@williamvelazquez.com"
         color="#fff"
-        hoverColor="#111317"
         lineColor="#111317"
+        hoverColor="#111317"
+        text="info@williamvelazquez.com"
+        href="mailto:info@williamvelazquez.com"
+        title="Send an email to William Velazquez"
+        handleClik={()=>logEvent(GA_CONTACT_FORM_CATEGORY,GA_CONTACT_FORM_MAIL_ACTION,GA_CONTACT_FORM_MAIL_LABEL)}
       />
       {
         props.alert &&

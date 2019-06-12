@@ -13,15 +13,16 @@ class AnalyticsLayout extends Component {
     logPageView();
   }
   render () {
+    const {active, title, description, children} = this.props;
     return (
       <div>
         <Header 
-          active={this.props.active} 
-          title={this.props.title}
-          description={this.props.description}
+          active={active} 
+          title={title}
+          description={description}
         />
-        {this.props.children}
-        <Footer />
+        {children}
+        <Footer active={active} />
       </div>
     )
   }

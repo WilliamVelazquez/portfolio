@@ -8,11 +8,11 @@ import Technologies from './sections/Technologies';
 import UnderlinedLink from './ui/UnderlinedLink';
 import DownloadIcon from './icons/DownloadIcon';
 
-const GA_RESUME_CATEGORY="Resume";
-const GA_DOWNLOAD_RESUME_ACTION="Download Resume";
-const GA_RESUME_LABEL="Resume downloaded";
-
 function ResumeContent(props) {
+	const GA_RESUME_CATEGORY="Resume";
+	const GA_RESUME_DOWNLOAD_ACTION="Download Resume";
+	const GA_RESUME_LABEL="Resume downloaded";
+
 	const RESUME_URL = "https://github.com/WilliamVelazquez/Blog-Articles/raw/master/Portfolio/WilliamVelazquez_Resume.pdf";
 
 	const OBJECTIVE = "Develop myself professionally as part of a leading company in which I can contribute with my skills and knowledge in the systems area, always seeking to progress and improve the performance of my activities to achieve positions of greater responsibility and challenge.\nOffer solutions according to the expectations of the companies, creating opportunities for personal and professional development.";
@@ -110,7 +110,7 @@ function ResumeContent(props) {
 					justify="flex-end"
 					hoverColor="#BF0404"
 					lineColor="#BF0404"
-					handleClik={()=>logEvent(GA_RESUME_CATEGORY,GA_DOWNLOAD_RESUME_ACTION,GA_RESUME_LABEL)}
+					handleClik={()=>logEvent(GA_RESUME_CATEGORY,GA_RESUME_DOWNLOAD_ACTION,GA_RESUME_LABEL)}
 				>
 					<DownloadIcon
 						size={20}

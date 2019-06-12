@@ -6,11 +6,12 @@ import ContactData from './ContactData';
 import Copyright from './Copyright';
 
 function Footer(props) {
+  const {active} = props;
 	return(
 		<footer>
       <TopButton />
       <div className="footerContent">
-        <ContactData />
+        <ContactData active={active} />
         <SocialMedia color="#fff" hoverColor="#BF0404" size={32} titleColor="#fff" title="Follow me!"/>
       </div>
       <Copyright />

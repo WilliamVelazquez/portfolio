@@ -1,8 +1,12 @@
 import React from 'react';
+import { logEvent } from '../../../utils/analytics';
 
 import UnderlinedLink from '../../ui/UnderlinedLink';
 
 function AboutCourses(props) {
+  const GA_ABOUT_COURSES_CATEGORY="About";
+  const GA_ABOUT_COURSES_PLATZI_PROFILE_ACTION="About - Visit Platzi Profile";
+  const GA_ABOUT_COURSES_PLATZI_PROFILE_LABEL='About to Platzi Profile';
   const WILLIAM_PLATZI_PROFILE='https://platzi.com/@WilliamVelazquez/';
   return(
     <React.Fragment>
@@ -10,16 +14,17 @@ function AboutCourses(props) {
       <p className="section-text">Nowadays there is much to learn, that is why Platzi is one of my supporters in technical matters, as I can confidently consult issues related to development, Internet of Things(IoT), design and product.</p>
       <p className="section-text">I'm a Platzi Expert Student.💚 You can see the certificates of all the courses I have taken on Platzi to improve my skills!</p>
       <UnderlinedLink 
-        href={WILLIAM_PLATZI_PROFILE}
-        target="_blank"
-        text="William's Platzi Profile"
         color="#fff"
-        justify="center"
         fontSize="22px"
-        hoverColor="#111317"//"#BF0404"
+        target="_blank"
+        justify="center"
         lineColor="#111317"//"#BF0404"
+        hoverColor="#111317"//"#BF0404"
+        href={WILLIAM_PLATZI_PROFILE}
+        text="William's Platzi Profile"
+        title="Visit William's Profile on Platzi"
+        handleClik={()=>logEvent(GA_ABOUT_COURSES_CATEGORY,GA_ABOUT_COURSES_PLATZI_PROFILE_ACTION,GA_ABOUT_COURSES_PLATZI_PROFILE_LABEL)}
       />
-        {/* handleClik={()=>logEvent(GA_RESUME_CATEGORY,GA_DOWNLOAD_RESUME_ACTION,GA_RESUME_LABEL)} */}
       {/* <p className="section-icon">💪</p> */}
         
 			<style jsx>{`

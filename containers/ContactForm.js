@@ -1,13 +1,13 @@
 import React, {PureComponent} from 'react';
 import { logEvent } from '../utils/analytics';
-
-import ContactFormUI from '../components/ContactFormUI';
-import API from '../utils/api';
 import { scrollToClassElement } from '../utils/functions';
+
+import API from '../utils/api';
+import ContactFormUI from '../components/ContactFormUI';
 
 const GA_CONTACT_CATEGORY="Contact";
 const GA_CONTACT_INVALID_DATA_ACTION="Invalid Data";
-const GA_CONTACT_SUCCESS_ACTION="Contact Data Sent";
+const GA_CONTACT_SUCCESS_ACTION="Data Sent Successfully";
 const GA_CONTACT_ERROR_ACTION="Error Sending Data";
 
 class ContactForm extends PureComponent{

@@ -1,22 +1,40 @@
 import React from 'react';
 import Link from 'next/link';
+import { logEvent } from '../../utils/analytics';
 
-import PhoneIcon from '../icons/PhoneIcon';
 import SmMailIcon from '../icons/SmMailIcon';
 
 function ContactData(props) {
+  const {active} = props;
+  const GA_CONTACTDATA_CATEGORY="Contact Data";
+  const GA_CONTACTDATA_MAIL_ACTION="Contact Data - Mail to Info";
+  const GA_CONTACTDATA_CONTACT_ACTION="Contact Data - Let's talk!";
+  const GA_CONTACTDATA_MAIL_LABEL=`Contact Data Mail From ${active||'-'}`
+  const GA_CONTACTDATA_CONTACT_LABEL=`Contact Data From ${active||'-'} to Contact`
 	return(
 		<div className="contactData">
       <span className="footerTitle">Contact</span>
 
       <span className="iconLine">
         <SmMailIcon color="white" size={32} />
-        <a href="mailto:info@williamvelazquez.com">info@williamvelazquez.com</a>
+        <a 
+          title="Send an email to William Velazquez"
+          href="mailto:info@williamvelazquez.com"
+          onClick={()=>logEvent(GA_CONTACTDATA_CATEGORY,GA_CONTACTDATA_MAIL_ACTION,GA_CONTACTDATA_MAIL_LABEL)}
+        >
+          info@williamvelazquez.com
+        </a>
       </span>
       <span>
         {"Want to work together or any advice? "}
         <Link href="/contact">
-          <a className="not-breakable">Let's talk!</a>
+          <a 
+            title="Get in touch with William Velazquez"
+            className="not-breakable"
+            onClick={()=>logEvent(GA_CONTACTDATA_CATEGORY,GA_CONTACTDATA_CONTACT_ACTION,GA_CONTACTDATA_CONTACT_LABEL)}
+          >
+            Let's talk!
+          </a>
         </Link>
       </span>
 
