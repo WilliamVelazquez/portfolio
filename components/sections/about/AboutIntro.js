@@ -1,13 +1,17 @@
 import React from 'react';
+import Link from 'next/link';
 
 import RoundedImage from '../../ui/RoundedImage';
 
 function AboutIntro(props) {
-  return (
+  return(
     <React.Fragment>
 			<h1 className="about-intro-title">Want to know about William Velazquez?</h1>
       <div className="intro-container">
-        <p className="intro-text">In the following section you can find the things that I like to do (hobbies), some others that I used to do and things that I'm planing to do!</p>
+        <div className="intro-text-container">
+          <p className="intro-text">In the following sections you can find about my hobbies, the things that I like to do on my free time, some others that I used to do and things that I'm planing to do!</p>
+          <p className="intro-text">If you want to know more about me, you can always <Link href="/contact"><a title="Contact William Velazquez" className="contact-text not-breakable">drop me a line!</a></Link></p>
+        </div>
         <RoundedImage
           src={"/static/William.jpg"}
           alt={"William Velazquez Photo"}
@@ -24,8 +28,9 @@ function AboutIntro(props) {
         }
         .intro-container{
           display: grid;
-          grid-gap: 80px;
-          margin: 0px 10px;
+          grid-column-gap: 80px;
+          grid-row-gap: 5px;
+          padding: 0px 30px;
           align-items: center;
           justify-content: center;
           grid-template-columns: 1fr min-content;
@@ -38,13 +43,30 @@ function AboutIntro(props) {
         }
         .intro-text:first-letter{
 					font-size: 30px;
-				}
+        }
+        .contact-text{
+          color: #fff;
+          cursor: pointer;
+          font-weight: bold;
+          text-decoration:none;
+          transition: all 0.4s;
+					-o-transition: all 0.4s;
+					-moz-transition: all 0.4s;
+					-webkit-transition: all 0.4s;
+        }
+        .contact-text:hover{
+          color: #111317;
+        }
+        .not-breakable{
+          white-space: nowrap;
+        }
         @media only screen and (max-width : 768px) {
           .about-intro-title{
             font-size: 40px;
           }
           .intro-container{
-            grid-gap: 20px;
+            padding: 0px 10px;
+            grid-column-gap: 20px;
           }
           .intro-text{
             padding: 0px 10px;

@@ -1,9 +1,10 @@
 import React from 'react';
 
-function AboutSports(props) {
-  return (
+function AboutPlans(props) {
+  return(
     <React.Fragment>
-      <p className="section-text">I used to practice fencing and swimming 🏊‍.</p>
+      <p className="section-text">I'm currently planning to create a podcast 🎤 about software development 👨‍💻 where I can share experiences and some tips for those who enter this great world of programming and technology.</p>
+      <p className="section-text">I am also working to create a Blog 📝 where I can have a knowledge base 📚 where everyone can look for common solutions in software development, especially with Progressive Web Apps and modern technologies.</p>
 			<style jsx>{`
         .section-text{
           font-size: 20px;
@@ -28,4 +29,4 @@ function AboutSports(props) {
   );
 }
 
-export default AboutSports;
+export default AboutPlans;

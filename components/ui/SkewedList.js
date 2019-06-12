@@ -27,8 +27,8 @@ function SkewedList(props) {
               {item.content}
               <a 
                 title={index+1>=data.length?'Back to the top':`${data[index+1].title} section`}
-                className="skewed-section-caret-down" 
-                onClick={()=>scrollToId(index+1>=data.length?`skewedSection${data[0].id}`:`skewedSection${item.id+1}`,!(index%2)?30:0)}//90
+                className={`skewed-section-caret-down${index+1>=data.length?" inverse":""}`}
+                onClick={()=>scrollToId(index+1>=data.length?`skewedSection${data[0].id}`:`skewedSection${item.id+1}`,!(index%2)?30:-80)}//90
               >
                 <ChevronIcon 
                   direction={index+1>=data.length?'up':'down'} 
@@ -53,7 +53,7 @@ function SkewedList(props) {
         .skewed-section-caret-down{
           display: grid;
           /*bottom: -10px;*/
-          bottom: -50px;
+          bottom: -30px;
           margin: 0 auto;
           cursor: pointer;
           position: relative;
@@ -65,14 +65,20 @@ function SkewedList(props) {
         }
         .skewed-section-caret-down:hover{
           /*bottom: -20px;*/
-          bottom: -60px;
+          bottom: -40px;
+        }
+        .skewed-section-caret-down.inverse:hover{
+          bottom: -20px;
         }
         @media only screen and (max-width : 768px) {
           .skewed-section-caret-down{
-            bottom: -20px;
+            bottom: -10px;
           }
           .skewed-section-caret-down:hover{
-            bottom: -30px;
+            bottom: -20px;
+          }
+          .skewed-section-caret-down.inverse:hover{
+            bottom: 0px;
           }
         }
       `}</style>

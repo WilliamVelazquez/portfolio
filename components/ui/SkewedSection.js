@@ -45,20 +45,20 @@ function SkewedSection(props) {
 				}	
 				.se-slope:nth-child(odd) .se-content{
 					transform: rotate(-5deg);
-					padding: 130px 100px 250px 100px;
+					padding: 100px 100px 210px 100px;
 					color: ${contentColor||secondaryColor||'#e90089'};
 				}
 				.se-slope:nth-child(even) .se-content{
 					transform: rotate(5deg);
 					color: ${contentColor||primaryColor||'#000'};
-					padding: 130px 100px 250px 100px;
+					padding: 100px 100px 170px 100px;
 				}
-				.se-slope:nth-last-child(odd) .se-content,
-				.se-slope:nth-last-child(even) .se-content{
-					padding: 130px 100px 200px 100px;
+				.se-slope:last-child .se-content,
+				.se-slope:last-child .se-content{
+					padding: 35px 100px 180px 100px;
 				}
 				.se-slope:first-child .se-content{
-					padding: 60px 100px 250px 100px;
+					padding: 60px 100px 200px 100px;
 				}
 				@media only screen and (max-width : 768px) {
 					.se-slope:nth-child(odd) .se-content{

@@ -1,7 +1,7 @@
 import React from 'react';
 
 function AboutMusic(props) {
-  return (
+  return(
     <React.Fragment>
       <p className="section-text">I used to play the Saxophone 🎷 and the Oboe on a Symphonic Orchestra 🎶 some years ago. I had the opportunity to play as an oboe soloist in an important place in my country with the best art school.</p>
       <p className="section-text">I love playing different musical instruments like the Piano 🎹, the Transverse Flute and I'm learning to play the Guitar 🎸 and the Drums🥁.</p>
