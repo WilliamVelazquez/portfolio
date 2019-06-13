@@ -19,21 +19,25 @@ function AboutCuriosities(props) {
   return(
     <div className="curiosities-container">
       <div className="curiosities-list-container">
-        <p className="section-text">I love ...</p>
+        <p className="section-list-text">I love ...</p>
         <List 
           titleSize="20px"
           titleColor="#fff"
+          titleWeight="normal"
           titleMobileSize="18px"
+          breakableTitle={false}
           data={CURIOSITIES_LOVE_DATA}
         />
       </div>
 
       <div className="curiosities-list-container">
-        <p className="section-text">I used to ...</p>
+        <p className="section-list-text">I used to ...</p>
         <List 
           titleSize="20px"
           titleColor="#fff"
+          titleWeight="normal"
           titleMobileSize="18px"
+          breakableTitle={false}
           data={CURIOSITIES_USED_TO_DATA}
         />
       </div>
@@ -49,19 +53,20 @@ function AboutCuriosities(props) {
         .curiosities-list-container{
           padding-left: 20px;
         }
-        .section-text{
+        .section-list-text{
           font-size: 20px;
           text-align: left;
+          font-weight: bold;
           margin-left: -20px;
         }
-        .section-text:first-letter{
+        .section-list-text:first-letter{
 					font-size: 30px;
 				}
         @media only screen and (max-width : 768px) {
           .curiosities-container{
             padding: 0px 10px;
           }
-          .section-text{
+          .section-list-text{
             padding: 0px 10px;
           }
         }
@@ -71,7 +76,7 @@ function AboutCuriosities(props) {
             grid-template-columns: 1fr;
             padding-left: 20px;
           }
-          .section-text{
+          .section-list-text{
             font-size: 18px;
           }
         }

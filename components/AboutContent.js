@@ -10,9 +10,9 @@ import AboutPlans from './sections/about/AboutPlans';
 function AboutContent(props) {
   const SECTIONS_DATA = [
 		{id:1, content: <AboutIntro />},
-		{id:2, title:'Music', content:<AboutMusic />},
+		{id:2, title:'Musical Life', content:<AboutMusic />},
 		{id:3, title:'Lifelong Learner', content:<AboutCourses />},
-		{id:4, title:'Plans', content:<AboutPlans />},
+		{id:4, title:'Future Plans', content:<AboutPlans />},
 		{id:5, title:'Curiosities', content:<AboutCuriosities />},
   ];
 

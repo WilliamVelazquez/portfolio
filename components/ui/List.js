@@ -1,7 +1,7 @@
 import React from 'react';
 
 function List(props) {
-	const { data, titleWeight, titleColor, titleSize, titlePosition, dateColor, descriptionColor, descriptionSize, descriptionPosition, titleTabletSize, descriptionTabletSize, titleMobileSize, descriptionMobileSize } = props;
+	const { data, breakableTitle=true, titleWeight, titleColor, titleSize, titlePosition, dateColor, descriptionColor, descriptionSize, descriptionPosition, titleTabletSize, descriptionTabletSize, titleMobileSize, descriptionMobileSize } = props;
 	return(
 		<>
       {
@@ -9,10 +9,15 @@ function List(props) {
           return(
             <div key={item.id} className="list-container">
               <p className="list-title">
-                {`• ${item.title}`}
+                {
+                  breakableTitle?
+                  `• ${item.title}`
+                  :
+                  <span className="not-breakable">{`• ${item.title}`}</span>
+                }
                 {
                   item.date && 
-                  <span className="date-not-breakable">{` | ${item.date}`}</span>
+                  <span className="list-date not-breakable">{` | ${item.date}`}</span>
                 }
               </p>
               {
@@ -31,9 +36,11 @@ function List(props) {
                   font-size: ${titleSize||"16px"};
                   text-align: ${titlePosition||"left"};
                 }
-                .date-not-breakable{
-                  white-space: nowrap;
+                .list-date{
                   color: ${dateColor||"#000"};
+                }
+                .not-breakable{
+                  white-space: nowrap;
                 }
                 .list-description{
                   margin: 0px 10px 10px 10px;
