@@ -1,33 +1,33 @@
 self.__precacheManifest = [
   {
-    "url": "/_next/static\\ngo3IOnPYD4aYtLCLJq72\\pages\\index.js"
+    "url": "/_next/static\\V~84BW_vxRAMFdK4kTLxt\\pages\\index.js"
   },
   {
-    "url": "/_next/static/chunks/commons.632904aeec63a3626c29.js"
+    "url": "/_next/static/chunks/commons.59c08fa51ca9352095dd.js"
   },
   {
-    "url": "/_next/static/runtime/main-ce6e42d7f989ff8b57d8.js"
+    "url": "/_next/static/runtime/main-7a9adef041432fa7f409.js"
   },
   {
-    "url": "/_next/static\\ngo3IOnPYD4aYtLCLJq72\\pages\\_error.js"
+    "url": "/_next/static\\V~84BW_vxRAMFdK4kTLxt\\pages\\_error.js"
   },
   {
-    "url": "/_next/static\\ngo3IOnPYD4aYtLCLJq72\\pages\\about.js"
+    "url": "/_next/static\\V~84BW_vxRAMFdK4kTLxt\\pages\\about.js"
   },
   {
-    "url": "/_next/static\\ngo3IOnPYD4aYtLCLJq72\\pages\\contact.js"
+    "url": "/_next/static\\V~84BW_vxRAMFdK4kTLxt\\pages\\contact.js"
   },
   {
     "url": "/_next/static/runtime/webpack-42652fa8b82c329c0559.js"
   },
   {
-    "url": "/_next/static\\ngo3IOnPYD4aYtLCLJq72\\pages\\resume.js"
+    "url": "/_next/static\\V~84BW_vxRAMFdK4kTLxt\\pages\\resume.js"
   },
   {
-    "url": "/_next/static\\ngo3IOnPYD4aYtLCLJq72\\pages\\work.js"
+    "url": "/_next/static\\V~84BW_vxRAMFdK4kTLxt\\pages\\work.js"
   },
   {
-    "url": "/_next/static\\ngo3IOnPYD4aYtLCLJq72\\pages\\_app.js"
+    "url": "/_next/static\\V~84BW_vxRAMFdK4kTLxt\\pages\\_app.js"
   }
 ];
 
