@@ -1,8 +1,8 @@
 import React from 'react';
 
 import SkewedSection from './SkewedSection';
-import ChevronIcon from '../icons/ChevronIcon';
-import { scrollToId } from '../../utils/functions';
+import ChevronIcon from '../../icons/ChevronIcon';
+import { scrollToId } from '../../../utils/functions';
 
 function SkewedList(props) {
 	const {data, titleColor, contentColor, primaryColor, secondaryColor} = props;
@@ -26,7 +26,7 @@ function SkewedList(props) {
 						>
               {item.content}
               <a 
-                title={index+1>=data.length?'Back to the top':`${data[index+1].title} section`}
+                title={index+1>=data.length?'Back to the top':''}//`${data[index+1].title} section`
                 className={`skewed-section-caret-down${index+1>=data.length?" inverse":""}`}
                 onClick={()=>scrollToId(index+1>=data.length?`skewedSection${data[0].id}`:`skewedSection${item.id+1}`,!(index%2)?30:-80)}//90
               >

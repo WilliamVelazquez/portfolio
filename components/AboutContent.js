@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SkewedList from './ui/SkewedList';
+import SkewedList from './ui/skewed/SkewedList';
 import AboutIntro from './sections/about/AboutIntro';
 import AboutMusic from './sections/about/AboutMusic';
 import AboutCuriosities from './sections/about/AboutCuriosities';

@@ -108,8 +108,9 @@ function ResumeContent(props) {
 					text="Download"
 					color="#111317"
 					justify="flex-end"
-					hoverColor="#BF0404"
 					lineColor="#BF0404"
+					hoverColor="#BF0404"
+					title="Download William's Resume"
 					handleClik={()=>logEvent(GA_RESUME_CATEGORY,GA_RESUME_DOWNLOAD_ACTION,GA_RESUME_LABEL)}
 				>
 					<DownloadIcon

@@ -29,9 +29,11 @@ function Header(props) {
         <title>{title || "William Velazquez"}</title>
         <link rel="icon" href="/static/WilliamVelazquez.ico" />
         
-        <meta name="theme-color" content="#052A4F" />
+        {/* <!-- Chrome, Firefox OS and Opera --> */}
+        <meta name="theme-color" content="#111317" />
         <link rel="manifest" href="/static/manifest.webmanifest" />
 
+        {/* <!-- iOS --> */}
         <link rel='apple-touch-icon' href='/static/Logo/Logo_512.png' />
         <meta name="apple-mobile-web-app-title" content="William Velazquez" />
         <meta name="apple-mobile-web-app-capable" content="no" />
@@ -124,6 +126,7 @@ function Header(props) {
           z-index: 99;
           padding: 10px;
           position: fixed;
+          min-height: 28px;
           max-height: 28px;
           background: #111317;
           border-radius: 0px 0px 10px 10px;
@@ -152,11 +155,12 @@ function Header(props) {
           padding:0;
           color:#BF0404;
           font-size: 24px;
-          align-self: flex-end;
           font-weight: bold;
+          align-self: flex-end;
         }
         @media only screen and (max-width : 768px) {
           header{
+            min-height: 23px;
             max-height: 23px;
           }
           .left .Offline{
@@ -171,10 +175,12 @@ function Header(props) {
         }
         @media only screen and (max-width : 667px) {
           header{
+            min-height: 15px;
             max-height: 15px;
           }
           .left .Offline{
             font-size:14px;
+            align-self: baseline;
           }
           img{
             width: 30px;
