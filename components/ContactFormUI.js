@@ -8,6 +8,7 @@ import UnderlinedLink from './ui/UnderlinedLink';
 import CubeLoader from './ui/CubeLoader';
 
 function ContactFormUI(props) {
+  const {alert, msg, success, name, changeName, validName, email, changeEmail, validEmail, phone, changePhone, validPhone, comments, changeComments, askForCall, changeAskForCall, handleSubmit, loading} = props;
   const GA_CONTACT_FORM_CATEGORY="Contact Form";
 	const GA_CONTACT_FORM_MAIL_ACTION="Contact Form - Mail to Info";
   const GA_CONTACT_FORM_MAIL_LABEL="Contact Form Mail to Info";
@@ -26,8 +27,8 @@ function ContactFormUI(props) {
         handleClik={()=>logEvent(GA_CONTACT_FORM_CATEGORY,GA_CONTACT_FORM_MAIL_ACTION,GA_CONTACT_FORM_MAIL_LABEL)}
       />
       {
-        props.alert &&
-        <AlertText title={props.msg} success={props.success}/>
+        alert &&
+        <AlertText title={msg} success={success}/>
       }
 
       <div className="container">
@@ -39,50 +40,51 @@ function ContactFormUI(props) {
             <input 
               type="text"
               placeholder="*Name"
-              value={props.name}
-              onChange={props.changeName}
-              className={props.validName?"":"errorShadow"}
+              value={name}
+              onChange={changeName}
+              className={validName?"":"errorShadow"}
             />
 
             <input 
-              type="text"
+              type="email"
               placeholder="*E-mail"
-              value={props.email}
-              onChange={props.changeEmail}
-              className={props.validEmail?"":"errorShadow"}
+              value={email}
+              onChange={changeEmail}
+              className={validEmail?"":"errorShadow"}
             />
 
             <input 
-              type="text"
+              type="tel"
               placeholder="Phone"
-              value={props.phone}
-              onChange={props.changePhone}
-              className={props.validPhone?"":"errorShadow"}
+              value={phone}
+              onChange={changePhone}
+              className={validPhone?"":"errorShadow"}
             />
 
             <textarea 
               rows="4"
               type="text"
               placeholder="Comments/Suggestions"
-              value={props.comments}
-              onChange={props.changeComments}
+              value={comments}
+              onChange={changeComments}
             />
 
             <p className="helpText">*Required data</p>
 
             <div className="rowContainer">
-              <p className="text">Do you want me to call you?</p>            
+              <p className="check-text">Do you want me to call you?</p>            
               <input 
-                className="check"
                 type="checkbox"
-                value={props.askForCall}
-                onChange={props.changeAskForCall}
+                className="check-btn"
+                value={askForCall}
+                checked={askForCall}
+                onChange={changeAskForCall}
               />
             </div>
 
             <button 
               type="button"
-              onClick={props.handleSubmit}
+              onClick={handleSubmit}
             >
               Send
             </button>
@@ -91,7 +93,7 @@ function ContactFormUI(props) {
       </div>
 
       {
-        props.loading &&
+        loading &&
         <CubeLoader cubeColor='#111317'/>
       }
 
@@ -144,12 +146,18 @@ function ContactFormUI(props) {
           -webkit-box-shadow: 3px 3px 5px 6px #ccc;
           box-shadow:         3px 3px 5px 6px #ccc;*/
         }
-        .check{
-          margin: 16px 5px !important;
+        .check-text{
+          margin: 0px;
+        }
+        .check-btn{
+          align-self: center;
+          margin: 0px !important;
+          margin-top: 3px !important;
         }
         .rowContainer{
+          margin: 10px;
           display: grid;
-          grid-autoflow: column;
+          grid-column-gap: 10px;
           grid-template-columns: auto 1fr;
         }
         .visitUs{
@@ -192,6 +200,9 @@ function ContactFormUI(props) {
           }
           h2{
             font-size: 18px;
+          }
+          .check-btn{
+            margin-top: 0px !important;
           }
         }
       `}</style>

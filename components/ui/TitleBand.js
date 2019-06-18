@@ -1,7 +1,7 @@
 import React from 'react';
 
 function TitleBand(props) {
-  const { rounded, title, backgroundColor, color, position } = props;
+  const { rounded, title, containerMargin, backgroundColor, color, position } = props;
 	return(
 		<div className={`band-container${rounded?" rounded-band":""}`}>
       
@@ -10,7 +10,7 @@ function TitleBand(props) {
       <style jsx>{`
         .band-container{
           width:100%;
-          margin:20px 0px;
+          margin: ${containerMargin||"20px 0px"};
           background: ${backgroundColor||"#111317"};
         }
         .rounded-band{

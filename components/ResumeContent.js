@@ -13,19 +13,19 @@ function ResumeContent(props) {
 	const GA_RESUME_DOWNLOAD_ACTION="Download Resume";
 	const GA_RESUME_DOWNLOAD_LABEL="Resume downloaded";
 
-	const RESUME_URL = "https://github.com/WilliamVelazquez/Blog-Articles/raw/master/Portfolio/WilliamVelazquez_Resume.pdf";
+	const RESUME_GITHUB_URL = "https://github.com/WilliamVelazquez/Blog-Articles/raw/master/Portfolio/WilliamVelazquez_Resume.pdf";
 
 	const OBJECTIVE = "Develop myself professionally as part of a leading company in which I can contribute with my skills and knowledge in the systems area, always seeking to progress and improve the performance of my activities to achieve positions of greater responsibility and challenge.\nOffer solutions according to the expectations of the companies, creating opportunities for personal and professional development.";
   const EXPERIENCE_DATA = [
     {id:1, title:'Secretary of Public Education (Government)', date:'2018-Present', description:'Area Director of the General Directorate of Information Systems.\nManagement of National Projects.\nSoftware Development (Java, AngularJS and ReacJS).\nDatabase Management (MySQL and SQL Server).'},
     {id:2, title:'Crédito Real (México) & AFS Acceptance, LLC (United States)', date:'2016-2018', description:'Systems analyst.\nSoftware development.\nDatabases Management.\nKey Performance Indicators.\nDashboards, Web Services, SPA and Web Platforms.'},
-    {id:3, title:'Bank of Mexico - Management of financial system risk analysis', date:'2016', description:'Analysis, design and maintenance of software, security and databases.'},
+    {id:3, title:'Bank of Mexico - Management of financial system risk analysis', date:'2016', description:'Systems analyst.\nAnalysis, design and maintenance of software, security and databases.'},
     {id:4, title:'Quality Publicidad', date:'2012-2016', description:'Local Network Administrator, Graphic designer and Administrative functions.'},
   ];
 	
 	const EDUCATION_DATA = [
-    {id:1, title:'Platzi - Online Education', date:'2017-Present', description:'Career in Databases Management.\nCareer in Development with React (React, Redux, React Router, Next).\nCareer in Apps Development with React Native.\nCareer in Big Data and Data Science.'},
-    {id:2, title:'University', date:'2012-2016', description:'Instituto Politécnico Nacional (IPN) - National Polytechnic Institute | Escuela Superior de Cómputo (ESCOM) - Higher School of Computer Science.\nAcademic Excellence Program all the career.\nAward for the Best Project of the Academy of Software Engineering of the XX Expo ESCOM 2015.\nProgramming Languages:\nJava, SQL, HTML, JavaScript, CSS, C#, C and Python.'},
+    {id:1, title:'Platzi', date:'2017-Present', description:'Career in Databases Management.\nCareer in Development with React (React, Redux, React Router, Next).\nCareer in Apps Development with React Native.\nCareer in Big Data and Data Science.'},
+    {id:2, title:'University', date:'2012-2016', description:'Computer Systems Engineering.\nInstituto Politécnico Nacional (IPN) - National Polytechnic Institute.\nEscuela Superior de Cómputo (ESCOM) - Higher School of Computer Science.\nAcademic Excellence Program all the career.\nAward for the Best Project of the Academy of Software Engineering of the XX Expo ESCOM 2015.\nProgramming Languages:\nJava, SQL, HTML, JavaScript, CSS, C#, C and Python.'},
     {id:3, title:'High School', date:'2010-2012', description:'Centro Escolar Benemérito de las Américas - Benemerito School Center of the Americas.'},
 	];
 	
@@ -103,7 +103,7 @@ function ResumeContent(props) {
           technologies={TECHNOLOGIES}
         />
 				<UnderlinedLink 
-					href={RESUME_URL}
+					href={RESUME_GITHUB_URL}
 					target="_blank"
 					text="Download"
 					color="#111317"

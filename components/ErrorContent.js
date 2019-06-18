@@ -18,6 +18,7 @@ function ErrorContent(props) {
       <TitleBand 
         rounded={true}
         position="center"
+        containerMargin="10px 0px"
         title="The content of the page will be available soon!"
       />
       {children}
@@ -38,19 +39,20 @@ function ErrorContent(props) {
 
       <SocialMedia color="#111317" hoverColor="#BF0404" size={32} titleColor="#111317" title="Get in touch!"/>
       <UnderlinedLink 
-        href="mailto:info@williamvelazquez.com"
-        text="info@williamvelazquez.com"
         color="#111317"
-        hoverColor="#BF0404"
         lineColor="#BF0404"
+        hoverColor="#BF0404"
+        text="info@williamvelazquez.com"
+        href="mailto:info@williamvelazquez.com"
+        title="Send an email to William Velazquez"
       />
       <LinkButton
-        href="/contact"
-        text="Contact"
         color="#fff"
-        backgroundColor="#111317"
-        borderColor="#070708"
+        text="Contact"
+        href="/contact"
         hoverColor="#111317"
+        borderColor="#070708"
+        backgroundColor="#111317"
         hoverBackgroundColor="#fff"
         handleClick={()=>logEvent(GA_NOTFOUND_CATEGORY,GA_NOTFOUND_ACTION,GA_NOTFOUND_LABEL)}
       />
