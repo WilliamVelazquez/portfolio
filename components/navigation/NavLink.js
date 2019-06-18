@@ -18,6 +18,7 @@ function NavLink(props) {
           color: #fff;
           margin: 0 20px;
           font-size: 18px;
+          user-select: none;
           justify-self: center;
           text-decoration: none;
         }

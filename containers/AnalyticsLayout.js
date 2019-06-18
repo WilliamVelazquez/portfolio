@@ -15,7 +15,7 @@ class AnalyticsLayout extends Component {
   render () {
     const {active, title, description, children} = this.props;
     return (
-      <div>
+      <>
         <Header 
           active={active} 
           title={title}
@@ -23,7 +23,7 @@ class AnalyticsLayout extends Component {
         />
         {children}
         <Footer active={active} />
-      </div>
+      </>
     )
   }
 }

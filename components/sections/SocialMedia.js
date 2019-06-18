@@ -108,6 +108,7 @@ function SocialMedia(props) {
         }
         .icon{
           cursor: pointer;
+          user-select: none;
           justify-self: center;
         }
         .socialMediaTitle{

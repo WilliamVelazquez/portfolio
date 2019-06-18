@@ -165,15 +165,15 @@ function ContactFormUI(props) {
           text-align: center;
         }
         button{
-          cursor: pointer;
-          border-radius: 5px;
-          border: 3px solid #070708;
-          padding: 10px 30px;
-          margin: 10px;
-          background: #111317;
           color: #fff;
+          margin: 10px;
+          cursor: pointer;
           font-size: 18px;
           font-weight: bold;
+          border-radius: 5px;
+          padding: 10px 30px;
+          background: #111317;
+          border: 3px solid #070708;
           transition-duration: 0.4s;
           -o-transition-duration: 0.4s; /* Opera */
           -moz-transition-duration: 0.4s; /* Mozilla */

@@ -61,9 +61,15 @@ function Header(props) {
         body{
           margin: 0;
           margin-top: 100px;
-          font-family: system-ui;
-          /*background-color: #fff;*/
+          /*font-family: system-ui;
+          background-color: #fff;*/
           background-color: #8e1a1a;
+          -webkit-touch-callout: none;
+          -webkit-tap-highlight-color: transparent;
+          font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+        }
+        button{
+          user-select: none;
         }
         @media only screen and (max-width : 667px) {
           body{
