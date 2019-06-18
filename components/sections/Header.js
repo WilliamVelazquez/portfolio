@@ -35,8 +35,8 @@ function Header(props) {
 
         {/* <!-- iOS --> */}
         <link rel='apple-touch-icon' href='/static/Logo/Logo_512.png' />
-        <meta name="apple-mobile-web-app-title" content="William Velazquez" />
         <meta name="apple-mobile-web-app-capable" content="no" />
+        <meta name="apple-mobile-web-app-title" content="William Velazquez" />
         <meta name="apple-mobile-web-apps-status-bar-style" content="black-translucent" />
       </Head>
       

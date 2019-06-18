@@ -8,7 +8,7 @@ import UnderlinedLink from './ui/UnderlinedLink';
 import SocialMedia from './sections/SocialMedia';
 
 function ErrorContent(props) {
-  const { msg, error } = props
+  const { msg, error, children } = props
   const GA_NOTFOUND_CATEGORY="NotFound";
   const GA_NOTFOUND_ACTION="Visit Contact Page";
   const GA_NOTFOUND_IMAGE_ACTION="Visit Home Page";
@@ -20,6 +20,7 @@ function ErrorContent(props) {
         position="center"
         title="The content of the page will be available soon!"
       />
+      {children}
       <Link href="/">
         <img 
           src="/static/Logo_512.png" 

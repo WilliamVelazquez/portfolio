@@ -11,7 +11,7 @@ import DownloadIcon from './icons/DownloadIcon';
 function ResumeContent(props) {
 	const GA_RESUME_CATEGORY="Resume";
 	const GA_RESUME_DOWNLOAD_ACTION="Download Resume";
-	const GA_RESUME_LABEL="Resume downloaded";
+	const GA_RESUME_DOWNLOAD_LABEL="Resume downloaded";
 
 	const RESUME_URL = "https://github.com/WilliamVelazquez/Blog-Articles/raw/master/Portfolio/WilliamVelazquez_Resume.pdf";
 
@@ -111,7 +111,7 @@ function ResumeContent(props) {
 					lineColor="#BF0404"
 					hoverColor="#BF0404"
 					title="Download William's Resume"
-					handleClik={()=>logEvent(GA_RESUME_CATEGORY,GA_RESUME_DOWNLOAD_ACTION,GA_RESUME_LABEL)}
+					handleClik={()=>logEvent(GA_RESUME_CATEGORY,GA_RESUME_DOWNLOAD_ACTION,GA_RESUME_DOWNLOAD_LABEL)}
 				>
 					<DownloadIcon
 						size={20}
