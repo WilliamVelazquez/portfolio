@@ -4,6 +4,7 @@ import TopButton from '../../containers/TopButton';
 import SocialMedia from './SocialMedia';
 import ContactData from './ContactData';
 import Copyright from './Copyright';
+import ColorBar from '../ui/ColorBar';
 
 function Footer(props) {
   const {active} = props;
@@ -15,8 +16,7 @@ function Footer(props) {
         <SocialMedia color="#fff" hoverColor="#BF0404" size={32} titleColor="#fff" title="Follow me!"/>
       </div>
       <Copyright />
-      
-      <div className="colorBar"></div>
+      <ColorBar color="#8E1A1A" height="8px" width="100%" />
 
       <style jsx>{`
         footer{
@@ -40,10 +40,6 @@ function Footer(props) {
           padding: 15px 10px;
           align-items: center;
           justify-items: center;
-        }
-        .colorBar{
-          background: #8e1a1a;
-          height: 8px;
         }
         img{
           width: 35px;

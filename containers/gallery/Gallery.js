@@ -1,18 +1,14 @@
 import React, {Component} from 'react';
 
+import GalleryModal from './GalleryModal';
+import GalleryImageCard from './GalleryImageCard';
+
 class Gallery extends Component {
   state = {
     currentIndex: null
   };
 
-  renderImageContent = (src, index) => {
-    return (
-      <div onClick={(e) => this.openModal(e, index)}>
-        <img src={src} key={src} />
-      </div>
-    ) 
-  }
-  openModal = (e, index) => {
+  openModal = (index) => {
     this.setState ({ currentIndex: index });
   }
   closeModal = (e) => {
@@ -38,80 +34,57 @@ class Gallery extends Component {
     }));
   }
   render() {
-    const {images} = this.props;
+    const {images, title, children, titleColor, titleAlignment, maxWidth='1200px', imageGap, columns, tabletColumns, mobileColumns} = this.props;
     return (
       <div className="gallery-container">
-        <h1>🔥 This Gallery Is Lit 🔥</h1>
+        <h3 className="gallery-title">{title}</h3>
+        {children}
         <div className="gallery-grid">
-          {images.map(this.renderImageContent)}
+          {
+            images.map((img,index)=>
+            <GalleryImageCard 
+              img={img} 
+              key={img.id}
+              index={index} 
+              handleImageCardClick={this.openModal} 
+            />)
+          }
         </div>
-        <GalleryModal 
-          closeModal={this.closeModal} 
-          findPrev={this.findPrev} 
-          findNext={this.findNext} 
-          hasPrev={this.state.currentIndex > 0} 
-          hasNext={this.state.currentIndex + 1 < images.length} 
-          src={images[this.state.currentIndex]} 
-        />
+        {
+          (this.state.currentIndex !== null ) &&
+          <GalleryModal 
+            findPrev={this.findPrev} 
+            findNext={this.findNext} 
+            closeModal={this.closeModal} 
+            hasPrev={this.state.currentIndex > 0} 
+            hasNext={this.state.currentIndex + 1 < images.length} 
+            image={images[this.state.currentIndex]} 
+          />
+        }
         <style jsx>{`
           .gallery-container {
             padding: .9375rem 0;
           }
+          .gallery-title{
+            color: ${titleColor||"#ffffff"};
+            text-align: ${titleAlignment||"center"};
+          }
           .gallery-grid {
             width: 100%;
             display: grid;
-            grid-gap: 8px;
             margin: 0 auto;
-            max-width: 1200px;
-            grid-template-columns: repeat(3, 1fr);
-            
-            @include bp( x-small ) {
-              grid-template-columns: repeat(1, 1fr);
-            }	  
-            @include bp( small ) {
-              grid-template-columns: repeat(2, 1fr);
-            }	
-            // When above our large breakpoint, make sure we have 3 columns
-            @include bp( large ) {
-              grid-template-columns: repeat(3, 1fr);
-            }	
-            img {
-              width: 100%;
-              border: 5px solid #fff;
+            ${maxWidth?`max-width: ${maxWidth};`:""}
+            grid-gap: ${imageGap||"8px"};
+            grid-template-columns: repeat(${columns||"4"}, 1fr);
+          }
+          @media only screen and (max-width : 768px) {
+            .gallery-grid {
+              grid-template-columns: repeat(${tabletColumns||"2"}, 1fr);
             }
           }
-          .gallery-grid div {
-            cursor: pointer;
-            position: relative;
-            &:before, &:after {
-              opacity: 0;
-              transition: .3s opacity ease;
-            }
-            &:after {
-              top: 50%;
-              left: 50%;
-              color: #fff;
-              font-size: 80px;
-              display: block;
-              content: '\02194';
-              position: absolute;
-              transform: translate3d(-50%, -50%, 0) rotate(-45deg);
-            }
-            &:before {
-              top: 0;
-              left: 0;
-              right: 0;
-              content: "";
-              bottom: 4px;
-              display: block;
-              position: absolute;
-              background: rgba(#222, 0.5);
-            }
-            &:hover {
-              &:before, &:after {
-                opacity: 1;
-                transition: .3s opacity ease;
-              }
+          @media only screen and (max-width: 667px) {
+            .gallery-grid {
+              grid-template-columns: repeat(${mobileColumns||"2"}, 1fr);
             }
           }
         `}</style>
@@ -119,3 +92,5 @@ class Gallery extends Component {
     )
   }
 }
+
+export default Gallery;

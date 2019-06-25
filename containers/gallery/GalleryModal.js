@@ -2,38 +2,41 @@ import React, {Component} from 'react';
 
 class GalleryModal extends Component {
   componentDidMount() {
-    document.body.addEventListener('keydown', this.handleKeyDown);
-  }  
-  componentWillUnMount() {
-    document.body.removeEventListener('keydown', this.handleKeyDown);
+    document.addEventListener('keydown', this.handleKeyDown);
+  }
+  componentWillUnmount() {
+    document.removeEventListener('keydown', this.handleKeyDown);
   }
   handleKeyDown = (e) => {
+    //Esc key
     if (e.keyCode === 27)
       this.props.closeModal();
+    //Left Key
     if (e.keyCode === 37 && this.props.hasPrev)
       this.props.findPrev();
+    //Rigth key
     if (e.keyCode === 39 && this.props.hasNext)
       this.props.findNext();
   }
   render () {
-    const { closeModal, hasNext, hasPrev, findNext, findPrev, src } = this.props;
-    if (!src) {
-      console.log('whut')
-      return null;
-    }
+    const { closeModal, hasNext, hasPrev, findNext, findPrev, image } = this.props;
+    // if (!image) {
+    //   console.log('Modal...')
+    //   return null;
+    // }
     return (
       <div>
         <div className="gallery-modal-overlay" onClick={closeModal}></div>
-        <div isOpen={!!src} className="gallery-modal">
+        <div className="gallery-modal">
           <div className='gallery-modal-body'>
             <a href="#" className='gallery-modal-close' onClick={closeModal} onKeyDown={this.handleKeyDown}>&times;</a>
             {hasPrev && <a href="#" className='gallery-modal-prev' onClick={findPrev} onKeyDown={this.handleKeyDown}>&lsaquo;</a>}
             {hasNext && <a href="#" className='gallery-modal-next' onClick={findNext} onKeyDown={this.handleKeyDown}>&rsaquo;</a>}
-            <img src={src} />
+            <img src={image.src} />
           </div>
         </div>
         <style jsx>{`
-          .modal {
+          .gallery-modal {
             top: 50%;
             left: 50%;
             width: 50%;
@@ -41,22 +44,12 @@ class GalleryModal extends Component {
             position: fixed;
             max-width: 800px;
             transform: translate3d(-50%, -50%, 0);
-            /*@include bp( x-small ) {
-              width: 95%;
-            }	  
-            @include bp( small ) {
-              width: 80%;
-            }	
-            @include bp( large ) {
-              width: 60%;
-            }*/
-            img {
-              width: 100%;
-              border: 5px solid #fff;
-            }
           }
-          
-          .modal-overlay {
+          .gallery-modal img {
+            width: 100%;
+            border: 5px solid #fff;
+          }
+          .gallery-modal-overlay {
             top: 0;
             left: 0;
             z-index: 1;
@@ -65,38 +58,50 @@ class GalleryModal extends Component {
             position: fixed;
             background-color: rgba(0, 0, 0, 0.5);
           }
-          .modal-body a {
-            position: absolute;
-            display: inline;
+          .gallery-modal-body a {
             color: #222;
-            text-decoration: none;
-            line-height: 36px;
+            display: inline;
             font-size: 30px;
-            font-weight: lighter;
             background: #fff;
+            line-height: 36px;
             border-radius: 5px;
-            height: 40px; width: 40px;
             text-align: center;
+            position: absolute;
+            font-weight: lighter;
+            text-decoration: none;
+            height: 40px; width: 40px;
           }
-          .modal-body .modal-close {
-            right: 0; top: 0;
+          .gallery-modal-body .gallery-modal-close {
+            top: 0;
+            right: -10px; 
             border-radius: 0 0 0 5px;
           }
-          .modal-body .modal-next,
-          .modal-body .modal-prev {
-            right: 0; top: calc(50% - 25px);
-            border-radius: 5px 0 0 5px;
+          .gallery-modal-body .gallery-modal-next,
+          .gallery-modal-body .gallery-modal-prev {
+            right: -10px; 
             height: 50px;
-            line-height: 40px;
             font-size: 60px;
+            line-height: 40px;
+            top: calc(50% - 25px);
+            border-radius: 5px 0 0 5px;
           }
-          .modal-body .modal-prev {
+          .gallery-modal-body .gallery-modal-prev {
             left: 0;
             right: auto;
             border-radius: 0 5px 5px 0;
           }
-          .modal-body {
+          .gallery-modal-body {
             position: relative;
+          }
+          @media only screen and (max-width : 768px){
+            .gallery-modal {
+              width: 80%;
+            }
+          }
+          @media only screen and (max-width: 667px){
+            .gallery-modal {
+              width: 80%;
+            }
           }
         `}</style>
       </div>
