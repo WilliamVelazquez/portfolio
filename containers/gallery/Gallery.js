@@ -34,7 +34,7 @@ class Gallery extends Component {
     }));
   }
   render() {
-    const {images, title, children, titleColor, titleAlignment, maxWidth='1200px', imageGap, columns, tabletColumns, mobileColumns} = this.props;
+    const {images, title, children, titleColor, titleAlignment, maxWidth='1200px', imageGap, columns, tabletColumns, mobileColumns, overlayBackgroundColor=''} = this.props;
     return (
       <div className="gallery-container">
         <h3 className="gallery-title">{title}</h3>
@@ -59,6 +59,7 @@ class Gallery extends Component {
             hasPrev={this.state.currentIndex > 0} 
             hasNext={this.state.currentIndex + 1 < images.length} 
             image={images[this.state.currentIndex]} 
+            overlayBackgroundColor={overlayBackgroundColor}
           />
         }
         <style jsx>{`

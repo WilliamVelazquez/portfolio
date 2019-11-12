@@ -19,7 +19,7 @@ class GalleryModal extends Component {
       this.props.findNext();
   }
   render () {
-    const { closeModal, hasNext, hasPrev, findNext, findPrev, image } = this.props;
+    const { closeModal, hasNext, hasPrev, findNext, findPrev, image, overlayBackgroundColor } = this.props;
     // if (!image) {
     //   console.log('Modal...')
     //   return null;
@@ -56,7 +56,7 @@ class GalleryModal extends Component {
             width: 100%;
             height: 100%;
             position: fixed;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: ${overlayBackgroundColor||'rgba(0, 0, 0, 0.5)'};
           }
           .gallery-modal-body a {
             color: #222;
@@ -80,7 +80,7 @@ class GalleryModal extends Component {
           .gallery-modal-body .gallery-modal-prev {
             right: -10px; 
             height: 50px;
-            font-size: 60px;
+            font-size: 50px;
             line-height: 40px;
             top: calc(50% - 25px);
             border-radius: 5px 0 0 5px;
