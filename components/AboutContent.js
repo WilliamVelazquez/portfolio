@@ -56,14 +56,14 @@ function AboutContent(props) {
 				primaryColor="#8E1A1A"
 				secondaryColor="#111317"
 			/>
-			<Gallery 
+			{/* <Gallery 
 				columns={8}
 				imageGap="0px"
 				images={IMAGES}
 				maxWidth={false}
 				tabletColumns={6}
 				mobileColumns={4}
-			/>
+			/> */}
 			<ColorBar color="#8E1A1A" height="10px" />
 
       <style jsx global>{`

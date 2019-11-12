@@ -24,6 +24,7 @@ function AboutMusic(props) {
         maxWidth={false}
         tabletColumns={6}
         mobileColumns={4}
+        overlayBackgroundColor="transparent"
       />
 			<style jsx>{`
         .section-text{
