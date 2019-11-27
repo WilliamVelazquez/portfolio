@@ -24,7 +24,7 @@ function ResumeContent(props) {
   ];
 	
 	const EDUCATION_DATA = [
-    {id:1, title:'Platzi', date:'2017-Present', description:'Career in Databases Management.\nCareer in Development with React (React, Redux, React Router, Next).\nCareer in Apps Development with React Native.\nCareer in Big Data and Data Science.'},
+    {id:1, title:'Platzi', date:'2017-Present', description:'Career in Databases Management.\nCareer in Big Data and Data Science.\nCareer in Apps Development with React Native.\nCareer in Development with React (React, Redux, React Router, Next).\nSchool of JavaScript - FullStack (MERN - Mongo, Express, React, Node).'},
     {id:2, title:'University', date:'2012-2016', description:'Computer Systems Engineering.\nInstituto Politécnico Nacional (IPN) - National Polytechnic Institute.\nEscuela Superior de Cómputo (ESCOM) - Higher School of Computer Science.\nAcademic Excellence Program all the career.\nAward for the Best Project of the Academy of Software Engineering of the XX Expo ESCOM 2015.\nProgramming Languages:\nJava, SQL, HTML, JavaScript, CSS, C#, C and Python.'},
     {id:3, title:'High School', date:'2010-2012', description:'Centro Escolar Benemérito de las Américas - Benemerito School Center of the Americas.'},
 	];
@@ -54,7 +54,7 @@ function ResumeContent(props) {
     {id:10, src:'/static/logos/html5_logo.png', alt:'HTML 5'},
     {id:11, src:'/static/logos/css_logo.png', alt:'CSS'},
     {id:12, src:'/static/logos/javascript_logo.png', alt:'Javascript'}
-  ];
+	];
 
 	return(
 		<>
