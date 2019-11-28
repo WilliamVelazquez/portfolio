@@ -70,6 +70,16 @@ function SkewedSection(props) {
 					.se-slope:first-child .se-content{
 						padding-top: 20px;
 					}
+				}
+				@media only screen and (min-width : 1400px) {
+					.se-slope:nth-child(odd) .se-content{
+						padding: 100px 100px 250px 100px;
+					}
+					.se-slope:first-child .se-content{
+						/*padding: 60px 100px 220px 100px;*/
+						padding: 100px 100px 260px 100px;
+						
+					}
         }
       `}</style>
     </div>
