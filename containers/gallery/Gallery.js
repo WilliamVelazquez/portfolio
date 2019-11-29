@@ -34,7 +34,7 @@ class Gallery extends Component {
     }));
   }
   render() {
-    const {images, title, children, titleColor, titleAlignment, maxWidth='1200px', imageGap, columns, tabletColumns, mobileColumns, overlayBackgroundColor=''} = this.props;
+    const {images, title, children, titleColor, titleAlignment, maxWidth='1200px', imageGap, columns, tabletColumns, mobileColumns, overlayBackgroundColor='', withLightBorder=false, withDarkBorder=false} = this.props;
     return (
       <div className="gallery-container">
         <h3 className="gallery-title">{title}</h3>
@@ -46,7 +46,9 @@ class Gallery extends Component {
               img={img} 
               key={img.id}
               index={index} 
-              handleImageCardClick={this.openModal} 
+              handleImageCardClick={this.openModal}
+              withLightBorder={withLightBorder}
+              withDarkBorder={withDarkBorder}
             />)
           }
         </div>

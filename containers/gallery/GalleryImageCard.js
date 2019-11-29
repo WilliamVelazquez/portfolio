@@ -1,7 +1,7 @@
 import React from 'react';
 
 function GalleryImageCard(props) {
-  const {img, index, handleImageCardClick, withBorder=false} = props;
+  const {img, index, handleImageCardClick, withLightBorder=false, withDarkBorder=false} = props;
   return(
     <div className="gallery-image-card" onClick={(e) => handleImageCardClick(index)}>
       <img src={img.src} />
@@ -15,6 +15,8 @@ function GalleryImageCard(props) {
           overflow: hidden;
           position: relative;
           margin-bottom: -4px;
+          ${withDarkBorder?"border: 2px solid #111317;":""}
+          ${withLightBorder?"border: 5px solid #ffffff;":""}
         }
         .gallery-image-card:before{
           top: 0;
@@ -49,7 +51,6 @@ function GalleryImageCard(props) {
         }
         .gallery-image-card img{
           width: 100%;
-          ${withBorder?"border: 5px solid #fff;":""}
           transition: 0.4s ease;
           -moz-transition: 0.4s ease;
           -webkit-transition: 0.4s ease;

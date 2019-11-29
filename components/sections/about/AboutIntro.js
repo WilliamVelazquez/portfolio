@@ -54,9 +54,9 @@ function AboutIntro(props) {
           font-weight: bold;
           text-decoration:none;
           transition: all 0.4s;
-					-o-transition: all 0.4s;
-					-moz-transition: all 0.4s;
-					-webkit-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -webkit-transition: all 0.4s;
         }
         .contact-text:hover{
           color: #111317;
