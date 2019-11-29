@@ -26,4 +26,5 @@ Require Node.JS
 
 ## Screenshots
 
+![About Page](./.readme-static/About.png)
 ![Contact Form](./.readme-static/Contact.png)
