@@ -2,7 +2,7 @@
 	"short_name": "William",
 	"name": "William Velazquez",
 	"description": "William Velazquez Portfolio",
-	"start_url":  "/",
+	"start_url":  "/?utm_source=homescreen",
 	"scope": "/",
 	"display": "standalone",
 	"theme_color": "#111317",
